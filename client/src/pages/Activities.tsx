@@ -186,28 +186,11 @@ export default function Activities() {
 
                 <CardFooter className="flex items-center justify-between p-4 pt-0">
                   <div className="font-bold text-primary">${activity.price}</div>
-                  <div className="flex gap-4">
-                    <button 
-                      onClick={() => {
-                        const subject = `Activity Booking Request - ${activity.name}`;
-                        const body = `Hi, I'm interested in booking "${activity.name}" for my trip.`;
-                        window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                      }}
-                      className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition"
-                    >
-                      Email
+                  <Link href={`/activities/${activity.id}`}>
+                    <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition">
+                      View Details
                     </button>
-                    <a 
-                      href={`https://wa.me/1234567890?text=${encodeURIComponent(
-                        `Hi, I'm interested in booking "${activity.name}" for my trip.`
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="border border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-md transition text-center"
-                    >
-                      WhatsApp
-                    </a>
-                  </div>
+                  </Link>
                 </CardFooter>
               </Card>
             ))}
