@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Clock } from "lucide-react";
 
 export default function ActivityDetails() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
   const { data, isLoading } = useQuery<{ activity: Activity }>({
-    queryKey: [`/api/activities/${id}`],
+    queryKey: [`/api/activities/${slug}`],
   });
 
   if (isLoading || !data) return <div>Loading...</div>;

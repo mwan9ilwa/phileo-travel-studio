@@ -186,7 +186,7 @@ export default function Activities() {
 
                 <CardFooter className="flex items-center justify-between p-4 pt-0">
                   <div className="font-bold text-primary">${activity.price}</div>
-                  <Link href={`/activities/${activity.id}`}>
+                  <Link href={`/activities/${activity.slug || activity.id}`}>
                     <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition">
                       View Details
                     </button>
