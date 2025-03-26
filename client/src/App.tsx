@@ -17,11 +17,13 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./app.css";
 
-function ErrorBoundary({ children }) {
-  const [error, setError] = React.useState(null);
-  const [errorInfo, setErrorInfo] = React.useState(null);
+import React, { useState, useEffect } from 'react';
 
-  React.useEffect(() => {
+function ErrorBoundary({ children }) {
+  const [error, setError] = useState(null);
+  const [errorInfo, setErrorInfo] = useState(null);
+
+  useEffect(() => {
     const onError = (error, errorInfo) => {
       setError(error);
       setErrorInfo(errorInfo);
