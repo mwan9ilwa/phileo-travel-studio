@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useState } from 'react';
+import { useLocation } from 'wouter';
 
 const HeroSection = () => {
+  const [, setLocation] = useLocation();
   const [searchParams, setSearchParams] = useState({
     destination: "",
     date: "",
@@ -11,28 +13,25 @@ const HeroSection = () => {
     const { name, value } = e.target;
     setSearchParams(prev => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Search submitted:", searchParams);
-    
-    // Create query parameters for the Tours page
+
     const queryParams = new URLSearchParams();
-    
+
     if (searchParams.destination) {
       queryParams.set('continent', searchParams.destination);
     }
-    
+
     if (searchParams.date) {
       queryParams.set('date', searchParams.date);
     }
-    
+
     if (searchParams.travelers) {
       queryParams.set('travelers', searchParams.travelers);
     }
-    
-    // Navigate to the tours page with search parameters
-    window.location.href = `/tours?${queryParams.toString()}`;
+
+    setLocation(`/tours?${queryParams.toString()}`);
   };
 
   return (

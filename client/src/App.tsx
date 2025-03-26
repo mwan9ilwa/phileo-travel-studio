@@ -17,6 +17,36 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./app.css";
 
+function ErrorBoundary({ children }) {
+  const [error, setError] = React.useState(null);
+  const [errorInfo, setErrorInfo] = React.useState(null);
+
+  React.useEffect(() => {
+    const onError = (error, errorInfo) => {
+      setError(error);
+      setErrorInfo(errorInfo);
+    };
+    window.addEventListener('error', onError);
+    return () => window.removeEventListener('error', onError);
+  }, []);
+
+  if (error) {
+    return (
+      <div>
+        <h2>Something went wrong.</h2>
+        <details style={{ whiteSpace: 'pre-wrap' }}>
+          {error && error.toString()}
+          <br />
+          {errorInfo && errorInfo.componentStack}
+        </details>
+      </div>
+    );
+  }
+
+  return children;
+}
+
+
 function Router() {
   return (
     <>
@@ -42,8 +72,10 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <Router />
-      <Toaster />
+      <ErrorBoundary>
+        <Router />
+        <Toaster />
+      </ErrorBoundary>
     </QueryClientProvider>
   );
 }
