@@ -56,19 +56,39 @@ export default function ContactUs() {
     },
   });
 
-  function onSubmit(values: FormValues) {
+  async function onSubmit(values: FormValues) {
     setIsSubmitting(true);
-    // Simulate API call
-    setTimeout(() => {
-      console.log(values);
-      setIsSubmitting(false);
+    
+    try {
+      // Send the contact form data to the server
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+      
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+      
       setIsSubmitted(true);
       toast({
         title: "Message Sent",
         description: "We've received your message and will get back to you soon.",
       });
       form.reset();
-    }, 1000);
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      toast({
+        title: "Error",
+        description: "There was a problem sending your message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
