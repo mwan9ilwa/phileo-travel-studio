@@ -10,6 +10,7 @@ import Destinations from "@/pages/Destinations";
 import Tours from "@/pages/Tours";
 import Activities from "@/pages/Activities";
 import Accommodations from "@/pages/Accommodations";
+import Accommodation from "@/pages/Accommodation"; // Added this line
 import AboutUs from "@/pages/AboutUs";
 import ContactUs from "@/pages/ContactUs";
 import Admin from "@/pages/Admin";
@@ -62,6 +63,7 @@ function Router() {
         <Route path="/activities" component={Activities} />
         <Route path="/activities/:slug" component={Activity} />
         <Route path="/accommodations" component={Accommodations} />
+        <Route path="/accommodations/:slug" component={Accommodation} /> {/* Added this line */}
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={ContactUs} />
         <Route path="/admin" component={Admin} />

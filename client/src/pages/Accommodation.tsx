@@ -38,75 +38,91 @@ export default function AccommodationDetails() {
     return <div className="container mx-auto px-4 py-8">Accommodation not found</div>;
   }
 
+  // Available amenities with their corresponding icons
+  const amenitiesIcons = {
+    wifi: <Wifi className="w-5 h-5" />,
+    pool: <Pool className="w-5 h-5" />,
+    restaurant: <Utensils className="w-5 h-5" />,
+    breakfast: <Coffee className="w-5 h-5" />
+  };
+
+  // Mock amenities for display - in a real app you'd get these from your data
+  const amenities = ["wifi", "pool", "restaurant", "breakfast"];
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <div className="relative">
-          <img
-            src={accommodation.image}
-            alt={accommodation.name}
-            className="w-full h-96 object-cover"
-          />
-          <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full">
-            {accommodation.type}
-          </div>
-        </div>
+        <img
+          src={accommodation.image}
+          alt={accommodation.name}
+          className="w-full h-96 object-cover"
+        />
         <div className="p-6">
-          <div className="flex items-center justify-between mb-4">
-            <h1 className="text-3xl font-bold">{accommodation.name}</h1>
+          <h1 className="text-3xl font-bold mb-4">{accommodation.name}</h1>
+          <div className="flex items-center gap-4 mb-4 text-neutral-medium">
             <div className="flex items-center">
-              {[...Array(Math.floor(Number(accommodation.rating)))].map((_, i) => (
-                <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+              <MapPin className="w-5 h-5 mr-2" />
+              <span>{accommodation.destinationName}</span>
+            </div>
+            <div className="flex items-center">
+              {[1, 2, 3, 4, 5].map((starNum) => (
+                <Star 
+                  key={starNum}
+                  className={`w-5 h-5 ${starNum <= accommodation.rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`}
+                />
               ))}
-              <span className="ml-2 text-neutral-medium">({accommodation.rating}/5)</span>
+              <span className="ml-2">{accommodation.rating}/5</span>
             </div>
           </div>
-          <div className="flex items-center mb-4 text-neutral-medium">
-            <MapPin className="w-5 h-5 mr-2" />
-            <span>{accommodation.address}</span>
-          </div>
-          <div className="flex items-center mb-6 text-neutral-medium">
-            <span className="text-primary text-2xl font-bold">${accommodation.price}</span>
-            <span className="ml-2">per night</span>
-          </div>
+          
           <div className="prose max-w-none mb-6">
-            <p className="text-lg mb-6">{accommodation.description}</p>
-          </div>
-          <div className="mb-8">
-            <h3 className="text-xl font-semibold mb-4">Amenities</h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              {accommodation.amenities.map((amenity, index) => (
-                <div key={index} className="flex items-center bg-neutral-lightest p-3 rounded-lg">
-                  {amenity.includes('WiFi') && <Wifi className="w-5 h-5 mr-2 text-primary" />}
-                  {amenity.includes('Pool') && <Pool className="w-5 h-5 mr-2 text-primary" />}
-                  {amenity.includes('Restaurant') && <Utensils className="w-5 h-5 mr-2 text-primary" />}
-                  {amenity.includes('Breakfast') && <Coffee className="w-5 h-5 mr-2 text-primary" />}
-                  <span>{amenity}</span>
+            <p className="text-lg mb-4">{accommodation.description}</p>
+            
+            <h3 className="font-bold text-xl mb-2">Amenities</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+              {amenities.map((amenity) => (
+                <div key={amenity} className="flex items-center gap-2 p-3 border rounded-md">
+                  {amenitiesIcons[amenity]}
+                  <span className="capitalize">{amenity}</span>
                 </div>
               ))}
             </div>
+            
+            <h3 className="font-bold text-xl mb-2">Details</h3>
+            <ul className="list-disc pl-6 mb-6">
+              <li>Room type: {accommodation.type || "Standard"}</li>
+              <li>Max occupancy: {accommodation.maxOccupancy || 2} guests</li>
+              <li>Size: {accommodation.size || "30m²"}</li>
+              <li>Check-in: {accommodation.checkIn || "2:00 PM"}</li>
+              <li>Check-out: {accommodation.checkOut || "11:00 AM"}</li>
+            </ul>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              className="flex-1"
-              onClick={() => {
-                const subject = `Booking Request: ${accommodation.name}`;
-                const body = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
-                window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-              }}
-            >
-              Book via Email
-            </Button>
-            <Button
-              variant="outline"
-              className="flex-1"
-              onClick={() => {
-                const text = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
-                window.location.href = `https://wa.me/1234567890?text=${encodeURIComponent(text)}`;
-              }}
-            >
-              Book via WhatsApp
-            </Button>
+          
+          <div className="flex items-center justify-between">
+            <div>
+              <span className="text-3xl font-bold text-primary">${accommodation.price}</span>
+              <span className="text-neutral-medium"> / night</span>
+            </div>
+            <div className="space-x-4">
+              <Button 
+                onClick={() => {
+                  const subject = `Booking Request: ${accommodation.name}`;
+                  const body = `Hi, I'm interested in booking a stay at "${accommodation.name}".`;
+                  window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                }}
+              >
+                Book via Email
+              </Button>
+              <Button
+                variant="outline"
+                onClick={() => {
+                  const text = `Hi, I'm interested in booking a stay at "${accommodation.name}".`;
+                  window.location.href = `https://wa.me/1234567890?text=${encodeURIComponent(text)}`;
+                }}
+              >
+                Book via WhatsApp
+              </Button>
+            </div>
           </div>
         </div>
       </div>
