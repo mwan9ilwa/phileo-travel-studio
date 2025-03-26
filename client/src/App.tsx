@@ -83,6 +83,6 @@ function App() {
   );
 }
 
-export default App;
-import Activities from "./pages/Activities";
 import Activity from "./pages/Activity";
+
+export default App;
