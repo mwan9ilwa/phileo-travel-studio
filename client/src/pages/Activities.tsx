@@ -22,9 +22,40 @@ export default function Activities() {
 
   const { data, isLoading, error } = useQuery<ActivitiesResponse>({
     queryKey: ["/api/activities"],
+    queryFn: async () => {
+      const response = await fetch('/api/activities');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    },
   });
 
   const [filteredActivities, setFilteredActivities] = useState<Activity[]>([]);
+
+  // Mock data for loading state
+  const mockActivities: Activity[] = [
+    {
+      id: "mock1",
+      name: "Mock Activity 1",
+      description: "This is a mock activity.",
+      image: "/images/placeholder.jpg",
+      destinationName: "Mock Destination",
+      price: 50,
+      duration: "Half Day",
+      slug: "mock-activity-1"
+    },
+    {
+      id: "mock2",
+      name: "Mock Activity 2",
+      description: "Another mock activity.",
+      image: "/images/placeholder.jpg",
+      destinationName: "Mock Destination",
+      price: 150,
+      duration: "Full Day",
+      slug: "mock-activity-2"
+    },
+  ];
 
   // Convert activities data to proper array if not already
   useEffect(() => {
@@ -64,7 +95,43 @@ export default function Activities() {
     return (
       <div className="container mx-auto py-12">
         <h1 className="text-3xl font-bold">Activities</h1>
-        <div className="mt-6">Loading activities...</div>
+        <div className="mt-6">Loading activities...  Here are some mock activities:</div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {mockActivities.map((activity: Activity) => (
+            <Card key={activity.id} className="overflow-hidden">
+              <div className="relative h-48 w-full">
+                <img
+                  src={activity.image}
+                  alt={activity.name}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <CardHeader className="p-4 pb-0">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-bold">{activity.name}</h3>
+                  <Badge variant="secondary">{activity.duration}</Badge>
+                </div>
+                <div className="text-sm text-gray-500">
+                  {activity.destinationName}
+                </div>
+              </CardHeader>
+
+              <CardContent className="p-4 pt-2">
+                <p className="line-clamp-2 text-sm text-gray-600">
+                  {activity.description}
+                </p>
+              </CardContent>
+
+              <CardFooter className="flex items-center justify-between p-4 pt-0">
+                <div className="font-bold text-primary">${activity.price}</div>
+                <button className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition" disabled>
+                  View Details
+                </button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
     );
   }
