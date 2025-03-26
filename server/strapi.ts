@@ -1,12 +1,19 @@
 import axios from 'axios';
-import { IStorage } from './storage';
 import {
-  Destination, InsertDestination,
-  Tour, InsertTour,
-  Activity, InsertActivity,
-  Accommodation, InsertAccommodation,
-  Review, InsertReview
-} from '../shared/schema';
+  IStorage,
+  User,
+  InsertUser,
+  Destination,
+  InsertDestination,
+  Tour,
+  InsertTour,
+  Activity,
+  InsertActivity,
+  Accommodation,
+  InsertAccommodation,
+  Review,
+  InsertReview
+} from './storage';
 
 /**
  * StrapiStorage implements the IStorage interface but uses Strapi CMS as 
@@ -23,15 +30,14 @@ export class StrapiStorage implements IStorage {
 
   private get headers() {
     return {
-      Authorization: `Bearer ${this.apiToken}`,
-      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${this.apiToken}`,
+      'Content-Type': 'application/json'
     };
   }
 
-  // Helper method to make API requests
   private async apiRequest<T>(
-    method: 'GET' | 'POST' | 'PUT' | 'DELETE',
     endpoint: string,
+    method: 'GET' | 'POST' | 'PUT' | 'DELETE' = 'GET',
     data?: any
   ): Promise<T> {
     try {
@@ -40,264 +46,417 @@ export class StrapiStorage implements IStorage {
         method,
         url,
         headers: this.headers,
-        data,
+        data
       });
       return response.data;
     } catch (error: any) {
-      console.error(`Strapi API error (${method} ${endpoint}):`, error.message);
-      throw error;
+      console.error(`Strapi API Error (${endpoint}):`, error.message);
+      throw new Error(`Strapi API Error: ${error.message}`);
     }
   }
 
-  // Transform Strapi data to our app's schema
+  // Transformation methods to convert Strapi data format to our app's format
   private transformDestination(strapiData: any): Destination {
-    const data = strapiData.attributes;
+    const data = strapiData.attributes || strapiData;
+    const gallery = data.gallery?.data?.map((img: any) => img.attributes.url) || [];
+    
     return {
-      id: strapiData.id,
-      name: data.name,
-      slug: data.slug,
-      description: data.description,
-      image: data.image.data?.attributes?.url || '',
-      gallery: data.gallery.data?.map((img: any) => img.attributes.url) || [],
-      rating: data.rating || 0,
+      id: strapiData.id || 0,
+      name: data.name || '',
+      slug: data.slug || '',
+      description: data.description || '',
+      image: data.image?.data?.attributes?.url || data.image || '',
+      gallery: gallery,
+      rating: data.rating || '0',
       reviewCount: data.reviewCount || 0,
       tourCount: data.tourCount || 0,
       continent: data.continent || '',
-      isFeatured: data.isFeatured ? 1 : 0,
+      isFeatured: data.isFeatured ? 1 : 0
     };
   }
 
   private transformTour(strapiData: any): Tour {
-    const data = strapiData.attributes;
+    const data = strapiData.attributes || strapiData;
+    const gallery = data.gallery?.data?.map((img: any) => img.attributes.url) || [];
+    
     return {
-      id: strapiData.id,
-      title: data.title,
-      slug: data.slug,
-      description: data.description,
-      duration: data.duration,
-      price: data.price,
-      image: data.featuredImage.data?.attributes?.url || '',
-      gallery: data.gallery.data?.map((img: any) => img.attributes.url) || [],
-      destinationId: data.destination.data?.id || 0,
-      destinationName: data.destination.data?.attributes?.name || '',
+      id: strapiData.id || 0,
+      title: data.title || '',
+      slug: data.slug || '',
+      description: data.description || '',
+      duration: data.duration || 0,
+      price: data.price?.toString() || '0',
+      image: data.image?.data?.attributes?.url || data.image || '',
+      gallery: gallery,
+      destinationId: data.destination?.data?.id || data.destinationId || 0,
+      destinationName: data.destination?.data?.attributes?.name || data.destinationName || '',
       departureDates: data.departureDates || [],
       itinerary: data.itinerary || {},
       highlights: data.highlights || [],
       included: data.included || [],
       excluded: data.excluded || [],
-      difficulty: data.difficulty || '',
-      groupSize: data.groupSize || 0,
-      rating: data.rating || 0,
+      difficulty: data.difficulty || 'Easy',
+      groupSize: data.groupSize || 10,
+      rating: data.rating || '0',
       reviewCount: data.reviewCount || 0,
       isFeatured: data.isFeatured ? 1 : 0,
-      tag: data.tag || '',
+      tag: data.tag || null
     };
   }
 
   private transformActivity(strapiData: any): Activity {
-    const data = strapiData.attributes;
+    const data = strapiData.attributes || strapiData;
+    
     return {
-      id: strapiData.id,
-      name: data.name,
-      description: data.description,
-      image: data.image.data?.attributes?.url || '',
-      price: data.price,
-      duration: data.duration,
-      destinationId: data.destination.data?.id || 0,
-      destinationName: data.destination.data?.attributes?.name || '',
-      isFeatured: data.isFeatured ? 1 : 0,
+      id: strapiData.id || 0,
+      name: data.name || '',
+      description: data.description || '',
+      image: data.image?.data?.attributes?.url || data.image || '',
+      price: data.price?.toString() || '0',
+      duration: data.duration || '',
+      destinationId: data.destination?.data?.id || data.destinationId || 0,
+      destinationName: data.destination?.data?.attributes?.name || data.destinationName || '',
+      isFeatured: data.isFeatured ? 1 : 0
     };
   }
 
   private transformAccommodation(strapiData: any): Accommodation {
-    const data = strapiData.attributes;
+    const data = strapiData.attributes || strapiData;
+    
     return {
-      id: strapiData.id,
-      name: data.name,
-      description: data.description,
-      image: data.image.data?.attributes?.url || '',
-      address: data.address,
+      id: strapiData.id || 0,
+      name: data.name || '',
+      description: data.description || '',
+      image: data.image?.data?.attributes?.url || data.image || '',
+      address: data.address || '',
       amenities: data.amenities || [],
-      rating: data.rating || 0,
-      price: data.price,
-      destinationId: data.destination.data?.id || 0,
-      destinationName: data.destination.data?.attributes?.name || '',
-      type: data.type || '',
-      isFeatured: data.isFeatured ? 1 : 0,
+      rating: data.rating || '0',
+      price: data.price?.toString() || '0',
+      destinationId: data.destination?.data?.id || data.destinationId || 0,
+      destinationName: data.destination?.data?.attributes?.name || data.destinationName || '',
+      type: data.type || 'Hotel',
+      isFeatured: data.isFeatured ? 1 : 0
     };
   }
 
   private transformReview(strapiData: any): Review {
-    const data = strapiData.attributes;
+    const data = strapiData.attributes || strapiData;
+    
     return {
-      id: strapiData.id,
-      author: data.author,
-      authorImage: data.authorImage.data?.attributes?.url || '',
-      rating: data.rating,
-      comment: data.comment,
-      tourId: data.tour.data?.id || 0,
-      tourTitle: data.tour.data?.attributes?.title || '',
+      id: strapiData.id || 0,
+      author: data.author || '',
+      authorImage: data.authorImage?.data?.attributes?.url || data.authorImage || '',
+      rating: data.rating || '0',
+      comment: data.comment || '',
+      tourId: data.tour?.data?.id || data.tourId || 0,
+      tourTitle: data.tour?.data?.attributes?.title || data.tourTitle || ''
     };
   }
 
-  // Users
-  async getUser(id: number): Promise<any> {
-    const response = await this.apiRequest<any>('GET', `/api/users/${id}`);
-    return response;
+  // User methods
+  async getUser(id: number): Promise<User | undefined> {
+    try {
+      const response = await this.apiRequest<any>(`/users/${id}`);
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching user:', error);
+      return undefined;
+    }
   }
 
-  async getUserByUsername(username: string): Promise<any> {
-    const response = await this.apiRequest<any>('GET', `/api/users?filters[username][$eq]=${username}`);
-    return response.data[0] || undefined;
+  async getUserByUsername(username: string): Promise<User | undefined> {
+    try {
+      const response = await this.apiRequest<any>(`/users?filters[username][$eq]=${username}`);
+      if (response.data && response.data.length > 0) {
+        return response.data[0];
+      }
+      return undefined;
+    } catch (error) {
+      console.error('Error fetching user by username:', error);
+      return undefined;
+    }
   }
 
-  async createUser(user: any): Promise<any> {
-    const response = await this.apiRequest<any>('POST', `/api/users`, user);
-    return response;
+  async createUser(user: InsertUser): Promise<User> {
+    try {
+      const response = await this.apiRequest<any>('/users', 'POST', user);
+      return response.data;
+    } catch (error) {
+      console.error('Error creating user:', error);
+      throw error;
+    }
   }
 
-  // Destinations
+  // Destinations methods
   async getDestinations(): Promise<Destination[]> {
-    const response = await this.apiRequest<any>('GET', '/api/destinations?populate=image,gallery');
-    return response.data.map(this.transformDestination);
+    try {
+      const response = await this.apiRequest<any>('/destinations?populate=*');
+      return response.data.map(this.transformDestination);
+    } catch (error) {
+      console.error('Error fetching destinations:', error);
+      return [];
+    }
   }
 
   async getDestination(id: number): Promise<Destination | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/destinations/${id}?populate=image,gallery`);
-    return this.transformDestination(response.data);
+    try {
+      const response = await this.apiRequest<any>(`/destinations/${id}?populate=*`);
+      return this.transformDestination(response.data);
+    } catch (error) {
+      console.error(`Error fetching destination ${id}:`, error);
+      return undefined;
+    }
   }
 
   async getDestinationBySlug(slug: string): Promise<Destination | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/destinations?filters[slug][$eq]=${slug}&populate=image,gallery`);
-    return response.data[0] ? this.transformDestination(response.data[0]) : undefined;
+    try {
+      const response = await this.apiRequest<any>(`/destinations?filters[slug][$eq]=${slug}&populate=*`);
+      if (response.data && response.data.length > 0) {
+        return this.transformDestination(response.data[0]);
+      }
+      return undefined;
+    } catch (error) {
+      console.error(`Error fetching destination by slug ${slug}:`, error);
+      return undefined;
+    }
   }
 
   async getFeaturedDestinations(): Promise<Destination[]> {
-    const response = await this.apiRequest<any>('GET', '/api/destinations?filters[isFeatured][$eq]=true&populate=image,gallery');
-    return response.data.map(this.transformDestination);
+    try {
+      const response = await this.apiRequest<any>('/destinations?filters[isFeatured][$eq]=true&populate=*');
+      return response.data.map(this.transformDestination);
+    } catch (error) {
+      console.error('Error fetching featured destinations:', error);
+      return [];
+    }
   }
 
   async createDestination(destination: InsertDestination): Promise<Destination> {
-    const response = await this.apiRequest<any>('POST', '/api/destinations', {
-      data: destination
-    });
-    return this.transformDestination(response.data);
+    try {
+      const response = await this.apiRequest<any>('/destinations', 'POST', { data: destination });
+      return this.transformDestination(response.data);
+    } catch (error) {
+      console.error('Error creating destination:', error);
+      throw error;
+    }
   }
 
-  // Tours
+  // Tours methods
   async getTours(): Promise<Tour[]> {
-    const response = await this.apiRequest<any>('GET', '/api/tours?populate=featuredImage,gallery,destination');
-    return response.data.map(this.transformTour);
+    try {
+      const response = await this.apiRequest<any>('/tours?populate=*');
+      return response.data.map(this.transformTour);
+    } catch (error) {
+      console.error('Error fetching tours:', error);
+      return [];
+    }
   }
 
   async getTour(id: number): Promise<Tour | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/tours/${id}?populate=featuredImage,gallery,destination`);
-    return this.transformTour(response.data);
+    try {
+      const response = await this.apiRequest<any>(`/tours/${id}?populate=*`);
+      return this.transformTour(response.data);
+    } catch (error) {
+      console.error(`Error fetching tour ${id}:`, error);
+      return undefined;
+    }
   }
 
   async getTourBySlug(slug: string): Promise<Tour | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/tours?filters[slug][$eq]=${slug}&populate=featuredImage,gallery,destination`);
-    return response.data[0] ? this.transformTour(response.data[0]) : undefined;
+    try {
+      const response = await this.apiRequest<any>(`/tours?filters[slug][$eq]=${slug}&populate=*`);
+      if (response.data && response.data.length > 0) {
+        return this.transformTour(response.data[0]);
+      }
+      return undefined;
+    } catch (error) {
+      console.error(`Error fetching tour by slug ${slug}:`, error);
+      return undefined;
+    }
   }
 
   async getToursByDestination(destinationId: number): Promise<Tour[]> {
-    const response = await this.apiRequest<any>('GET', `/api/tours?filters[destination][id][$eq]=${destinationId}&populate=featuredImage,gallery,destination`);
-    return response.data.map(this.transformTour);
+    try {
+      const response = await this.apiRequest<any>(
+        `/tours?filters[destination][id][$eq]=${destinationId}&populate=*`
+      );
+      return response.data.map(this.transformTour);
+    } catch (error) {
+      console.error(`Error fetching tours for destination ${destinationId}:`, error);
+      return [];
+    }
   }
 
   async getFeaturedTours(): Promise<Tour[]> {
-    const response = await this.apiRequest<any>('GET', '/api/tours?filters[isFeatured][$eq]=true&populate=featuredImage,gallery,destination');
-    return response.data.map(this.transformTour);
+    try {
+      const response = await this.apiRequest<any>('/tours?filters[isFeatured][$eq]=true&populate=*');
+      return response.data.map(this.transformTour);
+    } catch (error) {
+      console.error('Error fetching featured tours:', error);
+      return [];
+    }
   }
 
   async createTour(tour: InsertTour): Promise<Tour> {
-    const response = await this.apiRequest<any>('POST', '/api/tours', {
-      data: tour
-    });
-    return this.transformTour(response.data);
+    try {
+      const response = await this.apiRequest<any>('/tours', 'POST', { data: tour });
+      return this.transformTour(response.data);
+    } catch (error) {
+      console.error('Error creating tour:', error);
+      throw error;
+    }
   }
 
-  // Activities
+  // Activities methods
   async getActivities(): Promise<Activity[]> {
-    const response = await this.apiRequest<any>('GET', '/api/activities?populate=image,destination');
-    return response.data.map(this.transformActivity);
+    try {
+      const response = await this.apiRequest<any>('/activities?populate=*');
+      return response.data.map(this.transformActivity);
+    } catch (error) {
+      console.error('Error fetching activities:', error);
+      return [];
+    }
   }
 
   async getActivity(id: number): Promise<Activity | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/activities/${id}?populate=image,destination`);
-    return this.transformActivity(response.data);
+    try {
+      const response = await this.apiRequest<any>(`/activities/${id}?populate=*`);
+      return this.transformActivity(response.data);
+    } catch (error) {
+      console.error(`Error fetching activity ${id}:`, error);
+      return undefined;
+    }
   }
 
   async getActivitiesByDestination(destinationId: number): Promise<Activity[]> {
-    const response = await this.apiRequest<any>('GET', `/api/activities?filters[destination][id][$eq]=${destinationId}&populate=image,destination`);
-    return response.data.map(this.transformActivity);
+    try {
+      const response = await this.apiRequest<any>(
+        `/activities?filters[destination][id][$eq]=${destinationId}&populate=*`
+      );
+      return response.data.map(this.transformActivity);
+    } catch (error) {
+      console.error(`Error fetching activities for destination ${destinationId}:`, error);
+      return [];
+    }
   }
 
   async getFeaturedActivities(): Promise<Activity[]> {
-    const response = await this.apiRequest<any>('GET', '/api/activities?filters[isFeatured][$eq]=true&populate=image,destination');
-    return response.data.map(this.transformActivity);
+    try {
+      const response = await this.apiRequest<any>('/activities?filters[isFeatured][$eq]=true&populate=*');
+      return response.data.map(this.transformActivity);
+    } catch (error) {
+      console.error('Error fetching featured activities:', error);
+      return [];
+    }
   }
 
   async createActivity(activity: InsertActivity): Promise<Activity> {
-    const response = await this.apiRequest<any>('POST', '/api/activities', {
-      data: activity
-    });
-    return this.transformActivity(response.data);
+    try {
+      const response = await this.apiRequest<any>('/activities', 'POST', { data: activity });
+      return this.transformActivity(response.data);
+    } catch (error) {
+      console.error('Error creating activity:', error);
+      throw error;
+    }
   }
 
-  // Accommodations
+  // Accommodations methods
   async getAccommodations(): Promise<Accommodation[]> {
-    const response = await this.apiRequest<any>('GET', '/api/accommodations?populate=image,destination');
-    return response.data.map(this.transformAccommodation);
+    try {
+      const response = await this.apiRequest<any>('/accommodations?populate=*');
+      return response.data.map(this.transformAccommodation);
+    } catch (error) {
+      console.error('Error fetching accommodations:', error);
+      return [];
+    }
   }
 
   async getAccommodation(id: number): Promise<Accommodation | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/accommodations/${id}?populate=image,destination`);
-    return this.transformAccommodation(response.data);
+    try {
+      const response = await this.apiRequest<any>(`/accommodations/${id}?populate=*`);
+      return this.transformAccommodation(response.data);
+    } catch (error) {
+      console.error(`Error fetching accommodation ${id}:`, error);
+      return undefined;
+    }
   }
 
   async getAccommodationsByDestination(destinationId: number): Promise<Accommodation[]> {
-    const response = await this.apiRequest<any>('GET', `/api/accommodations?filters[destination][id][$eq]=${destinationId}&populate=image,destination`);
-    return response.data.map(this.transformAccommodation);
+    try {
+      const response = await this.apiRequest<any>(
+        `/accommodations?filters[destination][id][$eq]=${destinationId}&populate=*`
+      );
+      return response.data.map(this.transformAccommodation);
+    } catch (error) {
+      console.error(`Error fetching accommodations for destination ${destinationId}:`, error);
+      return [];
+    }
   }
 
   async getFeaturedAccommodations(): Promise<Accommodation[]> {
-    const response = await this.apiRequest<any>('GET', '/api/accommodations?filters[isFeatured][$eq]=true&populate=image,destination');
-    return response.data.map(this.transformAccommodation);
+    try {
+      const response = await this.apiRequest<any>('/accommodations?filters[isFeatured][$eq]=true&populate=*');
+      return response.data.map(this.transformAccommodation);
+    } catch (error) {
+      console.error('Error fetching featured accommodations:', error);
+      return [];
+    }
   }
 
   async createAccommodation(accommodation: InsertAccommodation): Promise<Accommodation> {
-    const response = await this.apiRequest<any>('POST', '/api/accommodations', {
-      data: accommodation
-    });
-    return this.transformAccommodation(response.data);
+    try {
+      const response = await this.apiRequest<any>('/accommodations', 'POST', { data: accommodation });
+      return this.transformAccommodation(response.data);
+    } catch (error) {
+      console.error('Error creating accommodation:', error);
+      throw error;
+    }
   }
 
-  // Reviews
+  // Reviews methods
   async getReviews(): Promise<Review[]> {
-    const response = await this.apiRequest<any>('GET', '/api/reviews?populate=authorImage,tour');
-    return response.data.map(this.transformReview);
+    try {
+      const response = await this.apiRequest<any>('/reviews?populate=*');
+      return response.data.map(this.transformReview);
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+      return [];
+    }
   }
 
   async getReview(id: number): Promise<Review | undefined> {
-    const response = await this.apiRequest<any>('GET', `/api/reviews/${id}?populate=authorImage,tour`);
-    return this.transformReview(response.data);
+    try {
+      const response = await this.apiRequest<any>(`/reviews/${id}?populate=*`);
+      return this.transformReview(response.data);
+    } catch (error) {
+      console.error(`Error fetching review ${id}:`, error);
+      return undefined;
+    }
   }
 
   async getReviewsByTour(tourId: number): Promise<Review[]> {
-    const response = await this.apiRequest<any>('GET', `/api/reviews?filters[tour][id][$eq]=${tourId}&populate=authorImage,tour`);
-    return response.data.map(this.transformReview);
+    try {
+      const response = await this.apiRequest<any>(
+        `/reviews?filters[tour][id][$eq]=${tourId}&populate=*`
+      );
+      return response.data.map(this.transformReview);
+    } catch (error) {
+      console.error(`Error fetching reviews for tour ${tourId}:`, error);
+      return [];
+    }
   }
 
   async createReview(review: InsertReview): Promise<Review> {
-    const response = await this.apiRequest<any>('POST', '/api/reviews', {
-      data: review
-    });
-    return this.transformReview(response.data);
+    try {
+      const response = await this.apiRequest<any>('/reviews', 'POST', { data: review });
+      return this.transformReview(response.data);
+    } catch (error) {
+      console.error('Error creating review:', error);
+      throw error;
+    }
   }
 }
 
-// Create a factory function to initialize the Strapi storage
 export function createStrapiStorage(apiUrl: string, apiToken: string): IStorage {
   return new StrapiStorage(apiUrl, apiToken);
 }

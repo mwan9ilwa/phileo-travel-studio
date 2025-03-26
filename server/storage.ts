@@ -1,11 +1,25 @@
 import { 
-  users, type User, type InsertUser,
-  destinations, type Destination, type InsertDestination,
-  tours, type Tour, type InsertTour,
-  activities, type Activity, type InsertActivity,
-  accommodations, type Accommodation, type InsertAccommodation,
-  reviews, type Review, type InsertReview
+  users, type User as UserType, type InsertUser as InsertUserType,
+  destinations, type Destination as DestinationType, type InsertDestination as InsertDestinationType,
+  tours, type Tour as TourType, type InsertTour as InsertTourType,
+  activities, type Activity as ActivityType, type InsertActivity as InsertActivityType,
+  accommodations, type Accommodation as AccommodationType, type InsertAccommodation as InsertAccommodationType,
+  reviews, type Review as ReviewType, type InsertReview as InsertReviewType
 } from "@shared/schema";
+
+// Re-export types for external use
+export type User = UserType;
+export type InsertUser = InsertUserType;
+export type Destination = DestinationType;
+export type InsertDestination = InsertDestinationType;
+export type Tour = TourType;
+export type InsertTour = InsertTourType;
+export type Activity = ActivityType;
+export type InsertActivity = InsertActivityType;
+export type Accommodation = AccommodationType;
+export type InsertAccommodation = InsertAccommodationType;
+export type Review = ReviewType;
+export type InsertReview = InsertReviewType;
 
 export interface IStorage {
   // Users
@@ -595,15 +609,16 @@ import { createStrapiStorage } from './strapi';
 // Default to MemStorage, but allow switching to StrapiStorage
 let currentStorage: IStorage = new MemStorage();
 
-// If Strapi credentials are available, use Strapi instead
-const STRAPI_URL = process.env.STRAPI_URL;
+// If Strapi credentials are available and enabled, use Strapi instead
+const STRAPI_API_URL = process.env.STRAPI_API_URL;
 const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
+const USE_STRAPI = process.env.USE_STRAPI === 'true';
 
-// Function to switch to Strapi storage if credentials are available
+// Function to switch to Strapi storage if credentials are available and enabled
 export function initStorage() {
-  if (STRAPI_URL && STRAPI_API_TOKEN) {
+  if (USE_STRAPI && STRAPI_API_URL && STRAPI_API_TOKEN) {
     console.log('Using Strapi CMS as data source');
-    currentStorage = createStrapiStorage(STRAPI_URL, STRAPI_API_TOKEN);
+    currentStorage = createStrapiStorage(STRAPI_API_URL, STRAPI_API_TOKEN);
   } else {
     console.log('Using in-memory storage as data source');
     currentStorage = new MemStorage();

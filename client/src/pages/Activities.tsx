@@ -24,8 +24,8 @@ export default function Activities() {
 
   // Convert activities data to proper array if not already
   useEffect(() => {
-    if (data) {
-      const activities = data.activities || [];
+    if (data && data.activities) {
+      const activities = data.activities;
       setFilteredActivities(
         activities.filter((activity: Activity) => {
           const matchesDestination = !destination || 
