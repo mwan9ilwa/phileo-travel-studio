@@ -11,12 +11,28 @@ const HeroSection = () => {
     const { name, value } = e.target;
     setSearchParams(prev => ({ ...prev, [name]: value }));
   };
-
+  
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would redirect to a search results page
-    // with the search parameters
     console.log("Search submitted:", searchParams);
+    
+    // Create query parameters for the Tours page
+    const queryParams = new URLSearchParams();
+    
+    if (searchParams.destination) {
+      queryParams.set('continent', searchParams.destination);
+    }
+    
+    if (searchParams.date) {
+      queryParams.set('date', searchParams.date);
+    }
+    
+    if (searchParams.travelers) {
+      queryParams.set('travelers', searchParams.travelers);
+    }
+    
+    // Navigate to the tours page with search parameters
+    window.location.href = `/tours?${queryParams.toString()}`;
   };
 
   return (
