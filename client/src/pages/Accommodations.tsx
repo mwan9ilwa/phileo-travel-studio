@@ -18,7 +18,11 @@ export default function Accommodations() {
   const type = urlParams.get("type") || "";
   const rating = urlParams.get("rating") || "";
 
-  const { data, isLoading, error } = useQuery({
+  interface AccommodationsResponse {
+    accommodations: Accommodation[];
+  }
+
+  const { data, isLoading, error } = useQuery<AccommodationsResponse>({
     queryKey: ["/api/accommodations"],
   });
 
@@ -26,8 +30,8 @@ export default function Accommodations() {
 
   // Convert accommodations data to proper array if not already
   useEffect(() => {
-    if (data) {
-      const accommodations = data.accommodations || [];
+    if (data && data.accommodations) {
+      const accommodations = data.accommodations;
       setFilteredAccommodations(
         accommodations.filter((accommodation: Accommodation) => {
           const matchesDestination = !destination || 

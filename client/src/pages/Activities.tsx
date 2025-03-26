@@ -16,7 +16,11 @@ export default function Activities() {
   const price = urlParams.get("price") || "";
   const duration = urlParams.get("duration") || "";
 
-  const { data, isLoading, error } = useQuery({
+  interface ActivitiesResponse {
+    activities: Activity[];
+  }
+
+  const { data, isLoading, error } = useQuery<ActivitiesResponse>({
     queryKey: ["/api/activities"],
   });
 

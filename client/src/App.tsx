@@ -12,6 +12,7 @@ import Activities from "@/pages/Activities";
 import Accommodations from "@/pages/Accommodations";
 import AboutUs from "@/pages/AboutUs";
 import ContactUs from "@/pages/ContactUs";
+import Admin from "@/pages/Admin";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./app.css";
@@ -30,6 +31,7 @@ function Router() {
         <Route path="/accommodations" component={Accommodations} />
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={ContactUs} />
+        <Route path="/admin" component={Admin} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
