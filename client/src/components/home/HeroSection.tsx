@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
+import { useQuery } from '@tanstack/react-query';
 
 const HeroSection = () => {
   const [, setLocation] = useLocation();
@@ -61,6 +62,9 @@ const HeroSection = () => {
               <select 
                 id="destination" 
                 name="destination"
+                value={searchParams.destination}
+                onChange={handleInputChange}
+                className="w-full border-0 focus:ring-2 focus:ring-primary rounded-md"
                 value={searchParams.destination} 
                 onChange={handleSearchChange}
                 className="border border-neutral-light rounded-md p-2 text-neutral-darkest"

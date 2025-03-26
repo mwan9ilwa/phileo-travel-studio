@@ -316,13 +316,29 @@ const Tour = () => {
                   </select>
                 </div>
 
-                <button className="w-full bg-primary text-white py-3 rounded-md hover:bg-primary-dark transition font-medium mb-4">
-                  Book Now
+                <button 
+                  onClick={() => {
+                    const subject = `Booking Request: ${tour.title}`;
+                    const body = `Hi, I'm interested in booking the "${tour.title}" tour for ${
+                      document.getElementById('travelers')?.value || '1'
+                    } traveler(s).`;
+                    window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                  }}
+                  className="w-full bg-primary text-white py-3 rounded-md hover:bg-primary-dark transition font-medium mb-4"
+                >
+                  Book via Email
                 </button>
                 
-                <button className="w-full border border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-md transition font-medium">
-                  Inquire About Tour
-                </button>
+                <a 
+                  href={`https://wa.me/1234567890?text=${encodeURIComponent(
+                    `Hi, I'm interested in booking the "${tour.title}" tour`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full border border-primary text-primary hover:bg-primary hover:text-white py-3 rounded-md transition font-medium text-center"
+                >
+                  Book via WhatsApp
+                </a>
 
                 <div className="border-t border-neutral-light mt-6 pt-6">
                   <div className="flex items-center mb-4">
