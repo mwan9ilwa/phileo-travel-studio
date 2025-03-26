@@ -6,15 +6,37 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Star } from "lucide-react";
 
 export default function AccommodationDetails() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  const { data, isLoading } = useQuery<{ accommodation: Accommodation }>({
-    queryKey: [`/api/accommodations/${id}`],
+  const { data, isLoading } = useQuery<{ accommodations: Accommodation[] }>({
+    queryKey: ["/api/accommodations"],
+    queryFn: async () => {
+      const response = await fetch('/api/accommodations');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    },
   });
 
-  if (isLoading || !data) return <div>Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="animate-pulse">
+          <div className="h-96 bg-gray-200 rounded-lg mb-6"></div>
+          <div className="h-8 bg-gray-200 rounded w-1/4 mb-4"></div>
+          <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
+          <div className="h-4 bg-gray-200 rounded w-2/3"></div>
+        </div>
+      </div>
+    );
+  }
 
-  const { accommodation } = data;
+  const accommodation = data?.accommodations.find(a => a.slug === slug || a.id.toString() === slug);
+
+  if (!accommodation) {
+    return <div className="container mx-auto px-4 py-8">Accommodation not found</div>;
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -31,6 +53,7 @@ export default function AccommodationDetails() {
               {[...Array(Math.floor(Number(accommodation.rating)))].map((_, i) => (
                 <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
               ))}
+              <span className="ml-2 text-neutral-medium">({accommodation.rating}/5)</span>
             </div>
           </div>
           <div className="flex items-center mb-4 text-neutral-medium">
@@ -57,7 +80,7 @@ export default function AccommodationDetails() {
               <Button 
                 onClick={() => {
                   const subject = `Booking Request: ${accommodation.name}`;
-                  const body = `Hi, I'm interested in booking a stay at "${accommodation.name}".`;
+                  const body = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
                   window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
                 }}
               >
@@ -66,7 +89,7 @@ export default function AccommodationDetails() {
               <Button
                 variant="outline"
                 onClick={() => {
-                  const text = `Hi, I'm interested in booking a stay at "${accommodation.name}".`;
+                  const text = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
                   window.location.href = `https://wa.me/1234567890?text=${encodeURIComponent(text)}`;
                 }}
               >
