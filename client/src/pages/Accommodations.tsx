@@ -259,7 +259,9 @@ export default function Accommodations() {
                     <span className="font-bold text-primary">${accommodation.price}</span>
                     <span className="text-sm text-gray-500"> / night</span>
                   </div>
-                  <Button size="sm">View Details</Button>
+                  <Link href={`/accommodations/${accommodation.slug || accommodation.id}`}>
+                    <Button size="sm">View Details</Button>
+                  </Link>
                 </CardFooter>
               </Card>
             ))}

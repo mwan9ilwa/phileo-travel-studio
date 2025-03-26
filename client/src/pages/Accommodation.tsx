@@ -1,6 +1,6 @@
 
 import { useQuery } from "@tanstack/react-query";
-import { useParams } from "wouter";
+import { useParams, Link } from "wouter";
 import { Accommodation } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { MapPin, Star, Wifi, Pool, Utensils, Coffee } from "lucide-react";
