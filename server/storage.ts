@@ -496,36 +496,39 @@ export class MemStorage implements IStorage {
       },
       {
         id: this.currentActivityId++,
-        name: "Guided Hikes",
-        description: "Explore breathtaking landscapes with experienced guides.",
+        name: "Guided Mountain Hikes",
+        description: "Experience the majestic beauty of Mount Fuji with our expert guides. Trek through ancient trails, discover hidden viewpoints, and learn about the local flora and fauna. Perfect for both beginners and experienced hikers, this tour combines adventure with cultural insights.\n\nHighlights:\n- Professional certified mountain guides\n- Safety equipment provided\n- Scenic photo opportunities\n- Traditional Japanese lunch included\n- Small groups (max 8 people)",
         image: "https://images.unsplash.com/photo-1534008897995-27a23e859048?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         price: 49,
-        duration: "Half-day",
+        duration: "Half-day (4-5 hours)",
         destinationId: 2,
         destinationName: "Kyoto, Japan",
-        isFeatured: 1
+        isFeatured: 1,
+        slug: "guided-mountain-hikes"
       },
       {
         id: this.currentActivityId++,
-        name: "Snorkeling Tours",
-        description: "Discover vibrant marine life in pristine coral reefs.",
+        name: "Mediterranean Snorkeling Adventure",
+        description: "Dive into the crystal-clear waters of the Aegean Sea on this unforgettable snorkeling experience. Explore vibrant coral reefs, encounter colorful fish species, and discover hidden underwater caves. Our experienced instructors ensure both safety and enjoyment.\n\nWhat's Included:\n- Professional snorkeling equipment\n- Safety briefing and basic training\n- Underwater photography service\n- Light refreshments and snacks\n- Hotel pickup and drop-off",
         image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         price: 65,
         duration: "3 hours",
         destinationId: 3,
         destinationName: "Santorini, Greece",
-        isFeatured: 1
+        isFeatured: 1,
+        slug: "mediterranean-snorkeling-adventure"
       },
       {
         id: this.currentActivityId++,
-        name: "Private City Tours",
-        description: "Explore hidden gems with knowledgeable local guides.",
+        name: "Hidden Paris Walking Tour",
+        description: "Discover the secret corners and lesser-known treasures of Paris with our expert local guides. This intimate walking tour takes you beyond the tourist spots to experience the authentic Parisian lifestyle. Visit charming neighborhoods, local markets, and historical sites often missed by visitors.\n\nTour Features:\n- Small group size (max 6 people)\n- Visit to local artisan shops\n- Wine and cheese tasting\n- Historical commentary\n- Tips for authentic Parisian experiences",
         image: "https://images.unsplash.com/photo-1477064996809-dae46985eee7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
         price: 35,
         duration: "2 hours",
         destinationId: 1,
         destinationName: "Paris, France",
-        isFeatured: 1
+        isFeatured: 1,
+        slug: "hidden-paris-walking-tour"
       }
     ];
     

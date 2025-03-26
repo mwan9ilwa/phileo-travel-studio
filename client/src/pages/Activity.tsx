@@ -36,7 +36,24 @@ export default function ActivityDetails() {
               <span>{activity.duration}</span>
             </div>
           </div>
-          <p className="text-lg mb-6">{activity.description}</p>
+          <div className="prose max-w-none mb-6">
+            {activity.description.split('\n\n').map((paragraph, index) => {
+              if (paragraph.includes(':')) {
+                const [title, items] = paragraph.split(':');
+                return (
+                  <div key={index} className="mb-4">
+                    <h3 className="font-bold text-xl mb-2">{title}</h3>
+                    <ul className="list-disc pl-6">
+                      {items.split('\n-').map((item, i) => (
+                        item.trim() && <li key={i}>{item.trim()}</li>
+                      ))}
+                    </ul>
+                  </div>
+                );
+              }
+              return <p key={index} className="text-lg mb-4">{paragraph}</p>;
+            })}
+          </div>
           <div className="flex items-center justify-between">
             <div>
               <span className="text-3xl font-bold text-primary">${activity.price}</span>
