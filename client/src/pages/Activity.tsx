@@ -8,13 +8,35 @@ import { MapPin, Clock } from "lucide-react";
 export default function ActivityDetails() {
   const { slug } = useParams();
 
-  const { data, isLoading } = useQuery<{ activity: Activity }>({
-    queryKey: [`/api/activities/${slug}`],
+  const { data, isLoading } = useQuery<{ activities: Activity[] }>({
+    queryKey: ["/api/activities"],
+    queryFn: async () => {
+      const response = await fetch('/api/activities');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    },
   });
 
-  if (isLoading || !data) return <div>Loading...</div>;
+  if (isLoading) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <div className="animate-pulse">
+          <div className="h-96 bg-gray-200 rounded-lg mb-6"></div>
+          <div className="h-8 bg-gray-200 rounded w-1/4 mb-4"></div>
+          <div className="h-4 bg-gray-200 rounded w-3/4 mb-2"></div>
+          <div className="h-4 bg-gray-200 rounded w-2/3"></div>
+        </div>
+      </div>
+    );
+  }
 
-  const { activity } = data;
+  const activity = data?.activities.find(a => a.slug === slug || a.id.toString() === slug);
+
+  if (!activity) {
+    return <div className="container mx-auto px-4 py-8">Activity not found</div>;
+  }
 
   return (
     <div className="container mx-auto px-4 py-8">
