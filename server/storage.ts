@@ -589,4 +589,29 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new MemStorage();
+// Import Strapi storage
+import { createStrapiStorage } from './strapi';
+
+// Default to MemStorage, but allow switching to StrapiStorage
+let currentStorage: IStorage = new MemStorage();
+
+// If Strapi credentials are available, use Strapi instead
+const STRAPI_URL = process.env.STRAPI_URL;
+const STRAPI_API_TOKEN = process.env.STRAPI_API_TOKEN;
+
+// Function to switch to Strapi storage if credentials are available
+export function initStorage() {
+  if (STRAPI_URL && STRAPI_API_TOKEN) {
+    console.log('Using Strapi CMS as data source');
+    currentStorage = createStrapiStorage(STRAPI_URL, STRAPI_API_TOKEN);
+  } else {
+    console.log('Using in-memory storage as data source');
+    currentStorage = new MemStorage();
+  }
+}
+
+// Initialize storage on app startup
+initStorage();
+
+// Export the storage instance
+export const storage = currentStorage;
