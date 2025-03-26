@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useSearch } from "wouter/use-location";
+import { useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -7,18 +7,14 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator";
 import { Activity } from "../lib/types";
 
-type SearchParams = {
-  destination?: string;
-  price?: string;
-  duration?: string;
-};
-
 export default function Activities() {
-  const [search, setSearch] = useSearch();
-  const searchParams = new URLSearchParams(search);
-  const destination = searchParams.get("destination") || "";
-  const price = searchParams.get("price") || "";
-  const duration = searchParams.get("duration") || "";
+  const [location, navigate] = useLocation();
+  const search = location.includes('?') ? location.split('?')[1] : '';
+  const urlParams = new URLSearchParams(search);
+  
+  const destination = urlParams.get("destination") || "";
+  const price = urlParams.get("price") || "";
+  const duration = urlParams.get("duration") || "";
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["/api/activities"],
@@ -26,11 +22,12 @@ export default function Activities() {
 
   const [filteredActivities, setFilteredActivities] = useState<Activity[]>([]);
 
-  // Filter activities based on search parameters
+  // Convert activities data to proper array if not already
   useEffect(() => {
-    if (data?.activities) {
+    if (data) {
+      const activities = data.activities || [];
       setFilteredActivities(
-        data.activities.filter((activity: Activity) => {
+        activities.filter((activity: Activity) => {
           const matchesDestination = !destination || 
             activity.destinationName.toLowerCase().includes(destination.toLowerCase());
           const matchesPrice = !price || 
@@ -47,23 +44,16 @@ export default function Activities() {
   }, [data, destination, price, duration]);
 
   const updateFilter = (key: string, value: string) => {
-    const newParams: SearchParams = {};
+    const params = new URLSearchParams(search);
     
-    // Keep existing params
-    if (destination && key !== "destination") newParams.destination = destination;
-    if (price && key !== "price") newParams.price = price;
-    if (duration && key !== "duration") newParams.duration = duration;
+    if (value) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
     
-    // Add new param
-    if (value) newParams[key as keyof SearchParams] = value;
-    
-    // Create the search string
-    const params: SearchParams = {};
-    Object.entries(newParams).forEach(([k, v]) => {
-      if (v) params[k as keyof SearchParams] = v;
-    });
-    
-    setSearch(params);
+    // Navigate to the new URL with the updated parameters
+    navigate(`/activities?${params.toString()}`);
   };
 
   if (isLoading) {
@@ -147,7 +137,7 @@ export default function Activities() {
               <Button 
                 className="w-full"
                 onClick={() => {
-                  setSearch({});
+                  navigate("/activities");
                 }}
               >
                 Clear Filters

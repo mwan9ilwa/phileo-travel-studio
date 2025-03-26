@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useSearch } from "wouter/use-location";
+import { useLocation } from "wouter";
 import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -8,20 +8,15 @@ import { Separator } from "@/components/ui/separator";
 import { Star } from "lucide-react";
 import { Accommodation } from "../lib/types";
 
-type SearchParams = {
-  destination?: string;
-  price?: string;
-  type?: string;
-  rating?: string;
-};
-
 export default function Accommodations() {
-  const [search, setSearch] = useSearch();
-  const searchParams = new URLSearchParams(search);
-  const destination = searchParams.get("destination") || "";
-  const price = searchParams.get("price") || "";
-  const type = searchParams.get("type") || "";
-  const rating = searchParams.get("rating") || "";
+  const [location, navigate] = useLocation();
+  const search = location.includes('?') ? location.split('?')[1] : '';
+  const urlParams = new URLSearchParams(search);
+  
+  const destination = urlParams.get("destination") || "";
+  const price = urlParams.get("price") || "";
+  const type = urlParams.get("type") || "";
+  const rating = urlParams.get("rating") || "";
 
   const { data, isLoading, error } = useQuery({
     queryKey: ["/api/accommodations"],
@@ -29,11 +24,12 @@ export default function Accommodations() {
 
   const [filteredAccommodations, setFilteredAccommodations] = useState<Accommodation[]>([]);
 
-  // Filter accommodations based on search parameters
+  // Convert accommodations data to proper array if not already
   useEffect(() => {
-    if (data?.accommodations) {
+    if (data) {
+      const accommodations = data.accommodations || [];
       setFilteredAccommodations(
-        data.accommodations.filter((accommodation: Accommodation) => {
+        accommodations.filter((accommodation: Accommodation) => {
           const matchesDestination = !destination || 
             accommodation.destinationName.toLowerCase().includes(destination.toLowerCase());
           const matchesPrice = !price || 
@@ -52,24 +48,16 @@ export default function Accommodations() {
   }, [data, destination, price, type, rating]);
 
   const updateFilter = (key: string, value: string) => {
-    const newParams: SearchParams = {};
+    const params = new URLSearchParams(search);
     
-    // Keep existing params
-    if (destination && key !== "destination") newParams.destination = destination;
-    if (price && key !== "price") newParams.price = price;
-    if (type && key !== "type") newParams.type = type;
-    if (rating && key !== "rating") newParams.rating = rating;
+    if (value) {
+      params.set(key, value);
+    } else {
+      params.delete(key);
+    }
     
-    // Add new param
-    if (value) newParams[key as keyof SearchParams] = value;
-    
-    // Create the search string
-    const params: SearchParams = {};
-    Object.entries(newParams).forEach(([k, v]) => {
-      if (v) params[k as keyof SearchParams] = v;
-    });
-    
-    setSearch(params);
+    // Navigate to the new URL with the updated parameters
+    navigate(`/accommodations?${params.toString()}`);
   };
 
   if (isLoading) {
@@ -168,7 +156,7 @@ export default function Accommodations() {
               <Button 
                 className="w-full"
                 onClick={() => {
-                  setSearch({});
+                  navigate("/accommodations");
                 }}
               >
                 Clear Filters

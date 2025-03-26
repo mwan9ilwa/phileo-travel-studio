@@ -26,6 +26,10 @@ function Router() {
         <Route path="/destinations/:slug" component={Destination} />
         <Route path="/tours" component={Tours} />
         <Route path="/tours/:slug" component={Tour} />
+        <Route path="/activities" component={Activities} />
+        <Route path="/accommodations" component={Accommodations} />
+        <Route path="/about" component={AboutUs} />
+        <Route path="/contact" component={ContactUs} />
         <Route component={NotFound} />
       </Switch>
       <Footer />
