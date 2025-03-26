@@ -63,11 +63,8 @@ const HeroSection = () => {
                 id="destination" 
                 name="destination"
                 value={searchParams.destination}
-                onChange={handleInputChange}
-                className="w-full border-0 focus:ring-2 focus:ring-primary rounded-md"
-                value={searchParams.destination} 
                 onChange={handleSearchChange}
-                className="border border-neutral-light rounded-md p-2 text-neutral-darkest"
+                className="w-full border-0 focus:ring-2 focus:ring-primary rounded-md p-2 text-neutral-darkest"
               >
                 <option value="">Any destination</option>
                 <option value="europe">Europe</option>
