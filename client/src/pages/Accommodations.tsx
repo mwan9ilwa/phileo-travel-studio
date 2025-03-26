@@ -12,7 +12,7 @@ export default function Accommodations() {
   const [location, navigate] = useLocation();
   const search = location.includes('?') ? location.split('?')[1] : '';
   const urlParams = new URLSearchParams(search);
-  
+
   const destination = urlParams.get("destination") || "";
   const price = urlParams.get("price") || "";
   const type = urlParams.get("type") || "";
@@ -44,7 +44,7 @@ export default function Accommodations() {
             accommodation.type.toLowerCase() === type.toLowerCase();
           const matchesRating = !rating || 
             accommodation.rating >= parseInt(rating);
-          
+
           return matchesDestination && matchesPrice && matchesType && matchesRating;
         })
       );
@@ -53,13 +53,13 @@ export default function Accommodations() {
 
   const updateFilter = (key: string, value: string) => {
     const params = new URLSearchParams(search);
-    
+
     if (value) {
       params.set(key, value);
     } else {
       params.delete(key);
     }
-    
+
     // Navigate to the new URL with the updated parameters
     navigate(`/accommodations?${params.toString()}`);
   };
@@ -87,9 +87,31 @@ export default function Accommodations() {
       <div className="flex flex-col space-y-4 md:flex-row md:justify-between md:space-y-0">
         <div>
           <h1 className="text-3xl font-bold">Accommodations</h1>
-          <p className="mt-2 text-gray-600">
+          <div className="mt-6 text-gray-600">
             Find the perfect place to stay during your travels
-          </p>
+          </div>
+          <div className="flex gap-4">
+            <button 
+              onClick={() => {
+                const subject = `Accommodation Booking Request`;
+                const body = `Hi, I'm interested in booking accommodation for my stay.`;
+                window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+              }}
+              className="bg-primary text-white px-6 py-2 rounded-md hover:bg-primary-dark transition"
+            >
+              Book via Email
+            </button>
+            <a 
+              href={`https://wa.me/1234567890?text=${encodeURIComponent(
+                'Hi, I\'m interested in booking accommodation for my stay.'
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border border-primary text-primary hover:bg-primary hover:text-white px-6 py-2 rounded-md transition text-center"
+            >
+              Book via WhatsApp
+            </a>
+          </div>
         </div>
       </div>
 
@@ -98,7 +120,7 @@ export default function Accommodations() {
           <div className="rounded-lg border p-4 shadow-sm">
             <h3 className="text-lg font-medium">Filters</h3>
             <Separator className="my-4" />
-            
+
             <div className="space-y-4">
               <div>
                 <h4 className="font-medium">Destination</h4>
@@ -113,7 +135,7 @@ export default function Accommodations() {
                   <option value="santorini">Santorini</option>
                 </select>
               </div>
-              
+
               <div>
                 <h4 className="font-medium">Price Range</h4>
                 <select
@@ -127,7 +149,7 @@ export default function Accommodations() {
                   <option value="high">$300+/night</option>
                 </select>
               </div>
-              
+
               <div>
                 <h4 className="font-medium">Accommodation Type</h4>
                 <select
@@ -142,7 +164,7 @@ export default function Accommodations() {
                   <option value="villa">Villa</option>
                 </select>
               </div>
-              
+
               <div>
                 <h4 className="font-medium">Rating</h4>
                 <select
@@ -156,7 +178,7 @@ export default function Accommodations() {
                   <option value="5">5 Stars</option>
                 </select>
               </div>
-              
+
               <Button 
                 className="w-full"
                 onClick={() => {
@@ -168,14 +190,14 @@ export default function Accommodations() {
             </div>
           </div>
         </div>
-        
+
         <div className="col-span-1 md:col-span-3">
           <div className="mb-4">
             <span className="text-gray-600">
               {filteredAccommodations.length} accommodations found
             </span>
           </div>
-          
+
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredAccommodations.map((accommodation: Accommodation) => (
               <Card key={accommodation.id} className="overflow-hidden">
@@ -189,7 +211,7 @@ export default function Accommodations() {
                     <Badge className="bg-white text-black">{accommodation.type}</Badge>
                   </div>
                 </div>
-                
+
                 <CardHeader className="p-4 pb-0">
                   <div>
                     <h3 className="font-bold">{accommodation.name}</h3>
@@ -198,7 +220,7 @@ export default function Accommodations() {
                     </div>
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="p-4 pt-2">
                   <div className="flex items-center space-x-1 mb-2">
                     {[...Array(5)].map((_, i) => (
@@ -231,7 +253,7 @@ export default function Accommodations() {
                     </div>
                   </div>
                 </CardContent>
-                
+
                 <CardFooter className="flex items-center justify-between p-4 pt-0">
                   <div>
                     <span className="font-bold text-primary">${accommodation.price}</span>

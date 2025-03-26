@@ -11,7 +11,7 @@ export default function Activities() {
   const [location, navigate] = useLocation();
   const search = location.includes('?') ? location.split('?')[1] : '';
   const urlParams = new URLSearchParams(search);
-  
+
   const destination = urlParams.get("destination") || "";
   const price = urlParams.get("price") || "";
   const duration = urlParams.get("duration") || "";
@@ -40,7 +40,7 @@ export default function Activities() {
             (price === "high" && activity.price >= 200);
           const matchesDuration = !duration || 
             activity.duration.toLowerCase().includes(duration.toLowerCase());
-          
+
           return matchesDestination && matchesPrice && matchesDuration;
         })
       );
@@ -49,13 +49,13 @@ export default function Activities() {
 
   const updateFilter = (key: string, value: string) => {
     const params = new URLSearchParams(search);
-    
+
     if (value) {
       params.set(key, value);
     } else {
       params.delete(key);
     }
-    
+
     // Navigate to the new URL with the updated parameters
     navigate(`/activities?${params.toString()}`);
   };
@@ -94,7 +94,7 @@ export default function Activities() {
           <div className="rounded-lg border p-4 shadow-sm">
             <h3 className="text-lg font-medium">Filters</h3>
             <Separator className="my-4" />
-            
+
             <div className="space-y-4">
               <div>
                 <h4 className="font-medium">Destination</h4>
@@ -109,7 +109,7 @@ export default function Activities() {
                   <option value="santorini">Santorini</option>
                 </select>
               </div>
-              
+
               <div>
                 <h4 className="font-medium">Price Range</h4>
                 <select
@@ -123,7 +123,7 @@ export default function Activities() {
                   <option value="high">$200+</option>
                 </select>
               </div>
-              
+
               <div>
                 <h4 className="font-medium">Duration</h4>
                 <select
@@ -137,7 +137,7 @@ export default function Activities() {
                   <option value="day">Full Day</option>
                 </select>
               </div>
-              
+
               <Button 
                 className="w-full"
                 onClick={() => {
@@ -149,14 +149,14 @@ export default function Activities() {
             </div>
           </div>
         </div>
-        
+
         <div className="col-span-1 md:col-span-3">
           <div className="mb-4">
             <span className="text-gray-600">
               {filteredActivities.length} activities found
             </span>
           </div>
-          
+
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {filteredActivities.map((activity: Activity) => (
               <Card key={activity.id} className="overflow-hidden">
@@ -167,7 +167,7 @@ export default function Activities() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                
+
                 <CardHeader className="p-4 pb-0">
                   <div className="flex items-center justify-between">
                     <h3 className="font-bold">{activity.name}</h3>
@@ -177,16 +177,37 @@ export default function Activities() {
                     {activity.destinationName}
                   </div>
                 </CardHeader>
-                
+
                 <CardContent className="p-4 pt-2">
                   <p className="line-clamp-2 text-sm text-gray-600">
                     {activity.description}
                   </p>
                 </CardContent>
-                
+
                 <CardFooter className="flex items-center justify-between p-4 pt-0">
                   <div className="font-bold text-primary">${activity.price}</div>
-                  <Button size="sm">View Details</Button>
+                  <div className="flex gap-4">
+                    <button 
+                      onClick={() => {
+                        const subject = `Activity Booking Request - ${activity.name}`;
+                        const body = `Hi, I'm interested in booking "${activity.name}" for my trip.`;
+                        window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                      }}
+                      className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark transition"
+                    >
+                      Email
+                    </button>
+                    <a 
+                      href={`https://wa.me/1234567890?text=${encodeURIComponent(
+                        `Hi, I'm interested in booking "${activity.name}" for my trip.`
+                      )}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="border border-primary text-primary hover:bg-primary hover:text-white px-4 py-2 rounded-md transition text-center"
+                    >
+                      WhatsApp
+                    </a>
+                  </div>
                 </CardFooter>
               </Card>
             ))}
