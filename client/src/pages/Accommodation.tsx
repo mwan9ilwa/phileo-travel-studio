@@ -1,9 +1,8 @@
-
 import { useQuery } from "@tanstack/react-query";
 import { useParams, Link } from "wouter";
 import { Accommodation } from "@/lib/types";
 import { Button } from "@/components/ui/button";
-import { MapPin, Star, Wifi, Pool, Utensils, Coffee } from "lucide-react";
+import { MapPin, Star, Wifi, Waves, Utensils, Coffee } from "lucide-react";
 
 export default function AccommodationDetails() {
   const { slug } = useParams();
@@ -41,7 +40,7 @@ export default function AccommodationDetails() {
   // Available amenities with their corresponding icons
   const amenitiesIcons = {
     wifi: <Wifi className="w-5 h-5" />,
-    pool: <Pool className="w-5 h-5" />,
+    pool: <Waves className="w-5 h-5" />,
     restaurant: <Utensils className="w-5 h-5" />,
     breakfast: <Coffee className="w-5 h-5" />
   };
@@ -74,10 +73,10 @@ export default function AccommodationDetails() {
               <span className="ml-2">{accommodation.rating}/5</span>
             </div>
           </div>
-          
+
           <div className="prose max-w-none mb-6">
             <p className="text-lg mb-4">{accommodation.description}</p>
-            
+
             <h3 className="font-bold text-xl mb-2">Amenities</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {amenities.map((amenity) => (
@@ -87,7 +86,7 @@ export default function AccommodationDetails() {
                 </div>
               ))}
             </div>
-            
+
             <h3 className="font-bold text-xl mb-2">Details</h3>
             <ul className="list-disc pl-6 mb-6">
               <li>Room type: {accommodation.type || "Standard"}</li>
@@ -97,7 +96,7 @@ export default function AccommodationDetails() {
               <li>Check-out: {accommodation.checkOut || "11:00 AM"}</li>
             </ul>
           </div>
-          
+
           <div className="flex items-center justify-between">
             <div>
               <span className="text-3xl font-bold text-primary">${accommodation.price}</span>
