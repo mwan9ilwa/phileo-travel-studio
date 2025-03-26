@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams } from "wouter";
 import { Accommodation } from "@/lib/types";
 import { Button } from "@/components/ui/button";
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Star, Wifi, Pool, Utensils, Coffee } from "lucide-react";
 
 export default function AccommodationDetails() {
   const { slug } = useParams();
@@ -41,11 +41,16 @@ export default function AccommodationDetails() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img
-          src={accommodation.image}
-          alt={accommodation.name}
-          className="w-full h-96 object-cover"
-        />
+        <div className="relative">
+          <img
+            src={accommodation.image}
+            alt={accommodation.name}
+            className="w-full h-96 object-cover"
+          />
+          <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full">
+            {accommodation.type}
+          </div>
+        </div>
         <div className="p-6">
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-3xl font-bold">{accommodation.name}</h1>
@@ -60,42 +65,48 @@ export default function AccommodationDetails() {
             <MapPin className="w-5 h-5 mr-2" />
             <span>{accommodation.address}</span>
           </div>
-          <p className="text-lg mb-6">{accommodation.description}</p>
-          <div className="mb-6">
-            <h3 className="text-xl font-semibold mb-3">Amenities</h3>
-            <div className="flex flex-wrap gap-2">
+          <div className="flex items-center mb-6 text-neutral-medium">
+            <span className="text-primary text-2xl font-bold">${accommodation.price}</span>
+            <span className="ml-2">per night</span>
+          </div>
+          <div className="prose max-w-none mb-6">
+            <p className="text-lg mb-6">{accommodation.description}</p>
+          </div>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-4">Amenities</h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {accommodation.amenities.map((amenity, index) => (
-                <span key={index} className="bg-neutral-lightest text-neutral-medium px-3 py-1 rounded-full">
-                  {amenity}
-                </span>
+                <div key={index} className="flex items-center bg-neutral-lightest p-3 rounded-lg">
+                  {amenity.includes('WiFi') && <Wifi className="w-5 h-5 mr-2 text-primary" />}
+                  {amenity.includes('Pool') && <Pool className="w-5 h-5 mr-2 text-primary" />}
+                  {amenity.includes('Restaurant') && <Utensils className="w-5 h-5 mr-2 text-primary" />}
+                  {amenity.includes('Breakfast') && <Coffee className="w-5 h-5 mr-2 text-primary" />}
+                  <span>{amenity}</span>
+                </div>
               ))}
             </div>
           </div>
-          <div className="flex items-center justify-between">
-            <div>
-              <span className="text-3xl font-bold text-primary">${accommodation.price}</span>
-              <span className="text-neutral-medium"> / night</span>
-            </div>
-            <div className="space-x-4">
-              <Button 
-                onClick={() => {
-                  const subject = `Booking Request: ${accommodation.name}`;
-                  const body = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
-                  window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-                }}
-              >
-                Book via Email
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => {
-                  const text = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
-                  window.location.href = `https://wa.me/1234567890?text=${encodeURIComponent(text)}`;
-                }}
-              >
-                Book via WhatsApp
-              </Button>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button 
+              className="flex-1"
+              onClick={() => {
+                const subject = `Booking Request: ${accommodation.name}`;
+                const body = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
+                window.location.href = `mailto:bookings@youragency.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+              }}
+            >
+              Book via Email
+            </Button>
+            <Button
+              variant="outline"
+              className="flex-1"
+              onClick={() => {
+                const text = `Hi, I'm interested in booking "${accommodation.name}" in ${accommodation.destinationName}.`;
+                window.location.href = `https://wa.me/1234567890?text=${encodeURIComponent(text)}`;
+              }}
+            >
+              Book via WhatsApp
+            </Button>
           </div>
         </div>
       </div>
