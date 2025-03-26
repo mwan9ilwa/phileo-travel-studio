@@ -60,6 +60,7 @@ function Router() {
         <Route path="/tours" component={Tours} />
         <Route path="/tours/:slug" component={Tour} />
         <Route path="/activities" component={Activities} />
+        <Route path="/activities/:slug" component={Activity} />
         <Route path="/accommodations" component={Accommodations} />
         <Route path="/about" component={AboutUs} />
         <Route path="/contact" component={ContactUs} />
@@ -83,3 +84,5 @@ function App() {
 }
 
 export default App;
+import Activities from "./pages/Activities";
+import Activity from "./pages/Activity";
