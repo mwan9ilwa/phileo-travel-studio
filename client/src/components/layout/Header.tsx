@@ -28,20 +28,7 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <div className="relative group">
-              <button className="flex items-center font-medium hover:text-primary">
-                Destinations <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-md hidden group-hover:block">
-                <div className="py-2">
-                  <Link href="/destinations?continent=europe" className="block px-4 py-2 hover:bg-neutral-lightest">Europe</Link>
-                  <Link href="/destinations?continent=asia" className="block px-4 py-2 hover:bg-neutral-lightest">Asia</Link>
-                  <Link href="/destinations?continent=africa" className="block px-4 py-2 hover:bg-neutral-lightest">Africa</Link>
-                  <Link href="/destinations?continent=north-america" className="block px-4 py-2 hover:bg-neutral-lightest">North America</Link>
-                  <Link href="/destinations?continent=south-america" className="block px-4 py-2 hover:bg-neutral-lightest">South America</Link>
-                </div>
-              </div>
-            </div>
+            <Link href="/destinations" className={`font-medium ${isActive('/destinations') ? 'text-primary' : 'hover:text-primary'}`}>Destinations</Link>
             <Link href="/tours" className={`font-medium ${isActive('/tours') ? 'text-primary' : 'hover:text-primary'}`}>Tours</Link>
             <Link href="/activities" className={`font-medium ${isActive('/activities') ? 'text-primary' : 'hover:text-primary'}`}>Activities</Link>
             <Link href="/accommodations" className={`font-medium ${isActive('/accommodations') ? 'text-primary' : 'hover:text-primary'}`}>Accommodations</Link>
@@ -60,7 +47,7 @@ const Header = () => {
             <button className="hidden md:block btn-primary">
               Sign Up
             </button>
-            
+
             {/* Mobile menu button */}
             <button 
               className="md:hidden p-2 rounded-md hover:bg-neutral-lightest"
