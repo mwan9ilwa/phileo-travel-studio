@@ -23,7 +23,7 @@ const Tour = () => {
 
   useEffect(() => {
     if (tourData?.tour) {
-      document.title = `${tourData.tour.title} | Voyageur`;
+      document.title = `${tourData.tour.title} | Phileo Travel Studio`;
       setSelectedImage(tourData.tour.image);
     }
   }, [tourData]);

@@ -89,7 +89,7 @@ const ToursPage = () => {
   };
 
   useEffect(() => {
-    document.title = "Tours | Voyageur";
+    document.title = "Tours | Phileo Travel Studio";
   }, []);
 
   return (

@@ -36,7 +36,7 @@ const Destination = () => {
 
   useEffect(() => {
     if (destinationData?.destination) {
-      document.title = `${destinationData.destination.name} | Voyageur`;
+      document.title = `${destinationData.destination.name} | Phileo Travel Studio`;
     }
   }, [destinationData]);
 

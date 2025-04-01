@@ -55,7 +55,7 @@ const DestinationsPage = () => {
   };
 
   useEffect(() => {
-    document.title = "Destinations | Voyageur";
+    document.title = "Destinations | Phileo Travel Studio";
   }, []);
 
   return (

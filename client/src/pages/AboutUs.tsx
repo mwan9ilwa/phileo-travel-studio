@@ -22,7 +22,7 @@ export default function AboutUs() {
     <div className="container mx-auto py-12">
       {/* Hero Section */}
       <div className="mb-16 text-center">
-        <h1 className="mb-4 text-4xl font-bold md:text-5xl">About Voyageur</h1>
+        <h1 className="mb-4 text-4xl font-bold md:text-5xl">About Phileo Travel Studio</h1>
         <p className="mx-auto max-w-2xl text-lg text-gray-600">
           We're on a mission to make travel experiences accessible to everyone,
           connecting travelers with authentic local experiences worldwide.
@@ -34,7 +34,7 @@ export default function AboutUs() {
         <div className="flex flex-col justify-center">
           <h2 className="mb-4 text-3xl font-bold">Our Story</h2>
           <p className="mb-4 text-gray-600">
-            Founded in 2018, Voyageur began with a simple idea: to create a travel
+            Founded in 2018, Phileo Travel Studio began with a simple idea: to create a travel
             platform that connects travelers with authentic experiences while
             supporting local communities.
           </p>
@@ -198,7 +198,7 @@ export default function AboutUs() {
                 ))}
               </div>
               <p className="mb-4 italic text-gray-600">
-                "Voyageur helped me discover hidden gems in Japan that I never
+                "Phileo Travel Studio helped me discover hidden gems in Japan that I never
                 would have found on my own. Their local guides were knowledgeable
                 and passionate. An unforgettable experience!"
               </p>
@@ -226,7 +226,7 @@ export default function AboutUs() {
                 ))}
               </div>
               <p className="mb-4 italic text-gray-600">
-                "Their commitment to sustainability is what drew me to Voyageur,
+                "Their commitment to sustainability is what drew me to Phileo Travel Studio,
                 but the amazing experiences they curated in Costa Rica exceeded all
                 my expectations. Will definitely book with them again!"
               </p>
@@ -254,7 +254,7 @@ export default function AboutUs() {
                 ))}
               </div>
               <p className="mb-4 italic text-gray-600">
-                "As a solo female traveler, safety is my top priority. Voyageur
+                "As a solo female traveler, safety is my top priority. Phileo Travel Studio
                 not only ensured I felt secure throughout my journey in Morocco,
                 but also connected me with incredible local experiences."
               </p>
@@ -302,9 +302,9 @@ export default function AboutUs() {
           <Mail className="mb-4 h-8 w-8 text-primary" />
           <h3 className="mb-2 text-xl font-bold">Email</h3>
           <p className="text-gray-600">
-            info@voyageur.com<br />
-            support@voyageur.com<br />
-            partnerships@voyageur.com
+            info@Phileo Travel Studio.com<br />
+            support@Phileo Travel Studio.com<br />
+            partnerships@Phileo Travel Studio.com
           </p>
         </div>
       </div>

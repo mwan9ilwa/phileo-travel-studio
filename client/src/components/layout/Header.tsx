@@ -21,8 +21,12 @@ const Header = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <Globe className="text-primary text-3xl mr-2" />
-              <span className="text-2xl font-bold font-playfair text-primary">Voyageur</span>
+              <img 
+                src="/logo-header.png" 
+                alt="Phileo Travel Studio Logo" 
+                className="h-10 mr-2" 
+              />
+              <span className="text-2xl font-bold font-playfair text-primary">Phileo Travel Studio</span>
             </Link>
           </div>
 
@@ -41,12 +45,12 @@ const Header = () => {
             <button className="p-2 hover:bg-neutral-lightest rounded-full">
               <Search className="h-5 w-5 text-neutral-medium" />
             </button>
-            <button className="hidden md:block btn-secondary">
+            {/* <button className="hidden md:block btn-secondary">
               Sign In
             </button>
             <button className="hidden md:block btn-primary">
               Sign Up
-            </button>
+            </button> */}
 
             {/* Mobile menu button */}
             <button 

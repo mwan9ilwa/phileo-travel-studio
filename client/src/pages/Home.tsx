@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const Home = () => {
   useEffect(() => {
     // Set document title
-    document.title = "Voyageur | Discover Amazing Destinations";
+    document.title = "Phileo Travel Studio | Discover Amazing Destinations";
   }, []);
 
   return (

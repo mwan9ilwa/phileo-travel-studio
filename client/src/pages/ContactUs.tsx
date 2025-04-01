@@ -253,9 +253,9 @@ export default function ContactUs() {
                   <div>
                     <h3 className="text-sm font-semibold">Email</h3>
                     <p className="text-gray-600">
-                      General: info@voyageur.com<br />
-                      Support: support@voyageur.com<br />
-                      Business: partners@voyageur.com
+                      General: info@Phileo Travel Studio.com<br />
+                      Support: support@Phileo Travel Studio.com<br />
+                      Business: partners@Phileo Travel Studio.com
                     </p>
                   </div>
                 </div>
