@@ -16,16 +16,16 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-            <Link href="/" className="flex items-center">
-              <img
-                src="/logo-footer.png"
-                alt="Phileo Travel Studio Logo"
-                className="h-20 mr-2"
-              />
-            </Link>
+              <Link href="/" className="flex items-center">
+                <img
+                  src="/logo-footer.png"
+                  alt="Phileo Travel Studio Logo"
+                  className="h-20 mr-2"
+                />
+              </Link>
             </div>
             <p className="text-neutral-light mb-4">
-              Creating unforgettable travel experiences since 2010. Our expert
+              Creating unforgettable travel experiences since 2017. Our expert
               team crafts journeys that combine adventure, culture, and
               relaxation.
             </p>
@@ -161,13 +161,21 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone className="text-primary mr-3 h-5 w-5 flex-shrink-0" />
-                <span className="text-neutral-light">+260 970 629899</span>
+                <a
+                  href="tel:+260970629899"
+                  className="text-neutral-light hover:text-white"
+                >
+                  +260 970 629899
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail className="text-primary mr-3 h-5 w-5 flex-shrink-0" />
-                <span className="text-neutral-light">
+                <a
+                  href="mailto:phileo.travelstudio@gmail.com"
+                  className="text-neutral-light hover:text-white"
+                >
                   phileo.travelstudio@gmail.com
-                </span>
+                </a>
               </li>
             </ul>
           </div>
