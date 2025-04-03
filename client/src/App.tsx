@@ -1,90 +1,43 @@
 import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
-import Home from "@/pages/Home";
-import Destination from "@/pages/Destination";
-import Tour from "@/pages/Tour";
-import Destinations from "@/pages/Destinations";
-import Tours from "@/pages/Tours";
-import Activities from "@/pages/Activities";
-import Accommodations from "@/pages/Accommodations";
-import Accommodation from "@/pages/Accommodation"; // Added this line
-import AboutUs from "@/pages/AboutUs";
-import ContactUs from "@/pages/ContactUs";
-import Admin from "@/pages/Admin";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
-import "./app.css";
-
-import React, { useState, useEffect } from 'react';
-
-function ErrorBoundary({ children }) {
-  const [error, setError] = useState(null);
-  const [errorInfo, setErrorInfo] = useState(null);
-
-  useEffect(() => {
-    const onError = (error, errorInfo) => {
-      setError(error);
-      setErrorInfo(errorInfo);
-    };
-    window.addEventListener('error', onError);
-    return () => window.removeEventListener('error', onError);
-  }, []);
-
-  if (error) {
-    return (
-      <div>
-        <h2>Something went wrong.</h2>
-        <details style={{ whiteSpace: 'pre-wrap' }}>
-          {error && error.toString()}
-          <br />
-          {errorInfo && errorInfo.componentStack}
-        </details>
-      </div>
-    );
-  }
-
-  return children;
-}
-
+import Layout from "@/components/layout/Layout";
+import HomePage from "@/pages/HomePage";
+import DestinationsPage from "@/pages/DestinationsPage";
+import DestinationDetailPage from "@/pages/DestinationDetailPage";
+import ToursPage from "@/pages/ToursPage";
+import TourDetailPage from "@/pages/TourDetailPage";
+import ActivitiesPage from "@/pages/ActivitiesPage";
+import ActivityDetailPage from "@/pages/ActivityDetailPage";
+import AboutPage from "@/pages/AboutPage";
+import ContactPage from "@/pages/ContactPage";
 
 function Router() {
   return (
-    <>
-      <Header />
-      <Switch>
-        <Route path="/" component={Home} />
-        <Route path="/destinations" component={Destinations} />
-        <Route path="/destinations/:slug" component={Destination} />
-        <Route path="/tours" component={Tours} />
-        <Route path="/tours/:slug" component={Tour} />
-        <Route path="/activities" component={Activities} />
-        <Route path="/activities/:slug" component={Activity} />
-        <Route path="/accommodations" component={Accommodations} />
-        <Route path="/accommodations/:slug" component={Accommodation} /> {/* Added this line */}
-        <Route path="/about" component={AboutUs} />
-        <Route path="/contact" component={ContactUs} />
-        <Route path="/admin" component={Admin} />
-        <Route component={NotFound} />
-      </Switch>
-      <Footer />
-    </>
+    <Switch>
+      <Route path="/" component={HomePage} />
+      <Route path="/destinations" component={DestinationsPage} />
+      <Route path="/destinations/:slug" component={DestinationDetailPage} />
+      <Route path="/tours" component={ToursPage} />
+      <Route path="/tours/:slug" component={TourDetailPage} />
+      <Route path="/activities" component={ActivitiesPage} />
+      <Route path="/activities/:slug" component={ActivityDetailPage} />
+      <Route path="/about" component={AboutPage} />
+      <Route path="/contact" component={ContactPage} />
+      <Route component={NotFound} />
+    </Switch>
   );
 }
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ErrorBoundary>
+    <>
+      <Layout>
         <Router />
-        <Toaster />
-      </ErrorBoundary>
-    </QueryClientProvider>
+      </Layout>
+      <Toaster />
+    </>
   );
 }
-
-import Activity from "./pages/Activity";
 
 export default App;

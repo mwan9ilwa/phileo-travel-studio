@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "slug": "paris",
+    "description": "<p>Paris, the capital of France, is a major European city and a global center for art, fashion, gastronomy, and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine.</p><p>Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p><p>The city of Paris offers a wealth of attractions and experiences, from world-renowned museums like the Louvre and Musée d'Orsay to charming neighborhoods like Montmartre and Le Marais. Visitors can enjoy exceptional cuisine, from cozy bistros to Michelin-starred restaurants, and explore beautiful gardens such as the Tuileries and Luxembourg Gardens.</p>",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80",
+      "https://images.unsplash.com/photo-1522093007474-d86e9bf7ba6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1364&q=80",
+      "https://images.unsplash.com/photo-1503917988258-f87a78e3c995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    ],
+    "activities": ["eiffel-tower-visit", "louvre-museum-tour", "seine-river-cruise"],
+    "location": {
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "The City of Light",
+        "content": "<p>Paris earned its nickname 'La Ville Lumière' (The City of Light) during the Age of Enlightenment, when it was a center of education and ideas. Later, it was one of the first cities to adopt street lighting, further cementing this nickname.</p><p>Today, Paris continues to shine as a beacon of culture, art, and romance. The city lights up spectacularly at night, particularly the Eiffel Tower, which sparkles with thousands of twinkling lights for five minutes every hour on the hour.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Parisian Cuisine",
+        "content": "<p>Parisian cuisine is an essential part of the city's identity and cultural heritage. From traditional bistros serving classic dishes like coq au vin and beef bourguignon to patisseries offering exquisite pastries and bread, food is taken seriously in Paris.</p><p>The city boasts over 70 Michelin-starred restaurants alongside countless local haunts where you can enjoy authentic French cuisine. Don't miss the opportunity to experience a traditional café, complete with terrace seating perfect for people-watching, or to explore the many food markets where locals shop for fresh produce, cheese, and other specialties.</p>"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Bali",
+    "slug": "bali",
+    "description": "<p>Bali, known as the 'Island of the Gods,' is an Indonesian paradise that blends stunning natural beauty with rich cultural traditions. The island is renowned for its volcanic mountains, iconic rice paddies, pristine beaches, and coral reefs.</p><p>Beyond its natural attributes, Bali's vibrant arts scene includes traditional and modern dance, music, painting, and sculpture. The island's spiritual side is evident in its thousands of Hindu temples, from cliff-top sanctuaries to royal water palaces.</p><p>Visitors to Bali can enjoy a diverse range of experiences, from high-end beach resorts and world-class dining in areas like Seminyak and Nusa Dua, to spiritual retreats in Ubud, surfing adventures in Kuta, and diving expeditions off the east coast.</p>",
+    "image": "https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1531778272849-d1dd22444c06?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "activities": ["temple-hopping-tour", "ubud-monkey-forest", "tegalalang-rice-terrace"],
+    "location": {
+      "latitude": -8.4095,
+      "longitude": 115.1889
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "Balinese Culture and Spirituality",
+        "content": "<p>Balinese Hinduism, a unique blend of Hindu, Buddhist, and indigenous beliefs, shapes daily life on the island. Ritual offerings (canang sari) can be seen everywhere, and ceremonies are frequent and elaborate. The Balinese calendar is filled with religious festivals, with Galungan, Kuningan, and Nyepi (Day of Silence) being among the most significant.</p><p>Visitors are welcome to observe many ceremonies and even enter most temples if dressed appropriately with a sarong and sash. Temple etiquette is important, so it's best to go with a knowledgeable guide who can explain the significance of what you're seeing.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Natural Wonders",
+        "content": "<p>Bali's diverse landscape offers everything from rugged coastlines to volcanic hillsides to lush rainforests. The central highlands are dominated by the island's volcanic peaks, including Mount Agung, Bali's highest point and most sacred mountain.</p><p>The island's famous rice terraces, particularly those at Tegalalang and Jatiluwih, showcase the ingenuity of Balinese farming techniques. These cascading green steps have been cultivated for centuries using a traditional cooperative irrigation system known as subak, which has been recognized by UNESCO.</p><p>Bali's beaches vary from the popular stretches of sand in Kuta, Seminyak, and Nusa Dua to hidden coves like those found in Uluwatu and the eastern shores. The waters around Bali, particularly in areas like Amed, Tulamben, and the neighboring islands of Nusa Penida, Lembongan, and Ceningan, offer exceptional diving and snorkeling opportunities.</p>"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Santorini",
+    "slug": "santorini",
+    "description": "<p>Santorini, one of the Cyclades islands in the Aegean Sea, was shaped by a volcanic eruption in the 16th century BC. The island is famous for its dramatic views, stunning sunsets, white-washed buildings with blue domes, black and red beaches, and its own active volcano.</p><p>The island's iconic architecture—with cubic houses in narrow streets, stunning blue-domed churches, and sun-bathed verandas—has made it one of the most photographed destinations in the world. The villages of Fira and Oia, situated on cliff tops offering panoramic views of the submerged caldera, are particularly captivating.</p><p>Beyond its visual splendor, Santorini offers unique wines made from grapes grown in volcanic soil, archaeological treasures including the prehistoric settlement of Akrotiri, and beaches composed of black, red, and white lava pebbles.</p>",
+    "image": "https://images.unsplash.com/photo-1484821582734-6692f7b94bf6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1507501336603-6e31db2be093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+      "https://images.unsplash.com/photo-1518889735938-1df222fc4fbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    ],
+    "activities": ["sunset-caldera-cruise", "akrotiri-archaeological-site", "wine-tasting-tour"],
+    "location": {
+      "latitude": 36.3932,
+      "longitude": 25.4615
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "Volcanic History",
+        "content": "<p>The island of Santorini as we know it today was formed by one of the largest volcanic eruptions in recorded history, which occurred around 1600 BC. This catastrophic event, known as the Minoan eruption, caused the center of the island to collapse into the sea, creating the current caldera and forever changing the island's topography.</p><p>Today, visitors can take boat tours to the active volcanic islets in the center of the caldera, hike to the crater, and even swim in hot springs created by volcanic activity. The dark volcanic beaches of Perissa and Kamari, with their distinctive black sand, as well as the dramatic Red Beach near Akrotiri, are direct results of the island's volcanic nature.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Wine and Gastronomy",
+        "content": "<p>Santorini's volcanic soil, coupled with a unique climate and indigenous grape varieties, creates exceptional wines that are recognized worldwide. The island's most famous variety is Assyrtiko, which produces crisp white wines with high acidity and a distinctive mineral character.</p><p>The vineyards of Santorini are unusual; instead of growing on trellises, the vines are woven into protective 'basket' shapes called kouloura, which help shield the grapes from strong winds and intense sun. Several wineries on the island offer tours and tastings where visitors can learn about these unique viticulture methods and sample local vintages.</p><p>Santorini's cuisine showcases fresh local ingredients, with specialties including tomatokeftedes (tomato fritters), fava (yellow split pea purée), white eggplant, and fresh seafood. Many restaurants offer these traditional dishes alongside contemporary Greek cuisine, often accompanied by stunning caldera views.</p>"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Kyoto",
+    "slug": "kyoto",
+    "description": "<p>Kyoto, once the imperial capital of Japan for more than a thousand years, is a city that embodies the essence of traditional Japanese culture. With its well-preserved temples, gardens, imperial palaces, shrines, and traditional wooden homes, Kyoto offers visitors a glimpse into Japan's rich historical heritage.</p><p>The city is home to 17 UNESCO World Heritage Sites, including the iconic Kinkaku-ji (Golden Pavilion), the dynamic Fushimi Inari Shrine with its thousands of vermilion torii gates, and the tranquil Arashiyama Bamboo Grove. These historic treasures exist alongside modern buildings, creating a fascinating blend of past and present.</p><p>Beyond its architectural splendors, Kyoto is known for its traditional arts and crafts, kaiseki cuisine, geisha culture in the Gion district, and seasonal celebrations like cherry blossom viewing in spring and vibrant autumn foliage.</p>",
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80"
+    ],
+    "activities": ["temple-garden-tour", "geisha-district-walk", "traditional-tea-ceremony"],
+    "location": {
+      "latitude": 35.0116,
+      "longitude": 135.7681
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "Temples and Shrines",
+        "content": "<p>Kyoto's religious architecture is unparalleled in Japan, with over 1,600 Buddhist temples and 400 Shinto shrines scattered throughout the city. Each has its own character and significance, from the contemplative rock garden of Ryoan-ji to the 'nightingale floors' of Nijo Castle, designed to chirp when walked upon to alert residents of intruders.</p><p>The Philosopher's Path, a stone walkway that follows a canal lined with cherry trees, connects several notable temples and is particularly beautiful during spring bloom. For a more immersive experience, some temples offer overnight stays (shukubo) where visitors can participate in morning meditation and ritual services.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Traditional Arts and Crafts",
+        "content": "<p>Kyoto has been a center for Japanese arts, crafts, and design for centuries. The city's artisans continue traditional practices in textiles (particularly silk weaving and yuzen dyeing for kimonos), ceramics, lacquerware, and paper making.</p><p>Visitors can observe master craftspeople at work, participate in workshops to learn basic techniques, or purchase high-quality handmade items. The Kyoto Handicraft Center offers demonstrations of various crafts, while the historic Nishijin district is famous for its textile production and the Kyoto Museum of Traditional Crafts showcases the full range of the city's artistic heritage.</p><p>Traditional performing arts also flourish in Kyoto, from Noh and Kabuki theater to geisha dances. Seasonal events like the Gion Matsuri (festival) in July provide special opportunities to experience these cultural treasures.</p>"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Costa Rica",
+    "slug": "costa-rica",
+    "description": "<p>Costa Rica, nestled between Nicaragua and Panama in Central America, is renowned for its incredible biodiversity, progressive environmental policies, and the national motto of 'Pura Vida' (Pure Life) that embodies the country's philosophy of living in harmony with nature and enjoying life's simple pleasures.</p><p>Despite its relatively small size, Costa Rica contains nearly 6% of the world's biodiversity, with lush rainforests, cloud forests, mangrove swamps, and both Caribbean and Pacific coastlines. The country has pioneered ecotourism, with over 25% of its territory protected as national parks, wildlife refuges, and reserves.</p><p>Visitors to Costa Rica can experience thrilling adventures like zip-lining through forest canopies, white-water rafting down pristine rivers, surfing world-class waves, or hiking to active volcanoes. At the same time, wildlife enthusiasts can observe scarlet macaws, howler monkeys, sloths, toucans, and countless other species in their natural habitats.</p>",
+    "image": "https://images.unsplash.com/photo-1518063319789-7217e6706b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1591017574092-fdf53df3dbe2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1584146397798-93790a6e08d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1537225228614-56cc3556d7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "activities": ["arenal-volcano-hike", "manuel-antonio-wildlife-tour", "monteverde-cloud-forest"],
+    "location": {
+      "latitude": 9.7489,
+      "longitude": -83.7534
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "Conservation and Sustainability",
+        "content": "<p>Costa Rica's commitment to environmental conservation has made it a global leader in sustainability. The country routinely produces over 98% of its electricity from renewable sources, primarily hydroelectric, wind, and geothermal power, and has set ambitious goals to become carbon-neutral.</p><p>This commitment extends to tourism, with many eco-lodges and tour operators implementing sustainable practices like solar power, rainwater collection, organic gardens, and community involvement. By choosing accommodations and activities that prioritize environmental and social responsibility, visitors can support Costa Rica's conservation efforts while enjoying authentic experiences.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Biodiversity Hotspots",
+        "content": "<p>Costa Rica's varied ecosystems support an astonishing array of plant and animal life. The Osa Peninsula, home to Corcovado National Park, is considered one of the most biologically intense places on Earth, where visitors might spot four species of monkeys, two species of sloths, scarlet macaws, and possibly even elusive jaguars or tapirs.</p><p>Tortuguero National Park on the Caribbean coast is famous for sea turtle nesting, while Monteverde's cloud forests harbor resplendent quetzals and hundreds of orchid species. Manuel Antonio National Park combines wildlife viewing with beautiful beaches, and Arenal Volcano National Park offers hot springs and lava flows alongside rich birdwatching opportunities.</p><p>The waters surrounding Costa Rica are equally diverse, with coral reefs, whale migration routes, and world-class sport fishing. Visitors can snorkel or dive at Caño Island Biological Reserve or watch humpback whales in the Marino Ballena National Park.</p>"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Marrakech",
+    "slug": "marrakech",
+    "description": "<p>Marrakech, Morocco's 'Red City,' is a captivating blend of ancient tradition and modern luxury set against the dramatic backdrop of the Atlas Mountains. Founded in 1062, this former imperial city retains much of its historic character while embracing contemporary influences.</p><p>The heart of Marrakech is its ancient walled medina, a UNESCO World Heritage site filled with maze-like streets, vibrant souks (markets), historic palaces, mosques, and gardens. At the center lies Jemaa el-Fnaa, the main square that transforms from a daytime market to an evening carnival of storytellers, musicians, acrobats, and food vendors.</p><p>Beyond the medina walls, the modern Gueliz district offers a stark contrast with its European-inspired architecture, upscale boutiques, and art galleries. Throughout the city, visitors will find exquisite riads (traditional houses with interior courtyards), hammams (traditional bath houses), and abundant examples of Islamic architecture and craftsmanship.</p>",
+    "image": "https://images.unsplash.com/photo-1561647784-2f9c43b07a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1548018560-c7196548ed02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80",
+      "https://images.unsplash.com/photo-1560843300-ce9370108222?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1558370781-d6196949e317?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "activities": ["medina-walking-tour", "atlas-mountains-day-trip", "moroccan-cooking-class"],
+    "location": {
+      "latitude": 31.6295,
+      "longitude": -7.9811
+    },
+    "sections": [
+      {
+        "__component": "destination.text-section",
+        "title": "Souks and Crafts",
+        "content": "<p>The souks of Marrakech are a sensory feast where centuries-old trading traditions continue to thrive. Each section typically specializes in particular goods—from spices, textiles, and ceramics to leather goods, metalwork, and carpets.</p><p>Artisans can often be observed practicing their crafts using techniques passed down through generations. The souks are not just tourist attractions but functioning markets where locals shop alongside visitors. While haggling is expected and part of the experience, approaching it with respect and good humor will lead to more enjoyable interactions.</p><p>Beyond the souks, cooperatives and workshops throughout the city offer opportunities to learn about traditional crafts like carpet weaving, pottery, and zellige (mosaic tilework), often with more transparent pricing for those uncomfortable with bargaining.</p>"
+      },
+      {
+        "__component": "destination.text-section",
+        "title": "Gardens and Architecture",
+        "content": "<p>Marrakech is renowned for its historic gardens and palaces that offer tranquil retreats from the bustling medina. The 12th-century Menara Gardens feature a large reflecting pool with the Atlas Mountains as a backdrop, while the Jardin Majorelle, restored by fashion designer Yves Saint Laurent, showcases exotic plants, vibrant blue buildings, and houses the Berber Museum.</p><p>Bahia Palace exemplifies Islamic and Moroccan architectural styles with its intricate woodwork, painted ceilings, and tranquil courtyards. The ruins of El Badi Palace, though less intact, convey the grandeur of Marrakech's golden age. The Ben Youssef Madrasa, a former Islamic college, displays some of the finest examples of Moroccan craftsmanship in its courtyard and student quarters.</p><p>For those interested in contemporary design, numerous modern riads and hotels thoughtfully blend traditional elements with innovative concepts, creating spaces that honor Moroccan heritage while embracing current aesthetics.</p>"
+      }
+    ]
+  }
+]

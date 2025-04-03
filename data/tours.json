@@ -1,0 +1,433 @@
+[
+  {
+    "id": 1,
+    "title": "Cultural Paris Walking Tour",
+    "slug": "cultural-paris-walking-tour",
+    "shortDescription": "Explore the hidden gems of Paris with a local guide, visiting iconic landmarks and discovering local culture.",
+    "description": "<p>Discover the soul of Paris beyond the iconic landmarks on this immersive walking tour led by expert local guides who know the city's hidden corners and fascinating stories.</p><p>Our Cultural Paris Walking Tour takes you through historic neighborhoods where you'll experience authentic Parisian life. Walk the charming streets of Le Marais, with its aristocratic mansions and vibrant Jewish quarter. Explore the Latin Quarter, home to the Sorbonne University and the magnificent Pantheon. Discover the literary haunts of Saint-Germain-des-Prés, where Hemingway, Sartre, and de Beauvoir once gathered.</p><p>Along the way, you'll sample French delicacies at local patisseries, visit artisanal shops, and learn about the city's rich history from Roman times to the present day. Your guide will share insights on everything from architecture and art to politics and gastronomy, providing context that brings the city to life.</p><p>The tour includes a relaxing break at a traditional café where you can rest your feet while enjoying a coffee or glass of wine like a true Parisian. The experience concludes with a memorable Seine River cruise, offering spectacular views of the Eiffel Tower, Notre-Dame, and other landmarks from a unique perspective.</p>",
+    "duration": 6,
+    "durationUnit": "hours",
+    "price": 129,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509439581779-6298f75bf6e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80",
+      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1544&q=80"
+    ],
+    "destination": "paris",
+    "departureDates": [
+      {
+        "date": "2023-07-15",
+        "time": "09:00",
+        "availableSeats": 8
+      },
+      {
+        "date": "2023-07-22",
+        "time": "09:00",
+        "availableSeats": 12
+      },
+      {
+        "date": "2023-07-29",
+        "time": "09:00",
+        "availableSeats": 15
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Historic Heart of Paris",
+        "description": "<p>The tour begins at the iconic Notre-Dame Cathedral where we'll discuss its Gothic architecture and the ongoing restoration efforts. From there, we'll cross to Île Saint-Louis to admire its 17th-century mansions and perhaps sample one of the best ice creams in Paris at Berthillon.</p><p>Next, we'll explore the charming streets of Le Marais, once the aristocratic district of Paris and now a vibrant area known for its fashion boutiques, art galleries, and historic Jewish quarter. We'll stop at Place des Vosges, Paris's oldest planned square, and take time to enjoy its arcaded surroundings.</p>"
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 2,
+        "title": "Left Bank Exploration",
+        "description": "<p>We'll cross the Seine to discover the Latin Quarter, traditionally home to students and intellectuals. Walking through its medieval streets, we'll discuss how this area became the educational center of Paris and visit sites like the Sorbonne University and the Pantheon.</p><p>After a coffee break at a historic café, we'll continue to Saint-Germain-des-Prés to see the legendary cafés where Hemingway, Sartre, and de Beauvoir once gathered. Your guide will share stories of the neighborhood's artistic and literary heritage while pointing out unique shops and galleries worth returning to.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "seine-river-cruise",
+        "description": "The tour concludes with a relaxing one-hour Seine River cruise, offering spectacular views of Parisian landmarks from a unique perspective. Enjoy the city's beautiful bridges and riverbanks as your guide points out notable architecture and shares the final stories of the day."
+      }
+    ],
+    "highlights": [
+      "Explore historic neighborhoods beyond the tourist paths",
+      "Sample authentic French pastries and local specialties",
+      "Learn about Paris's literary and artistic heritage",
+      "Enjoy a relaxing Seine River cruise with views of major landmarks",
+      "Small group size ensures a personalized experience"
+    ],
+    "included": "<ul><li>Professional, English-speaking local guide</li><li>Small group experience (maximum 8 participants)</li><li>Food tastings at selected specialty shops</li><li>Coffee or wine break at a traditional Parisian café</li><li>One-hour Seine River cruise ticket</li><li>Earpiece when needed for better hearing in busy areas</li></ul>",
+    "excluded": "<ul><li>Hotel pickup and drop-off</li><li>Additional food and beverages not specified in the included items</li><li>Gratuities (optional but appreciated)</li><li>Personal expenses and souvenirs</li><li>Transportation between sites (we use the Metro or walk)</li></ul>",
+    "difficulty": "Easy",
+    "groupSize": 8,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": true
+  },
+  {
+    "id": 2,
+    "title": "Bali Temple and Rice Terrace Tour",
+    "slug": "bali-temple-rice-terrace-tour",
+    "shortDescription": "Visit Bali's most beautiful temples and the stunning Tegalalang rice terraces with a knowledgeable local guide.",
+    "description": "<p>Immerse yourself in Bali's spiritual and agricultural heritage with our comprehensive Temple and Rice Terrace Tour. This full-day journey takes you through some of the island's most sacred sites and breathtaking landscapes.</p><p>Begin your day with a visit to Tirta Empul Temple, famous for its holy spring water where Balinese Hindus have been practicing purification rituals for over a thousand years. Your guide will explain the proper protocols for visiting this sacred site and the meaning behind the purification ceremonies you'll witness.</p><p>Next, explore the ancient royal temple complex of Gunung Kawi, carved into the rock face of a river valley. Learn about Bali's ancient kingdom period and marvel at these remarkable 11th-century monuments. The journey to and from the temple involves descending and ascending many steps through a scenic landscape of rice paddies and tropical plants.</p><p>After a traditional Balinese lunch at a local restaurant overlooking the valley, continue to the UNESCO-recognized Tegalalang Rice Terraces. These cascading green steps are a testament to the ingenious subak irrigation system developed by Balinese farmers centuries ago. Take your time walking along the terraces, meeting local farmers, and capturing stunning photos of this iconic landscape.</p><p>The tour concludes with a visit to a coffee plantation where you'll learn about the production of the famous Luwak coffee and have the opportunity to taste various Balinese teas and coffees.</p>",
+    "duration": 8,
+    "durationUnit": "hours",
+    "price": 89,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1600843071978-32b3f1b8a8d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1550&q=80",
+      "https://images.unsplash.com/photo-1558005137-d9619a5c539f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1391&q=80",
+      "https://images.unsplash.com/photo-1580332449507-32d16419bd1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "destination": "bali",
+    "departureDates": [
+      {
+        "date": "2023-08-05",
+        "time": "08:00",
+        "availableSeats": 6
+      },
+      {
+        "date": "2023-08-12",
+        "time": "08:00",
+        "availableSeats": 10
+      },
+      {
+        "date": "2023-08-19",
+        "time": "08:00",
+        "availableSeats": 12
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Morning Temple Visits",
+        "description": "<p>Your day begins with pickup from your hotel between 8:00-8:30 AM. The first stop is Tirta Empul Temple, one of Bali's most important water temples known for its holy spring water. Your guide will explain the proper way to participate in the purification ritual (if you wish to do so) and the religious significance of this sacred site.</p><p>Next, we'll visit the ancient temple complex of Gunung Kawi. Carved into the rock face of a river valley, these 11th-century monuments are dedicated to King Anak Wungsu and his favorite queens. The site requires descending and ascending approximately 300 steps, but the journey is well worth it as you'll be surrounded by lush rice fields and tropical vegetation.</p>"
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Afternoon Exploration",
+        "description": "<p>After enjoying a traditional Balinese lunch at a restaurant with panoramic valley views, we'll continue to the UNESCO-recognized Tegalalang Rice Terraces in Ubud. These spectacular terraced rice fields showcase the subak irrigation system, a cooperative water management method that dates back to the 9th century.</p><p>You'll have time to walk among the terraces, meet local farmers, learn about rice cultivation, and take photos of this iconic Balinese landscape. For the adventurous, there are several swings and photo platforms offering unique perspectives of the terraces (optional activity, additional fees apply).</p><p>The final stop is a visit to a local coffee plantation where you'll learn about the production process of various Balinese coffees and teas, including the famous Luwak coffee. Enjoy a tasting session of different varieties before the return journey to your hotel, arriving between 4:00-5:00 PM.</p>"
+      }
+    ],
+    "highlights": [
+      "Experience purification rituals at the sacred Tirta Empul Temple",
+      "Explore the ancient royal monuments of Gunung Kawi",
+      "Walk through the UNESCO-recognized Tegalalang Rice Terraces",
+      "Learn about traditional Balinese farming techniques",
+      "Sample various local coffees and teas at a plantation"
+    ],
+    "included": "<ul><li>Hotel pickup and drop-off (from major tourist areas in Bali)</li><li>Professional English-speaking guide</li><li>Air-conditioned vehicle transportation</li><li>Entrance fees to all temples and sites</li><li>Traditional Balinese lunch</li><li>Coffee and tea tasting</li><li>Bottled water throughout the day</li><li>Sarong loan for temple visits</li></ul>",
+    "excluded": "<ul><li>Personal expenses and souvenirs</li><li>Optional activities such as swings at Tegalalang</li><li>Alcoholic beverages</li><li>Travel insurance</li><li>Gratuities for guide and driver (recommended but at your discretion)</li></ul>",
+    "difficulty": "Moderate",
+    "groupSize": 10,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": true
+  },
+  {
+    "id": 3,
+    "title": "Santorini Sunset Cruise",
+    "slug": "santorini-sunset-cruise",
+    "shortDescription": "Sail around Santorini's caldera on a luxury catamaran and enjoy the world-famous sunset with dinner and drinks.",
+    "description": "<p>Experience the magic of Santorini from the water on our premium sunset cruise. Aboard a spacious catamaran, you'll sail around the island's famous caldera, exploring volcanic islands, swimming in crystal-clear waters, and witnessing one of the world's most celebrated sunsets.</p><p>The cruise begins at the port of Vlychada, where you'll board our modern catamaran. As we set sail, your experienced crew will share fascinating information about Santorini's unique geology and the massive volcanic eruption that shaped the island into its current form.</p><p>Our first stop is the volcanic hot springs, where you can swim in the mineral-rich waters known for their therapeutic properties. The water here is warmer than the surrounding sea and contains beneficial minerals that give it a distinctive reddish color.</p><p>Next, we'll sail to White Beach and Red Beach, two of Santorini's most distinctive and beautiful beaches, named for their dramatic cliff colorations. At each location, you'll have the opportunity to swim, snorkel with provided equipment, or simply relax on the deck soaking up the Mediterranean sun.</p><p>As evening approaches, the crew will prepare a delicious Greek BBQ dinner featuring fresh local ingredients. Enjoy your meal with unlimited Greek wine, beer, and soft drinks while we position the catamaran for an unobstructed view of the sunset.</p><p>The highlight of the cruise is witnessing Santorini's legendary sunset from the water—a truly magical experience as the sun dips below the horizon, painting the sky and the whitewashed villages perched on the caldera cliffs in stunning hues of gold, pink, and purple.</p>",
+    "duration": 5,
+    "durationUnit": "hours",
+    "price": 149,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1507501336603-6e31db2be093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1504512485720-7d83a16ee930?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80",
+      "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80",
+      "https://images.unsplash.com/photo-1555400038-63f5ba517a47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "destination": "santorini",
+    "departureDates": [
+      {
+        "date": "2023-09-10",
+        "time": "15:00",
+        "availableSeats": 10
+      },
+      {
+        "date": "2023-09-15",
+        "time": "15:00",
+        "availableSeats": 14
+      },
+      {
+        "date": "2023-09-20",
+        "time": "15:00",
+        "availableSeats": 20
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Boarding and Departure",
+        "description": "<p>The adventure begins at Vlychada Marina where you'll meet your crew and board our spacious, modern catamaran. After a safety briefing and introduction to the vessel, we'll set sail into the Aegean Sea. As we cruise along the coastline, your captain will share fascinating information about Santorini's volcanic history and the massive eruption that created the caldera you see today.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "volcanic-hot-springs",
+        "description": "Our first stop is at the volcanic hot springs near the islet of Nea Kameni. Here you can swim in the sulfur-rich waters, known for their therapeutic properties. The water temperature is approximately 5°C warmer than the surrounding sea and has a distinctive reddish color due to the high mineral content."
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "beach-swimming",
+        "description": "Next, we'll anchor near the distinctive White Beach and Red Beach, named for their dramatic cliff colorations. At each location, you'll have the opportunity to swim and snorkel in the crystal-clear waters. Snorkeling equipment is provided, and the crew will point out the best spots to explore the underwater world. Non-swimmers can relax on deck and enjoy the spectacular scenery."
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "BBQ Dinner and Sunset",
+        "description": "<p>As evening approaches, our crew will prepare a delicious Greek BBQ dinner featuring fresh local ingredients. Menu highlights include Greek salad, grilled meats and seafood, traditional dips, and local side dishes. Vegetarian options are available upon request.</p><p>Enjoy your meal with unlimited Greek wine, beer, or soft drinks while we position the catamaran for an unobstructed view of Santorini's legendary sunset. As the sun dips below the horizon, watch as it paints the sky and the whitewashed villages perched on the caldera cliffs in stunning hues of gold, pink, and purple.</p><p>After sunset, we'll slowly sail back to Vlychada Marina, arriving approximately 5 hours after departure.</p>"
+      }
+    ],
+    "highlights": [
+      "Sail around Santorini's caldera on a premium catamaran",
+      "Swim in mineral-rich volcanic hot springs",
+      "Snorkel in crystal-clear waters at White Beach and Red Beach",
+      "Enjoy a freshly prepared Greek BBQ dinner",
+      "Witness Santorini's world-famous sunset from the water"
+    ],
+    "included": "<ul><li>5-hour catamaran cruise</li><li>Professional English-speaking crew</li><li>Greek BBQ dinner</li><li>Unlimited wine, beer, and soft drinks</li><li>Snorkeling equipment</li><li>Towels</li><li>Round-trip transfers from your Santorini hotel</li><li>Free WiFi onboard</li></ul>",
+    "excluded": "<ul><li>Gratuities (optional)</li><li>Personal expenses</li><li>Professional photography (available for purchase)</li><li>Premium alcoholic beverages beyond house wine and beer</li></ul>",
+    "difficulty": "Easy",
+    "groupSize": 20,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": true
+  },
+  {
+    "id": 4,
+    "title": "Kyoto Cultural Immersion",
+    "slug": "kyoto-cultural-immersion",
+    "shortDescription": "Experience the essence of traditional Japan with visits to Kyoto's top temples, a tea ceremony, and a geisha district walk.",
+    "description": "<p>Immerse yourself in the heart of traditional Japan with our comprehensive Kyoto Cultural Tour. This carefully crafted experience takes you beyond surface-level sightseeing to truly connect with the essence of Japanese culture, aesthetics, and philosophy.</p><p>Begin your journey with visits to Kyoto's most significant temples and shrines. Marvel at the golden splendor of Kinkaku-ji (Golden Pavilion), reflect in the serene rock garden of Ryoan-ji, and walk through the thousands of vermillion torii gates at Fushimi Inari Shrine. Your knowledgeable guide will explain the historical importance of each site and their role in Japanese spiritual life.</p><p>Experience Japanese traditional arts firsthand with an authentic tea ceremony led by a qualified tea master. Learn about the philosophy of 'ichigo ichie' (one time, one meeting) that underlies this practice as you observe the precise movements and mindful attention that go into preparing and serving matcha green tea.</p><p>As evening approaches, explore the atmospheric streets of Gion, Kyoto's famous geisha district. Your guide will help you understand the reality behind the geisha (known locally as geiko) and maiko (apprentice geisha) tradition, explaining their rigorous training and artistic accomplishments. If luck is on your side, you might glimpse these elusive artists as they travel between appointments.</p><p>The day concludes with a traditional kaiseki dinner, featuring seasonal ingredients prepared with exquisite attention to presentation. This multi-course meal represents the pinnacle of Japanese cuisine and provides a fitting end to your cultural immersion.</p>",
+    "duration": 8,
+    "durationUnit": "hours",
+    "price": 195,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1453&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493780474015-ba834fd0ce2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80",
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1504516018909-1438562b3882?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    ],
+    "destination": "kyoto",
+    "departureDates": [
+      {
+        "date": "2023-10-05",
+        "time": "09:00",
+        "availableSeats": 8
+      },
+      {
+        "date": "2023-10-15",
+        "time": "09:00",
+        "availableSeats": 8
+      },
+      {
+        "date": "2023-10-25",
+        "time": "09:00",
+        "availableSeats": 8
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Temple Exploration",
+        "description": "<p>Your cultural journey begins with an early morning pickup from your Kyoto hotel. We start at Kinkaku-ji (Golden Pavilion), arriving before the main crowds to appreciate this stunning gold-leaf covered temple and its reflection in the surrounding pond. Your guide will explain its history, including how it was rebuilt after being burned down in 1950.</p><p>Next, we visit Ryoan-ji Temple, home to Japan's most famous rock garden. Here, your guide will introduce you to Zen concepts as you contemplate the arrangement of rocks and raked gravel that has inspired meditation for centuries.</p><p>Before lunch, we'll explore Arashiyama's bamboo grove, walking through towering green stalks that create a magical atmosphere. Nearby, we'll visit Tenryu-ji Temple with its exceptional landscape garden designed to incorporate the mountain views.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "traditional-tea-ceremony",
+        "description": "In the early afternoon, participate in an authentic tea ceremony at a traditional tea house. A qualified tea master will demonstrate the precise art of preparing and serving matcha green tea, explaining the philosophy and mindfulness behind each movement. You'll learn proper etiquette for receiving and drinking the tea, and gain insight into how this ritual embodies core Japanese aesthetic principles like wabi-sabi (acceptance of imperfection and transience)."
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Evening in Gion",
+        "description": "<p>As afternoon transitions to evening, we'll visit Fushimi Inari Shrine, famous for its thousands of vermillion torii gates that create tunnels along mountain paths. Your guide will explain the shrine's importance in Japanese business culture and Shinto religious practices.</p><p>The day's final cultural experience takes place in Gion, Kyoto's renowned geisha district. Walking through its atmospheric streets lined with traditional wooden machiya houses, your guide will share insights about the lives, training, and artistic accomplishments of geiko (Kyoto's geisha) and maiko (apprentices). With some luck, you might spot these elusive artists as they move between appointments.</p><p>The tour concludes with a traditional kaiseki dinner at a local restaurant. This multi-course meal showcases seasonal ingredients prepared with meticulous attention to flavor and presentation. Your guide will explain each dish and the culinary philosophy behind this highest expression of Japanese cuisine.</p>"
+      }
+    ],
+    "highlights": [
+      "Visit Kyoto's most significant temples including the Golden Pavilion",
+      "Walk through the mystical bamboo grove of Arashiyama",
+      "Experience an authentic tea ceremony with a qualified tea master",
+      "Explore the atmospheric streets of Gion, Kyoto's geisha district",
+      "Enjoy a traditional multi-course kaiseki dinner"
+    ],
+    "included": "<ul><li>Hotel pickup and drop-off within central Kyoto</li><li>Professional English-speaking guide with expertise in Japanese culture and history</li><li>All entrance fees to temples, shrines and gardens</li><li>Traditional tea ceremony experience</li><li>Kaiseki dinner with one drink included</li><li>Transportation between sites via private vehicle and/or public transportation</li><li>Bottled water throughout the day</li></ul>",
+    "excluded": "<ul><li>Additional food and drinks beyond what's specified</li><li>Personal expenses and souvenirs</li><li>Gratuities (not customary in Japan but appreciated for exceptional service)</li><li>Hotel accommodations</li><li>Photography fees where applicable at certain sites</li></ul>",
+    "difficulty": "Moderate",
+    "groupSize": 8,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": false
+  },
+  {
+    "id": 5,
+    "title": "Costa Rica Adventure Package",
+    "slug": "costa-rica-adventure-package",
+    "shortDescription": "Experience Costa Rica's biodiversity with this 7-day adventure including rainforest hikes, wildlife watching, and relaxation on pristine beaches.",
+    "description": "<p>Immerse yourself in the natural wonders of Costa Rica with our 7-day Adventure Package that showcases the incredible biodiversity and stunning landscapes of this Central American paradise. From misty cloud forests to volcanic hot springs and pristine beaches, this carefully crafted itinerary provides the perfect balance of adventure, wildlife encounters, and relaxation.</p><p>Begin your journey in the shadow of the majestic Arenal Volcano, where you'll hike through lava fields, soak in natural hot springs, and zip line through the rainforest canopy. Continue to Monteverde Cloud Forest Reserve, home to an astonishing variety of plants and animals, including the elusive resplendent quetzal. Here, you'll walk across hanging bridges suspended in the forest canopy and learn about Costa Rica's unique ecosystems.</p><p>The adventure concludes on the Pacific coast in Manuel Antonio National Park, where rainforest meets the sea. Explore trails teeming with monkeys, sloths, and tropical birds before relaxing on pristine beaches with time for swimming, snorkeling, or simply enjoying the sun.</p><p>Throughout your journey, expert local guides will enhance your understanding of Costa Rica's natural environment and conservation efforts. Comfortable accommodations in each location provide the perfect base for daily excursions and a place to relax and recharge after each day's adventures.</p><p>This tour epitomizes Costa Rica's national motto of 'Pura Vida' (Pure Life) – a phrase that encapsulates the country's commitment to good living, appreciation of nature, and relaxed approach to life.</p>",
+    "duration": 7,
+    "durationUnit": "days",
+    "price": 1695,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1518095695064-1a331b6e6b29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1589491106922-a8e488665d5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1475732450783-a01ee12a2e15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1497473376897-16fbb7552478?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "destination": "costa-rica",
+    "departureDates": [
+      {
+        "date": "2023-11-05",
+        "time": "08:00",
+        "availableSeats": 10
+      },
+      {
+        "date": "2023-11-19",
+        "time": "08:00",
+        "availableSeats": 12
+      },
+      {
+        "date": "2023-12-03",
+        "time": "08:00",
+        "availableSeats": 12
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Arrival and Transfer to Arenal",
+        "description": "<p>Upon arrival at Juan Santamaría International Airport in San José, you'll be greeted by your guide and transferred to your hotel near Arenal Volcano (approximately 3 hours by private vehicle). The drive offers a wonderful introduction to Costa Rica's diverse landscapes as you travel from the Central Valley into the northern lowlands, passing coffee plantations, farmland, and forested hills.</p><p>After check-in at your hotel, enjoy the remainder of the day at leisure. Take advantage of your hotel's amenities, perhaps relaxing in thermal hot springs if your accommodation offers this feature, or simply admire views of the perfectly conical Arenal Volcano from the property.</p><p>In the evening, join your fellow travelers and guide for a welcome dinner where you'll learn more about the adventures that await in the coming days.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "arenal-volcano-hike",
+        "description": "Begin your second day with a guided hike through Arenal Volcano National Park. Trek across old lava flows and through rainforest on well-maintained trails while your naturalist guide points out volcanic features and helps spot wildlife like monkeys, toucans, and coatis. Learn about the volcano's 1968 eruption that transformed the region and the current phase of relative dormancy. The hike offers fantastic views of the volcano (weather permitting) and Lake Arenal."
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 3,
+        "title": "Arenal to Monteverde",
+        "description": "<p>After breakfast, depart Arenal for Monteverde Cloud Forest. This scenic journey includes a boat ride across Lake Arenal followed by a drive up into the mountains. As you ascend, notice the dramatic change in vegetation as you enter the misty cloud forest ecosystem.</p><p>Upon arrival in Monteverde, check into your hotel and have lunch at a local restaurant. In the afternoon, experience the forest from a different perspective on a guided hanging bridges tour. Walk across a series of suspension bridges elevated in the forest canopy, offering unique views of the ecosystem from above. Your guide will point out wildlife and explain the special adaptations of plants and animals to the cloud forest environment.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "monteverde-cloud-forest",
+        "description": "Dedicate a full day to exploring the remarkable Monteverde Cloud Forest Reserve. With your specialist naturalist guide, hike through trails surrounded by mist-shrouded vegetation, home to over 400 bird species, 100 mammal species, and thousands of plant species, including 500 types of orchids. Your guide will help spot wildlife and explain the complex ecology of this unique ecosystem. Keep watch for the resplendent quetzal, considered one of the world's most beautiful birds, as well as hummingbirds, bellbirds, and monkeys."
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 5,
+        "title": "Monteverde to Manuel Antonio",
+        "description": "<p>Enjoy a final morning in Monteverde with an optional visit to a butterfly garden or coffee tour before departing for Manuel Antonio on the Pacific coast (approximately 3-4 hours by private vehicle). The scenic drive descends from the highlands to the tropical coast, with opportunities to stop at viewpoints along the way.</p><p>Arrive at your hotel near Manuel Antonio National Park in the afternoon. The remainder of the day is at leisure to enjoy your hotel's amenities, explore the nearby town, or relax on the beach.</p>"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "manuel-antonio-wildlife-tour",
+        "description": "Explore Manuel Antonio National Park with an expert naturalist guide. Despite being Costa Rica's smallest national park, it boasts an incredible diversity of wildlife. Walk through forest trails with opportunities to spot three species of monkeys (white-faced capuchin, squirrel monkeys, and howler monkeys), sloths, iguanas, and numerous bird species. The park also features several beautiful beaches where you can enjoy swimming in warm tropical waters. Your guide will provide insights about the area's ecosystem and help spot camouflaged wildlife that would be easy to miss on your own."
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 7,
+        "title": "Departure Day",
+        "description": "<p>Depending on your flight time, enjoy a final morning at leisure in Manuel Antonio. Perhaps take a last walk on the beach, do some souvenir shopping, or simply relax at your hotel.</p><p>At the appropriate time, you'll be transferred to Juan Santamaría International Airport in San José (approximately 2.5-3 hours) for your departure flight. The tour concludes with check-in for your onward journey, taking with you unforgettable memories of Costa Rica's natural wonders.</p>"
+      }
+    ],
+    "highlights": [
+      "Hike around the majestic Arenal Volcano and soak in natural hot springs",
+      "Walk across hanging bridges in the misty Monteverde Cloud Forest",
+      "Search for the resplendent quetzal and hundreds of other species",
+      "Spot monkeys, sloths and tropical birds in Manuel Antonio National Park",
+      "Enjoy the perfect balance of guided activities and free time for relaxation"
+    ],
+    "included": "<ul><li>6 nights accommodation in carefully selected hotels (2 nights Arenal, 2 nights Monteverde, 2 nights Manuel Antonio)</li><li>Daily breakfast and welcome dinner</li><li>Private airport transfers and all transportation between destinations</li><li>Expert English-speaking naturalist guides for all activities</li><li>All activities and entrance fees as mentioned in the itinerary</li><li>Boat transfer across Lake Arenal</li><li>24/7 in-country support</li></ul>",
+    "excluded": "<ul><li>International flights</li><li>Meals not specified in the itinerary</li><li>Optional activities and excursions</li><li>Travel insurance (strongly recommended)</li><li>Personal expenses and souvenirs</li><li>Alcoholic beverages</li><li>Gratuities for guides and drivers</li></ul>",
+    "difficulty": "Moderate",
+    "groupSize": 12,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": false
+  },
+  {
+    "id": 6,
+    "title": "Marrakech Desert Adventure",
+    "slug": "marrakech-desert-adventure",
+    "shortDescription": "Journey from vibrant Marrakech to the golden dunes of the Sahara, experiencing traditional Berber culture and the stunning landscapes of Morocco.",
+    "description": "<p>Embark on an unforgettable 4-day adventure from the bustling souks of Marrakech to the golden dunes of the Sahara Desert. This journey takes you through the spectacular landscapes of Morocco, including the High Atlas Mountains, ancient kasbahs, and the endless sands of Erg Chebbi.</p><p>Begin your exploration in Marrakech, where you'll discover the city's historic medina with its labyrinthine streets and vibrant marketplaces. From there, travel through the dramatic High Atlas Mountains via the Tizi n'Tichka pass, visiting the UNESCO World Heritage site of Ait Benhaddou – a spectacular fortified village that has served as a backdrop for numerous films.</p><p>Continue through the Valley of a Thousand Kasbahs to Boumalne Dades, where you'll witness the stunning geology of Dades Gorge and Todra Gorge with their towering rock formations. The journey then takes you to Merzouga at the edge of the Sahara, where the real desert adventure begins.</p><p>Ride camels into the heart of the Erg Chebbi dunes, led by experienced Berber guides. Watch the sunset transform the landscape into a sea of gold before arriving at a traditional desert camp. Enjoy a delicious dinner under the stars, accompanied by traditional Berber music around the campfire, and spend the night in a comfortable desert tent.</p><p>The return journey to Marrakech takes you through different landscapes and cultural experiences, including the Draa Valley with its abundant date palms and ancient kasbahs. Throughout the tour, you'll have opportunities to interact with local people, learn about Berber culture, and photograph some of Morocco's most spectacular scenery.</p>",
+    "duration": 4,
+    "durationUnit": "days",
+    "price": 595,
+    "currency": "USD",
+    "featuredImage": "https://images.unsplash.com/photo-1565689902450-0f4d82fe7a56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1489493887464-892be6d1daae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      "https://images.unsplash.com/photo-1547986164-59c9c9ec3841?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1561647784-2f9c43b07a0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "destination": "marrakech",
+    "departureDates": [
+      {
+        "date": "2023-10-10",
+        "time": "08:00",
+        "availableSeats": 10
+      },
+      {
+        "date": "2023-10-24",
+        "time": "08:00",
+        "availableSeats": 12
+      },
+      {
+        "date": "2023-11-07",
+        "time": "08:00",
+        "availableSeats": 12
+      }
+    ],
+    "itinerary": [
+      {
+        "__component": "tour.itinerary-day",
+        "day": 1,
+        "title": "Marrakech to Boumalne Dades",
+        "description": "<p>Your desert adventure begins with early morning pickup from your Marrakech hotel. Meet your driver/guide and fellow travelers before departing in a comfortable 4x4 vehicle or minivan. The journey takes you through the High Atlas Mountains via the spectacular Tizi n'Tichka pass (2,260m), offering breathtaking views of traditional Berber villages and dramatic landscapes.</p><p>Mid-morning, arrive at the UNESCO World Heritage site of Ait Benhaddou, a spectacular fortified village (ksar) that has featured in numerous films including Gladiator and Game of Thrones. Explore this ancient mud-brick city with your guide, learning about its history as an important stop on caravan routes.</p><p>After lunch in Ouarzazate, continue through the Valley of Roses and the Valley of a Thousand Kasbahs to Boumalne Dades. Arrive at your comfortable guesthouse in the late afternoon. Dinner and overnight stay in the Dades Valley.</p>"
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 2,
+        "title": "Dades Gorge to Merzouga Desert",
+        "description": "<p>After breakfast, take a short drive through the winding roads of Dades Gorge to admire the unusual rock formations known as 'monkey fingers.' Continue to Todra Gorge, a spectacular canyon with towering vertical limestone cliffs rising 300 meters. Take time to walk through the gorge and marvel at this natural wonder.</p><p>Continue eastward through changing landscapes, passing through small towns and oasis areas. Stop for lunch in Tinejdad or Erfoud, where you can learn about fossil production - a significant craft in this region.</p><p>In the late afternoon, arrive in Merzouga at the edge of the Sahara Desert. Here, you'll meet your camel caravan and Berber guides. After a brief orientation, mount your camel for a 1-1.5 hour ride into the heart of the Erg Chebbi dunes, watching as the sunset transforms the landscape into stunning gold and orange hues.</p><p>Arrive at a traditional desert camp set among the dunes, where you'll enjoy a warm welcome with mint tea. After settling into your tent, gather for a delicious dinner under the stars, followed by traditional Berber music around the campfire. Spend the night in a comfortable tent equipped with proper beds and bedding.</p>"
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 3,
+        "title": "Sahara Sunrise and Journey to Ouarzazate",
+        "description": "<p>Wake early to climb a nearby dune and witness a magnificent desert sunrise. After breakfast at the camp, ride camels back to Merzouga where you can freshen up with a shower at a local hotel before continuing your journey.</p><p>Today's route takes you through a different landscape via Alnif and the Draa Valley, famous for its abundant date palms and ancient kasbahs. Stop in Nkob for lunch, then continue to Ouarzazate, known as the 'Hollywood of Morocco' due to its famous film studios.</p><p>Time permitting, visit the Taourirt Kasbah in Ouarzazate before checking into your hotel. Dinner and overnight stay in Ouarzazate.</p>"
+      },
+      {
+        "__component": "tour.itinerary-day",
+        "day": 4,
+        "title": "Return to Marrakech",
+        "description": "<p>After breakfast, begin your return journey to Marrakech. The route takes you back through the High Atlas Mountains, but this time you'll stop at different viewpoints and villages to experience more of Berber culture and the mountain landscape.</p><p>Enjoy lunch en route, then continue to Marrakech, arriving in the late afternoon. The tour concludes with drop-off at your hotel or at a central location in Marrakech, depending on your preference.</p>"
+      }
+    ],
+    "highlights": [
+      "Experience the stunning Sahara sunset and sunrise over golden dunes",
+      "Ride camels led by Berber guides into the heart of the desert",
+      "Stay in a traditional desert camp with dinner under the stars",
+      "Explore the UNESCO World Heritage site of Ait Benhaddou",
+      "Travel through the spectacular gorges and valleys of southern Morocco"
+    ],
+    "included": "<ul><li>3 nights accommodation (1 night in Boumalne Dades, 1 night in desert camp, 1 night in Ouarzazate)</li><li>Daily breakfast and dinner</li><li>Transportation in air-conditioned 4x4 vehicle or minivan</li><li>English-speaking driver/guide throughout</li><li>Camel trek in the Sahara Desert</li><li>Local guides where required</li><li>All entrance fees to sites mentioned in the itinerary</li><li>Water provided in the vehicle daily</li></ul>",
+    "excluded": "<ul><li>International flights</li><li>Lunches and beverages</li><li>Tips for guides, driver, and camp staff</li><li>Travel insurance</li><li>Personal expenses</li><li>Any activities not mentioned in the itinerary</li></ul>",
+    "difficulty": "Moderate",
+    "groupSize": 12,
+    "bookingLink": "https://phileotravelstudio.com/book-now",
+    "isFeatured": false
+  }
+]

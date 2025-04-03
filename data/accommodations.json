@@ -1,0 +1,312 @@
+[
+  {
+    "id": 1,
+    "name": "Le Marais Luxury Apartments",
+    "slug": "le-marais-luxury-apartments",
+    "description": "<p>Located in the heart of Le Marais, one of Paris's most historic and vibrant neighborhoods, these luxury apartments offer a perfect blend of traditional Parisian charm and modern comfort. Housed in a beautifully restored 17th-century building with preserved original features, each apartment has been individually designed with elegant furnishings and contemporary amenities.</p><p>Guests will appreciate the spacious layouts, high ceilings, and large windows that flood the apartments with natural light. Each unit features a fully equipped kitchen, luxurious bathroom, comfortable living area, and a dedicated workspace. Select apartments offer romantic views of Parisian rooftops or charming neighborhood streets.</p><p>The location is unbeatable, with boutiques, galleries, cafés, and major attractions like Centre Pompidou and Place des Vosges within walking distance. The nearby Metro station provides easy access to all of Paris, making this the perfect base for exploring the city.</p>",
+    "image": "https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80",
+      "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "address": "15 Rue des Archives, 75004 Paris, France",
+    "location": {
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    },
+    "amenities": [
+      {
+        "name": "Free WiFi",
+        "icon": "fa-wifi"
+      },
+      {
+        "name": "Air Conditioning",
+        "icon": "fa-snowflake"
+      },
+      {
+        "name": "Fully Equipped Kitchen",
+        "icon": "fa-utensils"
+      },
+      {
+        "name": "Washer/Dryer",
+        "icon": "fa-washing-machine"
+      },
+      {
+        "name": "Smart TV",
+        "icon": "fa-tv"
+      },
+      {
+        "name": "Elevator Access",
+        "icon": "fa-elevator"
+      },
+      {
+        "name": "Concierge Service",
+        "icon": "fa-concierge-bell"
+      }
+    ],
+    "rating": 4.8,
+    "type": "Apartment"
+  },
+  {
+    "id": 2,
+    "name": "Ubud Jungle Villa",
+    "slug": "ubud-jungle-villa",
+    "description": "<p>Immerse yourself in Bali's natural beauty at this stunning private villa nestled in the lush jungle just outside Ubud. Floor-to-ceiling windows and open-concept living spaces blur the boundaries between inside and outside, allowing guests to experience the tropical surroundings from every room.</p><p>The villa features a spacious master bedroom with a luxurious en-suite bathroom, a fully equipped kitchen, and an elegant living area decorated with local artwork and handcrafted furniture. The highlight is the infinity pool that appears to float above the jungle canopy, offering breathtaking views of the Ayung River valley.</p><p>Wake up to the sounds of nature and enjoy breakfast on your private terrace as you watch monkeys playing in nearby trees. The villa comes with daily housekeeping and a private chef who can prepare authentic Balinese meals using fresh local ingredients.</p><p>Despite its secluded feeling, the villa is just a 10-minute drive from Ubud center, with free shuttle service available several times daily. The property also offers yoga sessions on request, in-villa spa treatments, and guided nature walks in the surrounding area.</p>",
+    "image": "https://images.unsplash.com/photo-1604616913992-0fc1e6a7e6ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1503&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1582610116397-edb318620f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1542321993-8fc36217e26f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "address": "Jalan Raya Tegallalang, Ubud, Bali 80571, Indonesia",
+    "location": {
+      "latitude": -8.5194,
+      "longitude": 115.2641
+    },
+    "amenities": [
+      {
+        "name": "Private Infinity Pool",
+        "icon": "fa-swimming-pool"
+      },
+      {
+        "name": "Free WiFi",
+        "icon": "fa-wifi"
+      },
+      {
+        "name": "Air Conditioning",
+        "icon": "fa-snowflake"
+      },
+      {
+        "name": "Private Chef",
+        "icon": "fa-utensils"
+      },
+      {
+        "name": "Daily Housekeeping",
+        "icon": "fa-broom"
+      },
+      {
+        "name": "Shuttle Service",
+        "icon": "fa-shuttle-van"
+      },
+      {
+        "name": "In-villa Spa Services",
+        "icon": "fa-spa"
+      },
+      {
+        "name": "Yoga Classes",
+        "icon": "fa-om"
+      }
+    ],
+    "rating": 4.9,
+    "type": "Villa"
+  },
+  {
+    "id": 3,
+    "name": "Oia Sunset Suites",
+    "slug": "oia-sunset-suites",
+    "description": "<p>Carved into the volcanic cliffs of Oia, Santorini, these exclusive suites offer unparalleled views of the Aegean Sea and the island's famous sunsets. Each suite features the iconic Cycladic architecture with whitewashed walls, rounded edges, and blue accents that Santorini is known for worldwide.</p><p>The spacious suites include a comfortable bedroom area, a separate living space, and a private terrace with a heated plunge pool where guests can enjoy the magnificent caldera views in complete privacy. The minimalist design emphasizes the breathtaking vistas visible from every room, while traditional elements like built-in sofas and locally crafted furniture add authentic character.</p><p>Indulge in daily breakfast delivered to your terrace, featuring local delicacies and fresh ingredients. The attentive but unobtrusive staff can arrange everything from private dining experiences to yacht excursions around the island.</p><p>The suites are ideally located just steps from Oia's pedestrian street with its boutiques, art galleries, and restaurants, yet positioned to ensure tranquility and privacy. The famous Ammoudi Bay with its seafood tavernas is accessible via a scenic walking path from the property.</p>",
+    "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1455587734955-081b22074882?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1570213489059-0aac6626982e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80",
+      "https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+    ],
+    "address": "Main Street, Oia 847 02, Santorini, Greece",
+    "location": {
+      "latitude": 36.4618,
+      "longitude": 25.3756
+    },
+    "amenities": [
+      {
+        "name": "Private Plunge Pool",
+        "icon": "fa-swimming-pool"
+      },
+      {
+        "name": "Free WiFi",
+        "icon": "fa-wifi"
+      },
+      {
+        "name": "Air Conditioning",
+        "icon": "fa-snowflake"
+      },
+      {
+        "name": "Daily Breakfast",
+        "icon": "fa-coffee"
+      },
+      {
+        "name": "Airport/Port Transfers",
+        "icon": "fa-shuttle-van"
+      },
+      {
+        "name": "Concierge Service",
+        "icon": "fa-concierge-bell"
+      },
+      {
+        "name": "Espresso Machine",
+        "icon": "fa-mug-hot"
+      },
+      {
+        "name": "Luxury Bath Amenities",
+        "icon": "fa-bath"
+      }
+    ],
+    "rating": 5,
+    "type": "Suite"
+  },
+  {
+    "id": 4,
+    "name": "Kyoto Traditional Ryokan",
+    "slug": "kyoto-traditional-ryokan",
+    "description": "<p>Experience authentic Japanese hospitality at this traditional ryokan located in a tranquil neighborhood of Kyoto. Dating back to the Edo period, this family-run inn has preserved the art of traditional Japanese hospitality while incorporating select modern comforts.</p><p>The ryokan features ten tatami-matted rooms with sliding paper doors (shoji), futon bedding, and views of the meticulously maintained Japanese garden. Each room is adorned with calligraphy scrolls and seasonal ikebana flower arrangements, creating an atmosphere of refined simplicity.</p><p>Guests are invited to wear provided yukata (cotton kimono) while enjoying the ryokan facilities, which include communal hot spring baths (onsen) with indoor and outdoor sections. The highlight of your stay will be the kaiseki dinner—a multi-course culinary experience showcasing seasonal ingredients prepared with exquisite technique and artful presentation.</p><p>The gracious hosts offer personalized attention, including tea service in your room upon arrival and assistance with planning your Kyoto explorations. Located within walking distance of several temples and traditional streets, the ryokan also offers easy access to public transportation for visiting further attractions.</p>",
+    "image": "https://images.unsplash.com/photo-1578469504753-13c49e5f1f1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1474&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1439&q=80",
+      "https://images.unsplash.com/photo-1605651531144-51381895e23d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    ],
+    "address": "34 Nishisakura-cho, Nakagyo-ku, Kyoto 604-8054, Japan",
+    "location": {
+      "latitude": 35.0116,
+      "longitude": 135.7681
+    },
+    "amenities": [
+      {
+        "name": "Traditional Kaiseki Dinner",
+        "icon": "fa-utensils"
+      },
+      {
+        "name": "Japanese Breakfast",
+        "icon": "fa-coffee"
+      },
+      {
+        "name": "Hot Spring Baths (Onsen)",
+        "icon": "fa-hot-tub"
+      },
+      {
+        "name": "Yukata (Cotton Kimono)",
+        "icon": "fa-tshirt"
+      },
+      {
+        "name": "Japanese Garden",
+        "icon": "fa-leaf"
+      },
+      {
+        "name": "Tea Ceremony",
+        "icon": "fa-mug-hot"
+      },
+      {
+        "name": "Free WiFi",
+        "icon": "fa-wifi"
+      }
+    ],
+    "rating": 4.9,
+    "type": "Ryokan"
+  },
+  {
+    "id": 5,
+    "name": "Costa Rica Rainforest Lodge",
+    "slug": "costa-rica-rainforest-lodge",
+    "description": "<p>Immerse yourself in Costa Rica's remarkable biodiversity at this eco-friendly lodge set within a private rainforest reserve. The property was designed to blend harmoniously with its natural surroundings, using sustainable building practices and locally sourced materials throughout.</p><p>Individual bungalows offer privacy and direct connection to nature, with screened windows that allow guests to experience the sounds of the rainforest. Each unit features a comfortable king bed, sitting area with handcrafted furniture, and a spacious bathroom with an indoor/outdoor shower. The covered deck with hammock provides the perfect spot for wildlife viewing or simply relaxing to the rhythm of the forest.</p><p>The main lodge houses a restaurant serving farm-to-table Costa Rican cuisine using organic ingredients grown on-site or sourced from local producers. The open-air yoga deck overlooks the forest canopy, while the natural swimming pool offers chemical-free refreshment.</p><p>Sustainability is central to the lodge's operations, with solar power, rainwater collection, composting systems, and a comprehensive recycling program. Guided experiences include bird watching tours, night hikes to spot nocturnal creatures, waterfall visits, and nature photography walks led by expert naturalists.</p>",
+    "image": "https://images.unsplash.com/photo-1470290378553-502b252222c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1469796466635-455ede028ac4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1594398901394-4e34939a4fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80"
+    ],
+    "address": "1 km east of La Fortuna, Alajuela Province, Costa Rica",
+    "location": {
+      "latitude": 10.4663,
+      "longitude": -84.6513
+    },
+    "amenities": [
+      {
+        "name": "Private Nature Reserve",
+        "icon": "fa-tree"
+      },
+      {
+        "name": "Natural Swimming Pool",
+        "icon": "fa-swimming-pool"
+      },
+      {
+        "name": "Farm-to-Table Restaurant",
+        "icon": "fa-utensils"
+      },
+      {
+        "name": "Guided Rainforest Tours",
+        "icon": "fa-hiking"
+      },
+      {
+        "name": "Yoga Deck",
+        "icon": "fa-om"
+      },
+      {
+        "name": "Bird Watching",
+        "icon": "fa-binoculars"
+      },
+      {
+        "name": "Solar Powered",
+        "icon": "fa-solar-panel"
+      },
+      {
+        "name": "Limited WiFi",
+        "icon": "fa-wifi"
+      }
+    ],
+    "rating": 4.7,
+    "type": "Lodge"
+  },
+  {
+    "id": 6,
+    "name": "Marrakech Luxury Riad",
+    "slug": "marrakech-luxury-riad",
+    "description": "<p>Hidden behind an unassuming door in the ancient medina of Marrakech lies this meticulously restored traditional riad, offering an oasis of tranquility just steps from the bustling souks. Built around a central courtyard with a refreshing plunge pool and fragrant orange trees, the riad's architecture showcases the finest Moroccan craftsmanship.</p><p>Each of the seven uniquely decorated suites features hand-carved furniture, intricate tilework (zellige), painted cedar ceilings, and plush textiles. Modern amenities like air conditioning, luxurious bedding, and spa-quality bathrooms blend seamlessly with the authentic historical elements.</p><p>The riad's rooftop terrace offers panoramic views of the medina and Atlas Mountains in the distance—the perfect setting for breakfast, sunset drinks, or a candlelit dinner under the stars. The in-house chef prepares traditional Moroccan cuisine using fresh local ingredients and time-honored recipes.</p><p>The attentive staff provides personalized service, including medina guides, hammam treatments in the riad's own traditional steam bath, and cooking classes where guests can learn to prepare Moroccan specialties. This intimate property offers the authentic character of a traditional Moroccan home with the amenities and service of a luxury hotel.</p>",
+    "image": "https://images.unsplash.com/photo-1559078439-0436287cec6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1584132967334-7e93eecefd8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+      "https://images.unsplash.com/photo-1552301725-fc05262c3921?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+    ],
+    "address": "Derb Abou El Fadail 44, Medina, Marrakech 40000, Morocco",
+    "location": {
+      "latitude": 31.6295,
+      "longitude": -7.9811
+    },
+    "amenities": [
+      {
+        "name": "Courtyard Plunge Pool",
+        "icon": "fa-swimming-pool"
+      },
+      {
+        "name": "Rooftop Terrace",
+        "icon": "fa-umbrella-beach"
+      },
+      {
+        "name": "In-house Restaurant",
+        "icon": "fa-utensils"
+      },
+      {
+        "name": "Traditional Hammam",
+        "icon": "fa-hot-tub"
+      },
+      {
+        "name": "Cooking Classes",
+        "icon": "fa-mortar-pestle"
+      },
+      {
+        "name": "Air Conditioning",
+        "icon": "fa-snowflake"
+      },
+      {
+        "name": "Free WiFi",
+        "icon": "fa-wifi"
+      },
+      {
+        "name": "Airport Transfers",
+        "icon": "fa-shuttle-van"
+      }
+    ],
+    "rating": 4.8,
+    "type": "Riad"
+  }
+]

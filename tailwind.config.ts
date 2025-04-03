@@ -5,6 +5,10 @@ export default {
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+        display: ["Playfair Display", "serif"],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -22,27 +26,13 @@ export default {
           foreground: "hsl(var(--popover-foreground))",
         },
         primary: {
-          DEFAULT: "rgb(var(--color-primary))",
-          dark: "rgb(var(--color-primary-dark))",
-          light: "rgb(var(--color-primary-light))",
+          DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "rgb(var(--color-secondary))",
-          dark: "rgb(var(--color-secondary-dark))",
-          light: "rgb(var(--color-secondary-light))",
+          DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
         },
-        neutral: {
-          lightest: "rgb(var(--color-neutral-lightest))",
-          light: "rgb(var(--color-neutral-light))",
-          medium: "rgb(var(--color-neutral-medium))",
-          dark: "rgb(var(--color-neutral-dark))",
-          darkest: "rgb(var(--color-neutral-darkest))",
-        },
-        success: "rgb(var(--color-success))",
-        danger: "rgb(var(--color-danger))",
-        warning: "rgb(var(--color-warning))",
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",

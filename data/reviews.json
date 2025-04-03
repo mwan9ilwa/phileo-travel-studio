@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "author": "Sarah Johnson",
+    "rating": 5,
+    "comment": "Our Paris tour was absolutely magical! Our guide Marie was knowledgeable and passionate about the city's history. The private Seine cruise at sunset was a highlight we'll never forget. The small group size made it feel like we were exploring with friends rather than on a typical tour.",
+    "tour": "cultural-paris-walking-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-1.svg"
+  },
+  {
+    "id": 2,
+    "author": "Michael Chen",
+    "rating": 5,
+    "comment": "The Bali temple tour exceeded our expectations. Our guide took us to less crowded spots and shared fascinating stories about Balinese culture. The sunset at Tanah Lot was breathtaking! I appreciated learning about the spiritual significance of each temple and the guide was patient in answering all our questions.",
+    "tour": "bali-temple-rice-terrace-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-2.svg"
+  },
+  {
+    "id": 3,
+    "author": "Emma & James Wilson",
+    "rating": 5,
+    "comment": "The Santorini cruise was the highlight of our honeymoon. Swimming in the hot springs, enjoying Greek cuisine, and watching the sunset with a glass of wine was an experience we'll treasure forever. The crew was attentive and friendly, and the catamaran was spacious and comfortable.",
+    "tour": "santorini-sunset-cruise",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-3.svg"
+  },
+  {
+    "id": 4,
+    "author": "David Thompson",
+    "rating": 4,
+    "comment": "The Cultural Paris Walking Tour gave us a wonderful overview of the city. Our guide was knowledgeable and shared interesting historical facts about each neighborhood. The Seine cruise at the end was beautiful, though it was a bit crowded. Overall, great value for the price!",
+    "tour": "cultural-paris-walking-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-4.svg"
+  },
+  {
+    "id": 5,
+    "author": "Priya Patel",
+    "rating": 5,
+    "comment": "Bali Temple and Rice Terrace Tour was the perfect introduction to Balinese culture. The rice terraces were even more beautiful than in photos, and our guide explained the traditional irrigation system in a fascinating way. Tirta Empul Temple was a spiritual experience I'll never forget. Highly recommend!",
+    "tour": "bali-temple-rice-terrace-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-5.svg"
+  },
+  {
+    "id": 6,
+    "author": "Marco Rossi",
+    "rating": 4,
+    "comment": "The Santorini Sunset Cruise offered breathtaking views and the dinner was delicious. Swimming in the hot springs was unique - just be aware the water has sulfur so it might stain light-colored swimwear. The sunset view from the water was absolutely magical and worth every penny.",
+    "tour": "santorini-sunset-cruise",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-6.svg"
+  },
+  {
+    "id": 7,
+    "author": "Sophia Martinez",
+    "rating": 5,
+    "comment": "The Kyoto Cultural Immersion tour was exceptional in every way. Our guide's knowledge of Japanese traditions and history made each temple visit meaningful. The tea ceremony was conducted with such grace and precision. I came away with a much deeper understanding of Japanese culture.",
+    "tour": "kyoto-cultural-immersion",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-7.svg"
+  },
+  {
+    "id": 8,
+    "author": "Thomas Weber",
+    "rating": 5,
+    "comment": "Costa Rica Adventure Package was the perfect mix of adventure and relaxation. Hiking around Arenal Volcano, zip-lining through the cloud forest, and spotting wildlife in Manuel Antonio were all incredible experiences. Our guide Carlos was passionate about conservation and taught us so much about the ecosystems.",
+    "tour": "costa-rica-adventure-package",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-8.svg"
+  },
+  {
+    "id": 9,
+    "author": "Fatima Al-Farsi",
+    "rating": 5,
+    "comment": "The Marrakech Desert Adventure was truly a once-in-a-lifetime experience. Riding camels into the Sahara dunes for sunset was magical, and sleeping under the stars at the desert camp was unforgettable. Our guide Mohammed shared fascinating insights about Berber culture and made sure we were comfortable throughout the journey.",
+    "tour": "marrakech-desert-adventure",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-9.svg"
+  },
+  {
+    "id": 10,
+    "author": "Robert Johnson",
+    "rating": 3,
+    "comment": "The Paris walking tour had interesting content but lasted longer than advertised. Our feet were quite sore by the end! The guide was knowledgeable but spoke very quickly which was challenging for non-native English speakers in our group. The Seine cruise portion was lovely.",
+    "tour": "cultural-paris-walking-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-10.svg"
+  },
+  {
+    "id": 11,
+    "author": "Aiko Tanaka",
+    "rating": 5,
+    "comment": "The Kyoto Cultural Immersion tour provided exactly the authentic Japanese experience we were hoping for. The tea ceremony was conducted with such precision and grace, and our guide explained the cultural significance behind each movement. The temples we visited were less crowded than the main tourist spots.",
+    "tour": "kyoto-cultural-immersion",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-11.svg"
+  },
+  {
+    "id": 12,
+    "author": "Carlos Rodriguez",
+    "rating": 4,
+    "comment": "Our Costa Rica Adventure was mostly excellent. The national parks and wildlife were incredible - we saw sloths, monkeys, toucans and so much more! The accommodations were comfortable and eco-friendly. One star deducted because our departure was delayed by an hour, but the company handled it professionally.",
+    "tour": "costa-rica-adventure-package",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-12.svg"
+  },
+  {
+    "id": 13,
+    "author": "Jane Smith",
+    "rating": 2,
+    "comment": "Disappointed with our Paris tour. The guide arrived late and rushed through some sites to make up time. The information provided was basic and could have been found in any guidebook. The Seine cruise portion was nice but too short.",
+    "tour": "cultural-paris-walking-tour",
+    "isApproved": false,
+    "avatar": "/images/avatars/avatar-13.svg"
+  },
+  {
+    "id": 14,
+    "author": "Liam O'Connor",
+    "rating": 5,
+    "comment": "The Marrakech Desert Adventure exceeded all expectations. The night in the desert camp was surprisingly comfortable with proper beds and excellent food. Watching the sunrise over the dunes was a magical moment I'll never forget. Worth every penny and more!",
+    "tour": "marrakech-desert-adventure",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-14.svg"
+  },
+  {
+    "id": 15,
+    "author": "Elena Petrova",
+    "rating": 5,
+    "comment": "The Bali tour was excellent! Our guide Wayan was knowledgeable about both the spiritual aspects of the temples and the agricultural techniques used in the rice terraces. He also took beautiful photos for us and knew exactly when to visit each location to avoid crowds. Highly recommend!",
+    "tour": "bali-temple-rice-terrace-tour",
+    "isApproved": true,
+    "avatar": "/images/avatars/avatar-15.svg"
+  }
+]

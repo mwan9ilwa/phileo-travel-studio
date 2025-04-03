@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Cultural Tours",
+    "slug": "cultural-tours",
+    "description": "Immerse yourself in local traditions, heritage, and ways of life with our immersive cultural tours. These experiences focus on history, arts, architecture, and authentic interactions with local communities, providing deeper understanding of destinations beyond typical tourist experiences.",
+    "image": "https://images.unsplash.com/photo-1551918120-9739cb430c6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80"
+  },
+  {
+    "id": 2,
+    "name": "Adventure",
+    "slug": "adventure",
+    "description": "For travelers seeking active experiences and thrilling challenges, our adventure tours offer hiking, trekking, rafting, zip-lining, and other exciting activities. These journeys combine adrenaline-pumping adventures with beautiful natural settings for unforgettable outdoor experiences.",
+    "image": "https://images.unsplash.com/photo-1612099197022-860b4f02663c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 3,
+    "name": "Wildlife & Nature",
+    "slug": "wildlife-nature",
+    "description": "Discover the natural world with tours focused on wildlife observation, biodiversity, and remarkable natural landscapes. From safaris and bird watching to rainforest exploration and mountain hikes, these experiences connect travelers with the stunning beauty and diversity of our planet.",
+    "image": "https://images.unsplash.com/photo-1518063319789-7217e6706b04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80"
+  },
+  {
+    "id": 4,
+    "name": "Culinary Experiences",
+    "slug": "culinary-experiences",
+    "description": "Savor the flavors of global cuisines with our food-focused tours. These delicious journeys include cooking classes, market visits, wine tastings, and meals at both renowned restaurants and hidden local gems, offering tasty insights into cultural traditions and regional specialties.",
+    "image": "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  },
+  {
+    "id": 5,
+    "name": "Beach & Island",
+    "slug": "beach-island",
+    "description": "Relax and rejuvenate with our beach and island getaways, showcasing stunning coastlines and island paradises around the world. These tours balance leisure time for sunbathing and swimming with optional activities like snorkeling, sailing, and cultural excursions to nearby villages.",
+    "image": "https://images.unsplash.com/photo-1507501336603-6e31db2be093?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80"
+  },
+  {
+    "id": 6,
+    "name": "Historical Journeys",
+    "slug": "historical-journeys",
+    "description": "Travel back in time with tours focused on archaeological sites, ancient civilizations, architectural landmarks, and pivotal historical events. Expert guides bring history to life, offering context and stories that illuminate the past's influence on present-day cultures and societies.",
+    "image": "https://images.unsplash.com/photo-1588614959060-4d489fc8f0da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80"
+  },
+  {
+    "id": 7,
+    "name": "Wellness Retreats",
+    "slug": "wellness-retreats",
+    "description": "Nourish mind, body, and spirit with our wellness-focused journeys. These thoughtfully designed retreats incorporate yoga, meditation, spa treatments, healthy cuisine, and natural healing traditions from around the world, all set in serene and inspiring locations.",
+    "image": "https://images.unsplash.com/photo-1532078073226-5937d5e2c854?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80"
+  },
+  {
+    "id": 8,
+    "name": "Photography Tours",
+    "slug": "photography-tours",
+    "description": "Capture stunning images while improving your photography skills with our specialized photography tours. Led by professional photographers, these journeys visit visually spectacular locations at optimal times for lighting, with guidance on composition, technique, and equipment.",
+    "image": "https://images.unsplash.com/photo-1502982720700-bfff97f2ecac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+  }
+]

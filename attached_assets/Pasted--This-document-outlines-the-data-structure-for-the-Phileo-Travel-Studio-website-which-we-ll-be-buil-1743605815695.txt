@@ -1,0 +1,296 @@
+
+This document outlines the data structure for the Phileo Travel Studio website, which we'll be building as a static site using Next.js. We've decided to forego a CMS for now to simplify hosting and reduce costs. Therefore, you will be working with static JSON data.
+
+Project Name: Phileo Travel Studio
+Technology Stack: Next.js (React/TypeScript)
+Goal: To create a fully functional website for Phileo Travel Studio using static JSON data files to populate content.
+1. Project Setup:
+* Ensure you have the latest version of Node.js and npm/yarn/pnpm installed.
+* If you don't already have a Next.js project, create one using: npx create-next-app@latest phileo-travel-studio --typescript (or equivalent using yarn/pnpm)
+2. Data Structure (Static JSON Files):
+We will be using the following JSON files to store our website data. These files will be located in a /data directory at the root of the project.
+* /data/homepage.json: Data for the homepage (Single Type).
+* /data/about.json: Data for the About Us page (Single Type).
+* /data/contact.json: Data for the Contact Us page, including inquiry form details (Single Type).
+* /data/destinations.json: Array of travel destinations (Collection Type).
+* /data/tours.json: Array of travel tours (Collection Type).
+* /data/activities.json: Array of activities available at destinations (Collection Type).
+* /data/accommodations.json: Array of accommodation options (hotels, villas, etc.) (Collection Type).
+* /data/reviews.json: Array of reviews for tours (Collection Type).
+* /data/categories.json: Array of tour categories (Collection Type).
+Detailed Data Structure:
+Below is a detailed specification of the data structure for each JSON file. Pay close attention to the types of each field, especially the slug and __component fields, as they are crucial for relationships and dynamic content rendering.
+* /data/homepage.json:
+      {
+  "heroTitle": "string",
+  "heroDescription": "string (HTML allowed)",
+  "heroImage": "/path/to/image.jpg",
+  "featuredDestinations": ["slug-destination-1", "slug-destination-2"],  // Array of destination slugs
+  "featuredTours": ["slug-tour-1", "slug-tour-2"], // Array of tour slugs
+  "sections": [   // Dynamic Zone
+    {
+      "__component": "homepage.section-hero",
+      "title": "string",
+      "description": "string (HTML allowed)",
+      "image": "/path/to/image.jpg",
+      "callToActionText": "string",
+      "callToActionLink": "/path/to/link"
+    },
+    {
+      "__component": "homepage.section-featured-destinations",
+      "title": "string",
+      "destinations": ["slug-destination-1", "slug-destination-2", "slug-destination-3"] // Array of destination slugs
+    },
+    {
+      "__component": "homepage.section-testimonials",
+      "title": "string",
+      "testimonials": [
+        {
+          "author": "string",
+          "comment": "string",
+          "rating": "number (1-5)"
+        }
+      ]
+    }
+  ]
+}
+    
+
+* /data/about.json:
+      {
+  "content": "string (HTML allowed)",
+  "teamMembers": [
+    {
+      "name": "string",
+      "title": "string",
+      "image": "/path/to/image.jpg",
+      "bio": "string",
+      "socialLinks": {
+        "linkedin": "string (URL)",
+        "twitter": "string (URL)",
+        "instagram": "string (URL)"
+      }
+    }
+  ]
+}
+    
+
+* /data/contact.json:
+      {
+  "address": "string",
+  "phone": "string",
+  "email": "string",
+  "googleMapsEmbed": "string (HTML embed code)",
+  "contactFormSuccessMessage": "string",
+  "inquiryFormFields": {
+    "fullName": {
+      "label": "string",
+      "type": "text",
+      "required": "boolean"
+    },
+    "departureDate": {
+      "label": "string",
+      "type": "date",
+      "required": "boolean"
+    },
+    "departureCity": {
+      "label": "string",
+      "type": "text",
+      "required": "boolean"
+    },
+    "arrivalCity": {
+      "label": "string",
+      "type": "text",
+      "required": "boolean"
+    },
+    "returnDate": {
+      "label": "string",
+      "type": "date",
+      "required": "boolean" // optional, so can be false
+    },
+    "numberOfPassengers": {
+      "label": "string",
+      "type": "number",
+      "required": "boolean",
+      "min": "number"
+    },
+    "email": {
+      "label": "string",
+      "type": "email",
+      "required": "boolean"
+    },
+    "phoneNumber": {
+      "label": "string",
+      "type": "tel"
+    }
+  }
+}
+    
+
+* /data/destinations.json:
+      [
+  {
+    "id": "number",
+    "name": "string",
+    "slug": "string (URL-safe, unique)",
+    "description": "string (HTML allowed)",
+    "image": "/path/to/image.jpg",
+    "gallery": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "activities": ["slug-activity-1", "slug-activity-2"],  // Array of activity slugs
+    "location": {
+      "latitude": "number",
+      "longitude": "number"
+    },
+    "sections": [  // Dynamic Zone
+      {
+        "__component": "destination.text-section",
+        "title": "string",
+        "content": "string (HTML allowed)"
+      }
+    ]
+  }
+]
+    
+
+* /data/tours.json:
+      [
+  {
+    "id": "number",
+    "title": "string",
+    "slug": "string (URL-safe, unique)",
+    "shortDescription": "string",
+    "description": "string (HTML allowed)",
+    "duration": "number",
+    "durationUnit": "string (e.g., 'days', 'hours')",
+    "price": "number",
+    "currency": "string (e.g., 'USD', 'EUR')",
+    "featuredImage": "/path/to/image.jpg",
+    "gallery": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "destination": "slug-destination", // Destination slug
+    "departureDates": [
+      {
+        "date": "string (YYYY-MM-DD)",
+        "time": "string (HH:MM)",
+        "availableSeats": "number"
+      }
+    ],
+    "itinerary": [  // Dynamic Zone
+      {
+        "__component": "tour.itinerary-day",
+        "day": "number",
+        "title": "string",
+        "description": "string (HTML allowed)"
+      },
+      {
+        "__component": "tour.itinerary-activity",
+        "activity": "slug-activity", // Activity slug
+        "description": "string (optional)"
+      }
+    ],
+    "highlights": ["string", "string"],
+    "included": "string (HTML allowed)",
+    "excluded": "string (HTML allowed)",
+    "difficulty": "string (e.g., 'Easy', 'Moderate', 'Challenging')",
+    "groupSize": "number",
+    "bookingLink": "string (URL)",
+    "isFeatured": "boolean"
+  }
+]
+    
+
+* /data/activities.json:
+      [
+  {
+    "id": "number",
+    "name": "string",
+    "slug": "string (URL-safe, unique)",
+    "description": "string (HTML allowed)",
+    "image": "/path/to/image.jpg",
+    "price": "number",
+    "currency": "string (e.g., 'USD', 'EUR')",
+    "duration": "string (e.g., '2 hours', 'Half-day')",
+    "location": {
+      "latitude": "number",
+      "longitude": "number"
+    }
+  }
+]
+    
+
+* /data/accommodations.json:
+      [
+  {
+    "id": "number",
+    "name": "string",
+    "slug": "string (URL-safe, unique)",
+    "description": "string (HTML allowed)",
+    "image": "/path/to/image.jpg",
+    "gallery": ["/path/to/image1.jpg", "/path/to/image2.jpg"],
+    "address": "string",
+    "location": {
+      "latitude": "number",
+      "longitude": "number"
+    },
+    "amenities": [
+      {
+        "name": "string",
+        "icon": "string (Font Awesome or React Icons class)"
+      }
+    ],
+    "rating": "number (1-5)",
+    "type": "string (e.g., 'Hotel', 'Villa', 'Apartment')"
+  }
+]
+    
+
+* /data/reviews.json:
+      [
+  {
+    "id": "number",
+    "author": "string",
+    "rating": "number (1-5)",
+    "comment": "string",
+    "tour": "slug-tour", // Tour slug
+    "isApproved": "boolean"
+  }
+]
+    
+
+* /data/categories.json:
+      [
+  {
+    "id": "number",
+    "name": "string",
+    "slug": "string (URL-safe, unique)",
+    "description": "string",
+    "image": "/path/to/image.jpg"
+  }
+]
+    
+
+Important Notes on Data Structure:
+* IDs: While present, the primary way of linking content is through the slug field.
+* Slugs: Ensure the slug values are unique across each content type. Use a consistent naming convention for slugs (e.g., lowercase, hyphen-separated).
+* Image Paths: All image paths are relative to the public directory of the Next.js project (e.g., if the path is /images/paris.jpg, the image file should be placed in public/images/paris.jpg).
+* Dynamic Zones: Dynamic zones are represented by the sections and itinerary arrays. The __component field determines which React component to render for each item in the array.
+* inquiryFormFields (Contact Page): This structure defines the fields that will be dynamically rendered in the inquiry form on the contact page.
+3. Implementation Steps:
+1. Create data Directory: Create a data directory in the root of your Next.js project.
+2. Create JSON Files: Create the JSON files listed above within the data directory. Populate these files with data. I've provided sample data, which you should use as a starting point.
+3. Create lib/data.ts: Create a file named data.ts inside the lib directory. This file will contain functions to read data from the JSON files and provide it to your Next.js components. Example:       // lib/data.ts 
+4. Create lib/types.ts: Define TypeScript interfaces for each content type to ensure type safety. This will also help with code completion and error detection. Example:  
+5. Implement Routing: Create dynamic routes in Next.js to handle individual destinations, tours, etc. Use the slug field to identify each resource.
+6. Implement Dynamic Zone Rendering: Create a function to dynamically render the components within the sections and itinerary arrays. This function should use a switch statement (or similar logic) to determine which React component to render based on the  
+7. Create React Components: Create React components for each of the different sections, itinerary items, and other elements of the website.
+8. Implement Contact Form: Dynamically generate the contact form on the contact page using the inquiryFormFields data from contact.json. Implement the form submission logic (e.g., sending the data to a serverless function for processing).
+9. Configure next.config.js: If you are using local images, no specific configuration for image domains is required.
+10. Testing: Thoroughly test all pages and components to ensure they are displaying the correct data and functioning as expected.
+4. Key Considerations:
+* Data Consistency: Ensure that the data in the JSON files is consistent and accurate. Pay attention to the relationships between different data types (e.g., destinations and tours).
+* Error Handling: Implement error handling in your data fetching and rendering logic to gracefully handle cases where data is missing or invalid.
+* Performance: Be mindful of performance, especially if you have a large amount of data. Consider using techniques like lazy loading and code splitting to optimize the website's loading time.
+* Maintainability: Write clean, well-documented code to make it easier to maintain and update the website in the future.
+* Image Optimization: Use the Next.js <Image> component for optimized image loading and display. All images should be stored inside the public directory of the project.
+5. Assets:
+* Sample JSON data has been provided for each content type.
+This setup will allow us to create a fully functional travel studio website without relying on a CMS, keeping our initial hosting costs low.

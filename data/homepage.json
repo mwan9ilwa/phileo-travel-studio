@@ -1,0 +1,43 @@
+{
+  "heroTitle": "Discover the World's Hidden Gems",
+  "heroDescription": "Curated travel experiences designed to immerse you in authentic cultures, breathtaking landscapes, and unforgettable adventures.",
+  "heroImage": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80",
+  "featuredDestinations": ["paris", "bali", "santorini"],
+  "featuredTours": ["cultural-paris-walking-tour", "bali-temple-rice-terrace-tour", "santorini-sunset-cruise"],
+  "sections": [
+    {
+      "__component": "homepage.section-hero",
+      "title": "Crafting Unforgettable Travel Experiences",
+      "description": "Our travel experts create personalized journeys that go beyond typical tourist experiences, providing authentic cultural immersion and access to hidden gems.",
+      "image": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=830&q=80",
+      "callToActionText": "Discover Our Approach",
+      "callToActionLink": "/about"
+    },
+    {
+      "__component": "homepage.section-featured-destinations",
+      "title": "Popular Destinations",
+      "destinations": ["paris", "bali", "santorini", "kyoto", "costa-rica", "marrakech"]
+    },
+    {
+      "__component": "homepage.section-testimonials",
+      "title": "What Our Travelers Say",
+      "testimonials": [
+        {
+          "author": "Sarah Johnson",
+          "comment": "Our Paris tour was absolutely magical! Our guide Marie was knowledgeable and passionate about the city's history. The private Seine cruise at sunset was a highlight we'll never forget.",
+          "rating": 5
+        },
+        {
+          "author": "Michael Chen",
+          "comment": "The Bali temple tour exceeded our expectations. Our guide took us to less crowded spots and shared fascinating stories about Balinese culture. The sunset at Tanah Lot was breathtaking!",
+          "rating": 5
+        },
+        {
+          "author": "Emma & James Wilson",
+          "comment": "The Santorini cruise was the highlight of our honeymoon. Swimming in the hot springs, enjoying Greek cuisine, and watching the sunset with a glass of wine was an experience we'll treasure forever.",
+          "rating": 5
+        }
+      ]
+    }
+  ]
+}

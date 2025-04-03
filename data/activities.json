@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Eiffel Tower Visit",
+    "slug": "eiffel-tower-visit",
+    "description": "<p>No visit to Paris is complete without experiencing the iconic Eiffel Tower. Built for the 1889 World's Fair, this wrought-iron marvel has become the ultimate symbol of Paris and one of the world's most recognizable structures.</p><p>Our Eiffel Tower experience includes skip-the-line access, saving you valuable time that would otherwise be spent waiting in long queues. Your knowledgeable guide will share fascinating stories about the tower's construction, the controversy it initially caused among Parisians, and its journey to becoming the beloved icon it is today.</p><p>Ascend to the second level for spectacular panoramic views of Paris. From this vantage point, your guide will point out major landmarks and help you understand the layout of the city. For those who wish to go higher, tickets to the summit can be arranged (subject to availability), where you'll enjoy even more breathtaking views and can toast your visit with champagne from the summit's bar.</p>",
+    "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1401&q=80",
+    "price": 75,
+    "currency": "USD",
+    "duration": "2 hours",
+    "location": {
+      "latitude": 48.8584,
+      "longitude": 2.2945
+    }
+  },
+  {
+    "id": 2,
+    "name": "Louvre Museum Tour",
+    "slug": "louvre-museum-tour",
+    "description": "<p>Explore the world's most visited museum with our expert art historian guides. The Louvre, originally built as a fortress in the 12th century and later a royal palace, now houses over 38,000 artifacts spanning from prehistory to the 21st century across 72,735 square meters.</p><p>Our carefully crafted tour focuses on the museum's masterpieces, including Leonardo da Vinci's Mona Lisa, the Venus de Milo, Winged Victory of Samothrace, and works by Delacroix, Michelangelo, and many others. Your guide will provide rich context for these iconic works, bringing their stories to life and helping you appreciate their historical and artistic significance.</p><p>Beyond the famous highlights, your guide will navigate you through the museum's magnificent halls, pointing out overlooked treasures and sharing insights about the building itself, including its modern additions like the glass pyramid designed by I.M. Pei.</p><p>Skip-the-line access ensures you maximize your time exploring the collections rather than waiting in queues. After the guided portion, you're welcome to remain in the museum to continue exploring at your own pace.</p>",
+    "image": "https://images.unsplash.com/photo-1499856871958-5b9357976b82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80",
+    "price": 65,
+    "currency": "USD",
+    "duration": "3 hours",
+    "location": {
+      "latitude": 48.8606,
+      "longitude": 2.3376
+    }
+  },
+  {
+    "id": 3,
+    "name": "Seine River Cruise",
+    "slug": "seine-river-cruise",
+    "description": "<p>Experience the beauty of Paris from a unique perspective with our enchanting Seine River cruise. This relaxing boat journey offers unparalleled views of the city's most famous monuments and buildings from the water.</p><p>As you glide along the Seine, you'll pass under historic bridges and see iconic landmarks including the Eiffel Tower, Notre-Dame Cathedral, the Louvre, Musée d'Orsay, Grand Palais, and the majestic buildings of Île de la Cité and Île Saint-Louis. The boat's open deck provides excellent photo opportunities, while the indoor seating area offers comfort in any weather.</p><p>Audio commentary is available in multiple languages, providing interesting historical and architectural information about the sights you pass. The leisurely pace of the cruise allows you to truly appreciate the elegant beauty of Paris and understand why the Seine riverbanks are listed as a UNESCO World Heritage site.</p><p>Choose between daytime cruises to see the details of monuments in natural light, or evening departures when the city transforms with twinkling lights reflecting on the water—the perfect romantic Paris experience.</p>",
+    "image": "https://images.unsplash.com/photo-1499856871958-5b9357976b82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1420&q=80",
+    "price": 40,
+    "currency": "USD",
+    "duration": "1 hour",
+    "location": {
+      "latitude": 48.8608,
+      "longitude": 2.3376
+    }
+  },
+  {
+    "id": 4,
+    "name": "Temple Hopping Tour",
+    "slug": "temple-hopping-tour",
+    "description": "<p>Discover Bali's spiritual heart with our comprehensive Temple Hopping Tour. Bali is known as the 'Island of a Thousand Temples,' and this carefully crafted experience takes you to some of the most significant and beautiful examples.</p><p>The journey begins at Tanah Lot, one of Bali's most iconic temples perched dramatically on a rock formation in the sea. Continue to the Royal Temple of Mengwi (Pura Taman Ayun) with its magnificent traditional architecture and peaceful garden surroundings.</p><p>Next, venture into the highlands to visit Ulun Danu Beratan Temple, which appears to float on Lake Beratan when the water is high. The mist-shrouded mountains create a magical atmosphere at this sacred site dedicated to the goddess of the lake.</p><p>The final stop is Uluwatu Temple, dramatically situated on a cliff edge with stunning sunset views over the Indian Ocean. Here, you'll also enjoy a traditional Kecak Fire Dance performance as the sun sets.</p><p>Throughout the day, your knowledgeable guide will explain the significance of each temple in Balinese Hindu culture, the meaning behind various architectural elements, and the role these sacred sites play in daily life on the island.</p>",
+    "image": "https://images.unsplash.com/photo-1604999333679-b86d54738315?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1550&q=80",
+    "price": 85,
+    "currency": "USD",
+    "duration": "Full day",
+    "location": {
+      "latitude": -8.5447,
+      "longitude": 115.0384
+    }
+  },
+  {
+    "id": 5,
+    "name": "Ubud Monkey Forest",
+    "slug": "ubud-monkey-forest",
+    "description": "<p>Explore the enchanting Sacred Monkey Forest Sanctuary (Mandala Suci Wenara Wana), a natural forest reserve and temple complex in the heart of Ubud. This ecological and cultural treasure serves as an important conservation area, research center, and spiritual site.</p><p>The forest is home to over 700 Balinese long-tailed macaques (Macaca fascicularis) living in four main groups. As you walk through lush greenery along well-maintained pathways, you'll observe these intelligent primates in their natural habitat—playing, grooming, caring for their young, and sometimes getting into mischievous antics.</p><p>Beyond the monkeys, the forest itself is a botanical marvel with over 186 species of trees and plants creating a verdant canopy. Three Hindu temples dating back to the 14th century are nestled within the sanctuary, adding cultural and spiritual significance to the natural beauty.</p><p>Your knowledgeable guide will share insights about monkey behavior, forest ecology, and the spiritual importance of the site to local Balinese. They'll also provide practical advice for safe and respectful interaction with the macaques.</p><p>This experience offers wonderful photo opportunities and a chance to connect with nature while learning about Balinese cultural attitudes toward the natural world and the concept of harmony between humans, nature, and the divine that is central to Balinese philosophy.</p>",
+    "image": "https://images.unsplash.com/photo-1537225228614-56cc3556d7ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 40,
+    "currency": "USD",
+    "duration": "2 hours",
+    "location": {
+      "latitude": -8.5194,
+      "longitude": 115.2586
+    }
+  },
+  {
+    "id": 6,
+    "name": "Tegalalang Rice Terrace",
+    "slug": "tegalalang-rice-terrace",
+    "description": "<p>Experience the breathtaking beauty of Bali's famous terraced landscapes with our guided tour of the Tegalalang Rice Terraces. Located just north of Ubud, these cascading emerald-green fields carved into the hillside represent one of the most photogenic locations in Bali and showcase the island's ancient irrigation system known as 'subak.'</p><p>Your guide will lead you along pathways through the terraces, explaining the ingenious subak irrigation system—a UNESCO-recognized cultural practice that dates back to the 9th century. This cooperative water management method, based on the philosophy of Tri Hita Karana (harmony between humans, nature, and the divine), has allowed Balinese farmers to cultivate these steep slopes for centuries.</p><p>Walking through the terraces, you'll observe farmers tending their crops using traditional methods and learn about the rice cultivation cycle. The tour includes stops at strategic viewpoints perfect for photography, as well as opportunities to meet local farmers and artisans selling handcrafted souvenirs.</p><p>For the adventurous, various swings and photo platforms are available throughout the area for an additional fee, offering unique perspectives of the terraced landscape.</p><p>The experience concludes with a visit to a local warung (café) overlooking the terraces, where you can relax with a coffee or fresh coconut while continuing to admire the stunning scenery.</p>",
+    "image": "https://images.unsplash.com/photo-1558005137-d9619a5c539f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1391&q=80",
+    "price": 45,
+    "currency": "USD",
+    "duration": "Half-day",
+    "location": {
+      "latitude": -8.4312,
+      "longitude": 115.2792
+    }
+  },
+  {
+    "id": 7,
+    "name": "Sunset Caldera Cruise",
+    "slug": "sunset-caldera-cruise",
+    "description": "<p>Experience the legendary Santorini sunset in the most magical way possible—from the water. Our premium catamaran cruise takes you around the island's famous caldera, created by one of the largest volcanic eruptions in recorded history.</p><p>Departing from Vlychada Marina in the afternoon, you'll sail around the caldera with stops at several key locations. Visit the volcanic hot springs where you can swim in warm waters rich in minerals. Continue to Red Beach and White Beach, named for their distinctive colored cliffs, with time for swimming and snorkeling in crystal-clear waters.</p><p>As evening approaches, our crew prepares a delicious BBQ dinner featuring fresh Greek specialties. Enjoy unlimited local wine, beer, and soft drinks while we position the vessel for an unobstructed view of the famous Santorini sunset.</p><p>Watch in awe as the sun dips below the horizon, casting a golden glow over the whitewashed villages perched on the caldera cliffs—a truly unforgettable spectacle. The perspective from the water offers a unique view of the island's distinctive architecture against the changing colors of the evening sky.</p><p>Throughout the cruise, our knowledgeable crew shares insights about Santorini's volcanic history, formation, and culture. The relaxed atmosphere, limited group size, and attentive service ensure a premium experience of this bucket-list sunset.</p>",
+    "image": "https://images.unsplash.com/photo-1504512485720-7d83a16ee930?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1504&q=80",
+    "price": 145,
+    "currency": "USD",
+    "duration": "5 hours",
+    "location": {
+      "latitude": 36.3932,
+      "longitude": 25.4615
+    }
+  },
+  {
+    "id": 8,
+    "name": "Akrotiri Archaeological Site",
+    "slug": "akrotiri-archaeological-site",
+    "description": "<p>Step back in time with our expert-guided tour of Akrotiri, one of the most important prehistoric settlements of the Aegean. Often called the 'Minoan Pompeii,' this remarkably preserved Bronze Age city was buried under volcanic ash following the catastrophic eruption of Santorini's volcano around 1600 BC.</p><p>Unlike Pompeii, Akrotiri's residents appear to have been evacuated before the eruption, leaving behind an intact city frozen in time. Walking through the site with your archaeologist guide, you'll explore multi-story buildings, intricate drainage systems, and pottery workshops that reveal the sophisticated urban planning and advanced technology of this ancient civilization.</p><p>Marvel at the remarkably preserved frescoes, furniture, and vessels that offer glimpses into daily life nearly 4,000 years ago. Your guide will bring the ancient city to life, explaining the historical context of Akrotiri, its trading relationships with other Mediterranean civilizations, and the theories about its connection to Plato's legend of Atlantis.</p><p>The tour provides fascinating insights into archaeological techniques and conservation challenges at the site, which continues to yield new discoveries. The modern protective structure covering the excavations ensures comfortable viewing regardless of weather conditions.</p><p>After exploring the archaeological site, the experience concludes with a visit to the Museum of Prehistoric Thera in Fira (optional), where original frescoes and artifacts from Akrotiri are displayed, complementing your understanding of this extraordinary ancient settlement.</p>",
+    "image": "https://images.unsplash.com/photo-1633674339418-6378ab2c0ee0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 65,
+    "currency": "USD",
+    "duration": "2 hours",
+    "location": {
+      "latitude": 36.3517,
+      "longitude": 25.4037
+    }
+  },
+  {
+    "id": 9,
+    "name": "Wine Tasting Tour",
+    "slug": "wine-tasting-tour",
+    "description": "<p>Discover the unique wines of Santorini on this immersive tasting tour that explores the island's distinctive viticulture. Santorini's volcanic soil, arid climate, and ancient vine-growing techniques produce wines with exceptional minerality and character found nowhere else in the world.</p><p>Visit three of the island's top wineries, each offering different perspectives on winemaking. At each location, you'll sample 4-6 different varieties, primarily featuring the island's signature Assyrtiko grape, along with other indigenous varieties like Athiri, Aidani, and the sweet Vinsanto.</p><p>Your sommelier guide will explain Santorini's unique vine-growing method, where plants are woven into basket-shaped formations called 'kouloura' to protect grapes from strong winds and harsh sun. Learn about the island's 3,500-year winemaking history—one of the oldest in the world—and how volcanic soils contribute to the wines' distinctive mineral character.</p><p>As you travel between wineries, enjoy spectacular views of the island's landscapes, including vineyards, the caldera, and the Aegean Sea. Light accompaniments such as local cheese, bread, and olives complement the wine tastings, highlighting the connection between Santorini's culinary and viticultural traditions.</p><p>The experience provides both wine enthusiasts and curious beginners with insights into what makes Santorini's wines so special and internationally acclaimed. You'll gain appreciation for the dedication required to cultivate vines in this challenging environment and the distinctive qualities that result from these ancient methods.</p>",
+    "image": "https://images.unsplash.com/photo-1546877625-cb8c71916608?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 120,
+    "currency": "USD",
+    "duration": "4 hours",
+    "location": {
+      "latitude": 36.4233,
+      "longitude": 25.4317
+    }
+  },
+  {
+    "id": 10,
+    "name": "Traditional Tea Ceremony",
+    "slug": "traditional-tea-ceremony",
+    "description": "<p>Experience the quintessence of Japanese cultural refinement with our authentic tea ceremony (chado or sado). This traditional ritual of preparing and serving matcha (powdered green tea) embodies core principles of Japanese aesthetics, philosophy, and spiritual practice.</p><p>The experience takes place in a traditional tea house in a peaceful garden setting. You'll be welcomed by a qualified tea master who will guide you through the ceremony and explain its significance. Before entering the tea room, walk through a Japanese garden designed to prepare your mind for the experience through its carefully composed elements of stone, water, and plants.</p><p>Inside the tea room, observe as the tea master performs each precise movement with mindful attention—from the arrangement of utensils to the ceremonial cleaning of each item, the precise preparation of matcha, and the formal serving of the tea. Each gesture has been refined over centuries and carries symbolic meaning.</p><p>Learn about the concept of 'ichigo ichie' (one time, one meeting) that underlies the ceremony—the idea that each gathering is unique and should be treasured as a once-in-a-lifetime encounter. Your host will explain the principles of harmony (wa), respect (kei), purity (sei), and tranquility (jaku) that form the philosophical foundation of the tea ceremony.</p><p>After observing the preparation, you'll be instructed in the proper etiquette for receiving and drinking the tea, including how to appreciate the tea bowl, which is selected specifically for the season and occasion. The experience concludes with Japanese sweets served to complement the slightly bitter taste of the matcha.</p>",
+    "image": "https://images.unsplash.com/photo-1535403828425-c11fce7046ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1476&q=80",
+    "price": 75,
+    "currency": "USD",
+    "duration": "1.5 hours",
+    "location": {
+      "latitude": 35.0116,
+      "longitude": 135.7681
+    }
+  },
+  {
+    "id": 11,
+    "name": "Arenal Volcano Hike",
+    "slug": "arenal-volcano-hike",
+    "description": "<p>Explore the natural wonders of Costa Rica's most active volcano on our guided Arenal Volcano Hike. This adventure takes you through distinct ecosystems on well-maintained trails within Arenal Volcano National Park, offering spectacular views and opportunities to learn about the volcano's fascinating geology and history.</p><p>The hike begins on the Las Coladas trail, which winds through secondary rainforest before crossing over a solidified lava flow from the 1992 eruption. Your naturalist guide will explain how this seemingly inhospitable surface gradually transforms back into forest through ecological succession.</p><p>As you hike, learn about Arenal's dramatic 1968 eruption that transformed the region and the current dormant phase that began in 2010. Your guide will point out geological features like ancient lava flows, volcanic bombs, and ash deposits that tell the story of past eruptions.</p><p>The trail offers several strategic viewpoints where, weather permitting, you can see the perfect cone shape of the volcano against the sky. These spots provide excellent photo opportunities and time to appreciate the power and beauty of this natural landmark.</p><p>Throughout the hike, your guide will help spot wildlife that inhabits the forests surrounding the volcano, including various bird species, monkeys, coatis, and reptiles. The integration of geological and biological information provides a comprehensive understanding of this dynamic ecosystem.</p><p>The experience concludes at Lake Arenal, where you can enjoy views of the volcano reflected in the water while your guide shares information about the lake's creation and its importance to Costa Rica's renewable energy production.</p>",
+    "image": "https://images.unsplash.com/photo-1589491106922-a8e488665d5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "price": 65,
+    "currency": "USD",
+    "duration": "3 hours",
+    "location": {
+      "latitude": 10.4626,
+      "longitude": -84.7038
+    }
+  },
+  {
+    "id": 12,
+    "name": "Medina Walking Tour",
+    "slug": "medina-walking-tour",
+    "description": "<p>Immerse yourself in the beating heart of Marrakech with our expert-guided walking tour of the medina. This labyrinthine old city, a UNESCO World Heritage site, offers a sensory feast and a journey through Morocco's rich history and culture.</p><p>Begin at the iconic Jemaa el-Fnaa square, the pulsating center of Marrakech life for nearly a millennium. Your guide will share stories of this dynamic space that transforms throughout the day, from a market in the morning to an open-air theater of storytellers, musicians, and food vendors by night.</p><p>Venture into the souks (traditional markets), each section dedicated to specific crafts—from aromatic spices and colorful textiles to intricate metalwork and leather goods. Watch artisans at work using techniques passed down through generations and learn about the guild system that has organized these crafts for centuries.</p><p>The tour continues to architectural treasures including the 14th-century Ben Youssef Madrasa, once one of North Africa's largest Islamic colleges, where you'll admire exquisite zellige (mosaic tilework), carved cedar, and stucco ornamentation. Nearby, explore the Almoravid Koubba, the oldest monument in Marrakech dating from the 12th century.</p><p>Throughout your journey, your knowledgeable guide will provide context for what you're seeing, from explanations of Islamic architectural elements to insights into daily life in the medina. They'll also help navigate the intricate alleys, pointing out hidden gems that most visitors miss.</p><p>The experience includes stops at a traditional bakery where locals bring their bread to be baked in communal ovens and a neighborhood hammam (bathhouse), offering glimpses into authentic medina life beyond the tourist trail.</p>",
+    "image": "https://images.unsplash.com/photo-1548918901-9b7f99af4e93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+    "price": 55,
+    "currency": "USD",
+    "duration": "4 hours",
+    "location": {
+      "latitude": 31.6295,
+      "longitude": -7.9811
+    }
+  }
+]
