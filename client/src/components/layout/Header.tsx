@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { Menu, X } from 'lucide-react';
-import logoPath from '../../assets/logo.svg';
+import logoPath from '../../assets/logo2.png';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -24,8 +24,8 @@ const Header = () => {
             <Link href="/" className="flex items-center space-x-2">
               <img src={logoPath} alt="Phileo Travel Studio" className="h-10 w-auto" />
               <div className="flex flex-col">
-                <span className="text-primary font-display text-2xl font-bold leading-tight">Phileo</span>
-                <span className="text-neutral-600 font-display text-sm leading-tight">Travel Studio</span>
+                <span className="text-primary font-display text-2xl font-bold leading-tight">Phileo Travel Studio</span>
+                {/* <span className="text-neutral-600 font-display text-sm leading-tight">Travel Studio</span> */}
               </div>
             </Link>
             

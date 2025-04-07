@@ -1,6 +1,6 @@
 import { Link } from 'wouter';
 import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
-import logoPath from '../../assets/logo.svg';
+import logoPath from '../../assets/logo1.png';
 
 const Footer = () => {
   return (
@@ -10,13 +10,13 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-4 flex items-center space-x-2">
-              <img src={logoPath} alt="Phileo Travel Studio" className="h-10 w-auto filter brightness-0 invert" />
-              <div className="flex flex-col">
+              <img src={logoPath} alt="Phileo Travel Studio" className="h-20 w-auto" />
+              {/* <div className="flex flex-col">
                 <span className="text-white font-display text-2xl font-bold leading-tight">Phileo</span>
                 <span className="text-neutral-400 font-display text-sm leading-tight">Travel Studio</span>
-              </div>
+              </div> */}
             </div>
-            <p className="mb-4">Creating unforgettable travel experiences since 2010. Our expert team is dedicated to crafting the perfect journey for every traveler.</p>
+            <p className="mb-4">Your one stop travel shop dedicated to you...</p>
             <div className="flex space-x-4">
               <a href="#" className="text-neutral-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
@@ -64,19 +64,19 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="mt-1 mr-3 text-neutral-400">📍</span>
-                <span>123 Travel Way, Adventure City, AC 12345</span>
+                <span>Plot #17, Nangwenya Road, Rhodes Park, Lusaka.</span>
               </li>
               <li className="flex items-start">
                 <span className="mt-1 mr-3 text-neutral-400">📞</span>
-                <span>+1 (555) 123-4567</span>
+                <span>+260970629899</span>
               </li>
               <li className="flex items-start">
                 <span className="mt-1 mr-3 text-neutral-400">✉️</span>
-                <span>info@phileotravelstudio.com</span>
+                <span>phileo.travelstudio@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <span className="mt-1 mr-3 text-neutral-400">🕒</span>
-                <span>Mon-Fri: 9am-6pm EST</span>
+                <span>Mon-Fri: 8:00 am - 5:00 pm CAT</span>
               </li>
             </ul>
           </div>
