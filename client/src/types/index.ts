@@ -59,9 +59,25 @@ export interface TeamMember {
   socialLinks: SocialLinks;
 }
 
+export interface Service {
+  id: number;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface Partner {
+  id: number;
+  name: string;
+  logo: ImagePath;
+  website: string;
+}
+
 export interface About {
   content: string;
   teamMembers: TeamMember[];
+  services: Service[];
+  partners: Partner[];
 }
 
 // Contact Page Types

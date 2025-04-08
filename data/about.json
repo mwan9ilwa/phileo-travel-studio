@@ -1,5 +1,81 @@
 {
-  "content": "<h2>Our Story</h2><p>Phileo Travel Studio was founded in 2010 by a team of passionate travelers who shared a vision: to create meaningful travel experiences that go beyond the typical tourist paths. The name 'Phileo' comes from the Greek word for brotherly love and friendship – reflecting our philosophy that travel is about forming connections with people, cultures, and places.</p><p>What began as a small boutique agency specializing in Mediterranean destinations has grown into a global travel studio with expertise in destinations across six continents. Despite our growth, we've maintained our dedication to personalized service and authentic experiences.</p><h2>Our Mission</h2><p>At Phileo Travel Studio, we believe that travel has the power to transform lives, broaden perspectives, and create memories that last a lifetime. Our mission is to craft journeys that reflect the unique interests and aspirations of each traveler, while promoting sustainable tourism practices that benefit local communities and preserve cultural heritage.</p><p>We strive to strike the perfect balance between iconic attractions and off-the-beaten-path discoveries, luxurious comfort and authentic immersion, structure and spontaneity.</p><h2>Our Approach</h2><p>Every journey we design begins with understanding your travel dreams, preferences, and expectations. Our team of destination specialists – all avid travelers themselves – then collaborate to craft an itinerary that reflects your unique vision while incorporating our insider knowledge and expertise.</p><p>We work with a carefully curated network of local partners who share our values and commitment to excellence. This includes boutique accommodations with character, knowledgeable guides who bring destinations to life, and authentic experiences that connect you with local culture and communities.</p><p>From the moment you reach out to us until your return home, our team is dedicated to ensuring your journey exceeds expectations. We believe in being present and responsive throughout your travels, providing 24/7 support and the flexibility to adjust your itinerary as needed.</p>",
+  "content": "<h2>Our Story</h2><p>Phileo Travel Studio offers our clients with coordination of comprehensive travel itineraries within a 24 hour turnaround time. Our team of highly trained and skilled staff has been programmed to understand the client’s needs and offer the best options available.</p><h2>Our Mission</h2><p>At Phileo Travel Studio, we believe that travel should be an enriching experience that allows you to connect with different cultures, people, and places. Our mission is to help you create memories that will last a lifetime.</p><h2>Our Values</h2><ul><li>Personalized Service: We take the time to understand your needs and preferences to create a customized itinerary just for you.</li><li>Attention to Detail: We pay close attention to every detail of your trip to ensure a seamless and enjoyable experience.</li><li>Passion for Travel: We are passionate about travel and strive to share that passion with our clients.</li></ul>",
+  "services": [
+    {
+      "id": 1,
+      "title": "Personalized Itineraries",
+      "description": "Custom travel plans tailored to your preferences, interests, and pace. Whether you're seeking adventure, relaxation, cultural immersion, or a mix of experiences, we craft journeys that reflect your unique travel style.",
+      "icon": "map"
+    },
+    {
+      "id": 2,
+      "title": "Destination Expertise",
+      "description": "Our team includes specialists with deep knowledge of destinations across six continents. We offer insider tips, hidden gems, and authentic experiences that go beyond the typical tourist path.",
+      "icon": "globe"
+    },
+    {
+      "id": 3,
+      "title": "Luxury Accommodations",
+      "description": "From boutique hotels with character to luxury resorts with world-class amenities, we select accommodations that enhance your travel experience and provide exceptional comfort and service.",
+      "icon": "hotel"
+    },
+    {
+      "id": 4,
+      "title": "Private Guided Tours",
+      "description": "Experience destinations with expert local guides who share their knowledge, passion, and personal insights. Our guides are carefully selected for their expertise and ability to create meaningful connections.",
+      "icon": "user"
+    },
+    {
+      "id": 5,
+      "title": "Seamless Logistics",
+      "description": "We handle all the details, from transportation and accommodations to activities and restaurant reservations, ensuring a smooth and stress-free journey from start to finish.",
+      "icon": "calendar-check"
+    },
+    {
+      "id": 6,
+      "title": "24/7 Travel Support",
+      "description": "Our team is available around the clock to assist with any questions or unexpected situations that may arise during your travels, providing peace of mind and immediate solutions.",
+      "icon": "life-buoy"
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "name": "Luxury Hotels Collection",
+      "logo": "https://images.unsplash.com/photo-1639556251340-5b71f6b6beae?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner1"
+    },
+    {
+      "id": 2,
+      "name": "EcoTours International",
+      "logo": "https://images.unsplash.com/photo-1639556251343-10c98156f92d?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner2"
+    },
+    {
+      "id": 3,
+      "name": "Global Adventure Group",
+      "logo": "https://images.unsplash.com/photo-1639556251339-0711dcfe346a?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner3"
+    },
+    {
+      "id": 4,
+      "name": "Sustainable Travel Alliance",
+      "logo": "https://images.unsplash.com/photo-1639556251342-c7f8e91ee5c5?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner4"
+    },
+    {
+      "id": 5,
+      "name": "Cultural Heritage Foundation",
+      "logo": "https://images.unsplash.com/photo-1639556251558-d8c167292210?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner5"
+    },
+    {
+      "id": 6,
+      "name": "World Culinary Tours",
+      "logo": "https://images.unsplash.com/photo-1639556251346-8569cbaba932?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=200",
+      "website": "https://example.com/partner6"
+    }
+  ],
   "teamMembers": [
     {
       "name": "Elena Papandreou",

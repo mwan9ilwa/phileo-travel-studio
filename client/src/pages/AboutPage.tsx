@@ -1,7 +1,19 @@
 import { useQuery } from '@tanstack/react-query';
 import { about } from '@/utils/data';
 import ContactCTA from '@/components/sections/ContactCTA';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { 
+  Facebook, 
+  Twitter, 
+  Instagram, 
+  Linkedin,
+  Map,
+  Globe,
+  Hotel,
+  User,
+  CalendarCheck,
+  LifeBuoy,
+  ExternalLink
+} from 'lucide-react';
 
 const AboutPage = () => {
   const { data: aboutData } = useQuery({
@@ -22,6 +34,25 @@ const AboutPage = () => {
         return <Linkedin className="h-5 w-5" />;
       default:
         return null;
+    }
+  };
+  
+  const getServiceIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'map':
+        return <Map className="h-10 w-10 text-primary" />;
+      case 'globe':
+        return <Globe className="h-10 w-10 text-primary" />;
+      case 'hotel':
+        return <Hotel className="h-10 w-10 text-primary" />;
+      case 'user':
+        return <User className="h-10 w-10 text-primary" />;
+      case 'calendar-check':
+        return <CalendarCheck className="h-10 w-10 text-primary" />;
+      case 'life-buoy':
+        return <LifeBuoy className="h-10 w-10 text-primary" />;
+      default:
+        return <Globe className="h-10 w-10 text-primary" />;
     }
   };
 
@@ -55,6 +86,30 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      {aboutData.services && aboutData.services.length > 0 && (
+        <section className="py-16 bg-white border-t border-neutral-200">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-800 mb-4 text-center">
+              Our Services
+            </h2>
+            <p className="text-neutral-600 text-lg text-center max-w-3xl mx-auto mb-12">
+              Experience exceptional travel services designed to make your journey unforgettable.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {aboutData.services.map((service) => (
+                <div key={service.id} className="p-6 bg-neutral-50 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <div className="mb-4 flex justify-center md:justify-start">
+                    {getServiceIcon(service.icon)}
+                  </div>
+                  <h3 className="font-display text-xl font-bold mb-3 text-center md:text-left">{service.title}</h3>
+                  <p className="text-neutral-600 text-center md:text-left">{service.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {aboutData.teamMembers.length > 0 && (
         <section className="py-16 bg-neutral-100">
@@ -90,6 +145,43 @@ const AboutPage = () => {
                     </div>
                   </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {aboutData.partners && aboutData.partners.length > 0 && (
+        <section className="py-16 bg-white border-t border-neutral-200">
+          <div className="container mx-auto px-4">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-neutral-800 mb-4 text-center">
+              Our Partners
+            </h2>
+            <p className="text-neutral-600 text-lg text-center max-w-3xl mx-auto mb-12">
+              We collaborate with trusted partners worldwide to provide you with exceptional travel experiences.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+              {aboutData.partners.map((partner) => (
+                <a 
+                  key={partner.id} 
+                  href={partner.website} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                >
+                  <div className="flex flex-col items-center">
+                    <img 
+                      src={partner.logo} 
+                      alt={partner.name} 
+                      className="h-12 object-contain mb-3" 
+                    />
+                    <p className="text-sm font-medium text-neutral-700 text-center">{partner.name}</p>
+                    <div className="text-primary flex items-center mt-1 text-xs">
+                      <span className="mr-1">Visit</span>
+                      <ExternalLink className="h-3 w-3" />
+                    </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
