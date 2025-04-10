@@ -9,32 +9,32 @@
     },
     {
       "id": 2,
-      "title": "Destination Expertise",
-      "description": "Our team includes specialists with deep knowledge of destinations across six continents. We offer insider tips, hidden gems, and authentic experiences that go beyond the typical tourist path.",
-      "icon": "globe"
+      "title": "Car Hire",
+      "description": "Looking for car hire in Lusaka? Enquire with us for reasonably priced and reliable saloon and SUV cars.",
+      "icon": "car"
     },
     {
       "id": 3,
-      "title": "Luxury Accommodations",
-      "description": "From boutique hotels with character to luxury resorts with world-class amenities, we select accommodations that enhance your travel experience and provide exceptional comfort and service.",
+      "title": "Holiday Packages",
+      "description": "Benefit from Phileo Travel's discounted rates at hotels and lodges. Our dedicated team is ready to assist in planning your holiday, offering various options for accommodation, meals, activities, and transfers.",
       "icon": "hotel"
     },
     {
       "id": 4,
-      "title": "Private Guided Tours",
-      "description": "Experience destinations with expert local guides who share their knowledge, passion, and personal insights. Our guides are carefully selected for their expertise and ability to create meaningful connections.",
+      "title": "Honeymoon Packages",
+      "description": "Celebrate your newlywed bliss with a romantic honeymoon! Phileo Travel is here to plan your perfect getaway.",
       "icon": "user"
     },
     {
       "id": 5,
-      "title": "Seamless Logistics",
-      "description": "We handle all the details, from transportation and accommodations to activities and restaurant reservations, ensuring a smooth and stress-free journey from start to finish.",
+      "title": "Flights",
+      "description": "Phileo travel is here to help you connect to with the cheapest and most convenient flights worldwide.",
       "icon": "calendar-check"
     },
     {
       "id": 6,
-      "title": "24/7 Travel Support",
-      "description": "Our team is available around the clock to assist with any questions or unexpected situations that may arise during your travels, providing peace of mind and immediate solutions.",
+      "title": "Visa's",
+      "description": "Are you Travelling to Dubai or China? please allow us to assist you with processing your visa.",
       "icon": "life-buoy"
     }
   ],
@@ -78,8 +78,8 @@
   ],
   "teamMembers": [
     {
-      "name": "Elena Papandreou",
-      "title": "Founder & CEO",
+      "name": "Mwila Musokota Jere",
+      "title": "Manager",
       "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80",
       "bio": "With over 20 years of experience in luxury travel and a passport filled with stamps from 75+ countries, Elena brings unparalleled expertise and passion to Phileo Travel Studio. Her specialty is crafting transformative journeys across the Mediterranean and Asia.",
       "socialLinks": {
@@ -88,7 +88,7 @@
       }
     },
     {
-      "name": "Marco Rossi",
+      "name": "Clive Jere",
       "title": "Head of European Destinations",
       "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
       "bio": "Born in Milan and having lived across Europe, Marco brings insider knowledge and a local's perspective to our European destinations. His connections with boutique hotels, local chefs, and hidden attractions ensure our clients experience the authentic Europe.",
