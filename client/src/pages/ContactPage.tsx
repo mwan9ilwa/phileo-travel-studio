@@ -103,9 +103,9 @@ const ContactPage = () => {
         title="Ready for Your Next Adventure?"
         description="Follow us on social media for travel inspiration, tips, and exclusive offers."
         primaryButtonText="Follow on Instagram"
-        primaryButtonLink="https://instagram.com"
+        primaryButtonLink="https://instagram.com/phileotravelstudio"
         secondaryButtonText="Like on Facebook"
-        secondaryButtonLink="https://facebook.com"
+        secondaryButtonLink="https://web.facebook.com/phileo.travel"
       />
     </>
   );
