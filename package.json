@@ -6,7 +6,7 @@
  "scripts": {
   "dev": "vite",
   "build": "vite build",
-  "vercel-build": "vite build && tsc --project tsconfig.server.json"
+  "vercel-build": "vite build && tsc --project tsconfig.json"
 },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
