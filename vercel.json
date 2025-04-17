@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "server/index.ts",
+      "src": "api/index.ts",
       "use": "@vercel/node"
     },
     {
@@ -20,6 +20,10 @@
     },
     {
       "handle": "filesystem"
+    },
+    {
+      "src": "/(assets|images|css|js|favicon.ico)(.*)",
+      "dest": "/dist/$1$2"
     },
     {
       "src": "/(.*)",
