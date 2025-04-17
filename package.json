@@ -5,8 +5,8 @@
   "license": "MIT",
  "scripts": {
   "dev": "vite",
-  "build": "tsc && vite build",
-  "vercel-build": "vite build"
+  "build": "vite build",
+  "vercel-build": "vite build && tsc --project tsconfig.server.json"
 },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
